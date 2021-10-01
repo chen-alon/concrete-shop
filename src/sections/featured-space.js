@@ -1,21 +1,21 @@
 /** @jsx jsx */
-import { rgba } from 'polished';
-import { useState, useRef, useEffect } from 'react';
-import { jsx, Box, Container, Heading, Text } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
-import Progressbar from 'components/progressbar';
-import Feature from 'components/cards/feature';
-import Image from 'components/image';
-import expand from 'assets/images/icons/expand.png';
-import users from 'assets/images/icons/users.png';
-import wifi from 'assets/images/icons/wifi.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.webp';
-import slider3 from 'assets/images/features/3.png';
+import { rgba } from "polished";
+import { useState, useRef, useEffect } from "react";
+import { jsx, Box, Container, Heading, Text } from "theme-ui";
+import SectionHeading from "components/section-heading";
+import Progressbar from "components/progressbar";
+import Feature from "components/cards/feature";
+import Image from "components/image";
+import expand from "assets/images/icons/expand.png";
+import users from "assets/images/icons/users.png";
+import wifi from "assets/images/icons/wifi.png";
+import slider1 from "assets/images/features/1.png";
+import slider2 from "assets/images/features/2.webp";
+import slider3 from "assets/images/features/3.png";
 
-import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
+import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
@@ -24,40 +24,40 @@ const data = {
     {
       id: 1,
       icon: expand,
-      title: '1000 ft2',
-      description: 'you will get 1000ft square space facility here.',
+      title: "עבודת יד",
+      description: "you will get 1000ft square space facility here.",
     },
     {
       id: 2,
       icon: users,
-      title: '80 Members',
-      description: 'you will get advantage to live 80+ member here.',
+      title: "ידידותי לסביבה",
+      description: "you will get advantage to live 80+ member here.",
     },
     {
       id: 3,
       icon: wifi,
-      title: '100 mbps',
-      description: 'Internet speed is much better than others.',
+      title: "100 mbps",
+      description: "Internet speed is much better than others.",
     },
   ],
   gallery: [
     {
       id: 1,
       image: slider1,
-      title: 'Kin Co-working Space',
-      desc: '442 Broadway, New York',
+      title: "קולקציית נטורל",
+      desc: "חלק, נקי, קלאסי",
     },
     {
       id: 2,
       image: slider2,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Jamaica',
+      title: "קולקציית טרזו",
+      desc: "צבעוני, פיגמנטים שונים",
     },
     {
       id: 3,
       image: slider3,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Houston',
+      title: "קולקציית מרבל",
+      desc: "שילוב של לפחות שני צבעים",
     },
   ],
 };
@@ -103,20 +103,20 @@ const FeaturedSpace = () => {
   };
 
   return (
-    <Box id="feature" as="section" sx={styles.section}>
+    <Box id="collections" as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Some good place to where can build your startup business"
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="איך נולדו הקולקציות שלנו? מתוך אהבה טהורה לאומנות ובטון"
+              description="יצרנו עבורכם קולקציות מוקפדות של אקססוריס לפנים וחוץ הבית. יצרנו עבורכם פרטי אקססוריז מיוחדים לפנים וחוץ הבית שיצרנו במיוחד עבורכם או לאהובים עליכם, מתנות שיכניסו אור לבית"
             />
-            <Box sx={styles.featureWrapper}>
+            {/* <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
                 <Feature key={feature.id} data={feature} />
               ))}
-            </Box>
+            </Box> */}
           </Box>
           <Box sx={styles.rightContent}>
             <Progressbar
@@ -162,114 +162,101 @@ const styles = {
     pb: [30, null, null, 50, 60],
   },
   contentWrapper: {
-    gap: [null, null, null, null, '30px'],
-    display: ['flex', null, null, null, 'grid'],
-    alignItems: 'center',
-    flexDirection: ['column', null, null, null, null],
-    gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+    gap: [null, null, null, null, "30px"],
+    display: ["flex", null, null, null, "grid"],
+    alignItems: "center",
+    flexDirection: ["column", null, null, null, null],
+    gridTemplateColumns: ["unset", null, null, null, "repeat(2,1fr)"],
   },
   leftContent: {
-    m: [0, '30px 0px 0', '30px 50px 0', 0],
+    m: [0, "30px 0px 0", "30px 50px 0", 0],
   },
   heading: {
-    textAlign: ['center', null, null, null, 'left'],
+    textAlign: ["right", null, null, null, "right"],
     maxWidth: 490,
-    margin: ['0 auto 40px', null, null, null, '0 0 80px'],
+    margin: ["0 auto 40px", null, null, null, "0 0 80px"],
     h2: {
       fontSize: [22, null, null, 30, null, 36, 46],
       lineHeight: [1.6, null, null, 1.41],
       fontWeight: [500, null, null, 400],
     },
     p: {
-      fontSize: ['15px', null, null, '17px'],
+      fontSize: ["15px", null, null, "17px"],
       mt: [3, null, null, 5],
     },
   },
   featureWrapper: {
-    gap: ['40px 20px', null, null, null, '30px'],
-    display: 'grid',
+    gap: ["40px 20px", null, null, null, "30px"],
+    display: "grid",
     gridTemplateColumns: [
-      'repeat(2,1fr)',
+      "repeat(2,1fr)",
       null,
       null,
-      'repeat(3,180px)',
-      'repeat(3,1fr)',
+      "repeat(3,180px)",
+      "repeat(3,1fr)",
     ],
-    justifyContent: ['unset', null, null, 'center', 'flex-start'],
+    justifyContent: ["unset", null, null, "center", "flex-start"],
   },
   rightContent: {
-    position: 'relative',
+    position: "relative",
     mt: [6, null, null, null, 0],
-    maxWidth: '100%',
-    '.swiper-pagination-bullets': {
+    maxWidth: "100%",
+    ".swiper-pagination-bullets": {
       bottom: 20,
     },
-    '.swiper-pagination-bullet': {
-      backgroundColor: 'rgba(255,255,255,0.5)',
+    ".swiper-pagination-bullet": {
+      backgroundColor: "#D5573B",
       width: 10,
       height: 10,
       opacity: 1,
       mx: 5,
-      ':focus': {
+      ":focus": {
         outline: 0,
       },
     },
-    '.swiper-pagination-bullet-active': {
-      backgroundColor: 'rgba(255,255,255,1)',
+    ".swiper-pagination-bullet-active": {
+      backgroundColor: "rgba(255,255,255,1)",
     },
   },
   progressbar: {
-    position: 'absolute',
+    position: "absolute",
     left: [15, 25],
     top: [46, 53],
     zIndex: 2,
+    backgroundColor: "#D5573B",
   },
   progressBar: {
-    position: 'relative',
+    position: "relative",
     mr: 4,
   },
-  toggleButton: {
-    backgroundColor: 'transparent',
-    border: 0,
-    cursor: 'pointer',
-    display: 'flex',
-    padding: 0,
-    position: 'absolute',
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%)',
-    '&:focus': {
-      outline: '0 none',
-    },
-  },
   image: {
-    position: 'relative',
-    display: 'flex',
-    alignItems: 'flex-start',
-    '> img': {
+    position: "relative",
+    display: "flex",
+    alignItems: "flex-start",
+    "> img": {
       borderRadius: 10,
     },
     figcaption: {
-      backgroundColor: 'primary',
-      display: 'flex',
-      alignItems: 'center',
-      position: 'absolute',
+      backgroundColor: "#D5573B",
+      display: "flex",
+      alignItems: "center",
+      position: "absolute",
       left: 0,
       top: 30,
       borderRadius: 5,
-      color: '#fff',
-      padding: ['20px 20px 20px 80px', '25px 25px 25px 90px'],
+      color: "#fff",
+      padding: ["20px 20px 20px 80px", "25px 25px 25px 90px"],
       h4: {
         lineHeight: 1,
-        fontWeight: 'bold',
+        fontWeight: "bold",
         fontSize: [14, 18],
-        letterSpacing: 'heading',
+        letterSpacing: "heading",
       },
       p: {
         fontSize: [13, 16],
         fontWeight: 500,
-        letterSpacing: 'heading',
-        color: rgba('#fff', 0.6),
+        letterSpacing: "heading",
+        color: rgba("#fff", 0.6),
         marginTop: [2],
       },
     },

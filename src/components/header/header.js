@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx, Box, Container, MenuButton, Flex, Button } from 'theme-ui';
-import { useState } from 'react';
-import { GrClose } from 'react-icons/gr';
-import Sticky from 'react-stickynode';
-import Logo from 'components/logo';
-import { NavLink } from 'components/link';
-import menuItems from './header.data';
+import { jsx, Box, Container, MenuButton, Flex, Button } from "theme-ui";
+import { useState } from "react";
+import { GrClose } from "react-icons/gr";
+import Sticky from "react-stickynode";
+import Logo from "components/logo";
+import { NavLink } from "components/link";
+import menuItems from "./header.data";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -28,7 +28,7 @@ export default function Header() {
         <Box
           as="header"
           sx={styles.header}
-          className={mobileMenu ? 'is-mobile-menu' : ''}
+          className={mobileMenu ? "is-mobile-menu" : ""}
         >
           <Container>
             <Box sx={styles.headerInner}>
@@ -37,12 +37,13 @@ export default function Header() {
               <Flex
                 as="nav"
                 sx={styles.navbar}
-                className={mobileMenu ? 'navbar active' : 'navbar'}
+                className={mobileMenu ? "navbar active" : "navbar"}
               >
                 <Box
                   as="ul"
                   sx={styles.navList}
-                  className={mobileMenu ? 'active' : ''}
+                  className={mobileMenu ? "active" : ""}
+                  dir="rtl"
                 >
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
@@ -55,7 +56,7 @@ export default function Header() {
                   ))}
                 </Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
-                  Join us now
+                  שלח הודעה
                 </Button>
               </Flex>
 
@@ -79,87 +80,93 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-    backgroundColor: 'transparent',
-    '.is-sticky': {
+    backgroundColor: "transparent",
+    ".is-sticky": {
       header: {
-        backgroundColor: '#fff',
-        boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
-        py: [10],
+        backgroundColor: "#fff",
+        boxShadow: "0 6px 13px rgba(38, 78, 118, 0.1)",
+        py: [20],
       },
     },
   },
   header: {
-    position: 'fixed',
+    position: "fixed",
     left: 0,
     right: 0,
     py: [20],
-    transition: 'all 0.3s ease-in-out 0s',
-    '&.is-mobile-menu': {
-      backgroundColor: '#fff',
+    transition: "all 0.3s ease-in-out 0s",
+    "&.is-mobile-menu": {
+      backgroundColor: "#fff",
     },
   },
   headerInner: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    '@media only screen and (max-width: 768px)': {
-      '.navbar': {
-        position: 'absolute',
-        top: '100%',
-        backgroundColor: '#fff',
-        width: '100%',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    "@media only screen and (max-width: 768px)": {
+      ".navbar": {
+        position: "absolute",
+        top: "100%",
+        backgroundColor: "#fff",
+        width: "100%",
         left: 0,
-        p: '20px 30px',
-        display: 'block',
-        boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
+        p: "20px 30px",
+        display: "block",
+        boxShadow: "0 6px 13px rgba(38,78,118,0.1)",
         opacity: 0,
-        visibility: 'hidden',
-        transition: 'all 0.3s ease-in-out 0s',
-        '&.active': {
+        visibility: "hidden",
+        transition: "all 0.3s ease-in-out 0s",
+        "&.active": {
           opacity: 1,
-          visibility: 'visible',
+          visibility: "visible",
         },
         ul: {
-          display: 'block',
-          'li + li': {
+          display: "block",
+          "li + li": {
             marginTop: 5,
           },
         },
         button: {
           marginTop: 8,
-          width: '100%',
+          width: "100%",
         },
       },
     },
   },
   navbar: {
-    alignItems: 'center',
+    alignItems: "center",
     flexGrow: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   navList: {
-    display: ['flex'],
-    listStyle: 'none',
-    marginLeft: 'auto',
+    display: ["flex"],
+    listStyle: "none",
+    marginLeft: "auto",
     p: 0,
-    '.nav-item': {
-      cursor: 'pointer',
+    ".nav-item": {
+      cursor: "pointer",
       fontWeight: 400,
       padding: 0,
-      margin: '0 20px',
+      margin: "0 20px",
+      "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
+        {
+          fontSize: "1.5rem",
+        },
     },
-    '.active': {
-      color: 'primary',
+    ".active": {
+      color: "#D5573B",
     },
   },
   joinNow: {
-    marginLeft: 'auto',
+    marginLeft: "auto",
+    backgroundColor: "#D5573B",
+    fontSize: "1.6rem",
   },
   closeButton: {
-    height: '32px',
-    padding: '4px',
-    minHeight: 'auto',
-    width: '32px',
-    ml: '3px',
+    height: "32px",
+    padding: "4px",
+    minHeight: "auto",
+    width: "32px",
+    ml: "3px",
   },
 };

@@ -1,54 +1,26 @@
 export default [
-  // {
-  //   path: 'home',
-  //   label: 'Home',
-  // },
   {
-    path: 'clients',
-    label: 'צור קשר',
+    path: "home",
+    label: "בית",
   },
   {
-    path: 'feature',
-    label: 'מי אנחנו',
+    path: "clients",
+    label: "חדש בחנות",
   },
   {
-    path: 'blog',
-    label: 'התמונות שלכם',
+    path: "collections",
+    label: "קולקציות",
   },
   {
-    path: 'gallery',
-    label: 'מוצרים',
+    path: "products",
+    label: "מוצרים",
   },
   {
-    path: 'home',
-    label: 'בית',
+    path: "contact",
+    label: "צור קשר",
+  },
+  {
+    path: "customers",
+    label: "הלקוחות שלנו",
   },
 ];
-
-// export default [
-//   {
-//     path: 'home',
-//     label: 'Home',
-//   },
-//   {
-//     path: 'clients',
-//     label: 'Clients',
-//   },
-//   {
-//     path: 'feature',
-//     label: 'Feature',
-//   },
-//   {
-//     path: 'gallery',
-//     label: 'Gallery',
-//   },
-//   {
-//     path: 'pricing',
-//     label: 'Pricing',
-//   },
-//   {
-//     path: 'blog',
-//     label: 'בית',
-//   },
-// ];
-
