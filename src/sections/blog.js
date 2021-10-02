@@ -78,7 +78,7 @@ const settings = {
 
 const Blog = () => {
   return (
-    <Box id="blog" as="section" sx={styles.section}>
+    <Box id="customers" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
