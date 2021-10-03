@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Text, Container, Input, Button } from "theme-ui";
+import { jsx, Box, Flex } from "theme-ui";
 import { Link } from "components/link";
 import facebook from "assets/images/icons/facebook.png";
 import instagram from "assets/images/icons/instagram.png";
@@ -17,11 +17,12 @@ const data = {
       id: 2,
       icon: instagram,
       link: "https://www.instagram.com/concrete_shop_israel/",
-    },{
-      id:3,
+    },
+    {
+      id: 3,
       icon: whatsapp,
-      link: "#!"
-    }
+      link: "#!",
+    },
   ],
   navItems: [
     {
@@ -65,7 +66,9 @@ const Subscription = () => {
       <Flex as="ul" sx={styles.nav} dir="rtl">
         {data?.navItems?.map((item) => (
           <li key={item.id}>
-            <Link path={item.link}>{item.title}</Link>
+            <Link path={item.link}>
+              <a>{item.title}</a>
+            </Link>
           </li>
         ))}
       </Flex>
@@ -82,16 +85,18 @@ const styles = {
     pb: "3rem",
   },
   featureWrapper: {
-    // gap: ["40px 20px", null, null, null, "30px"],
-    // display: "grid",
     listStyle: "none",
     alignItems: "center",
     display: "flex",
     flexWrap: ["wrap", null, null, "unset"],
-    justifyContent: ["center", null, null, null],
+    justifyContent: ["center"],
     a: {
       color: "white",
       display: "inline-flex",
+      padding: "2rem",
+      "@media only screen and (max-width: 400px)": {
+        padding: "0.5rem",
+      },
     },
   },
   nav: {
@@ -99,20 +104,16 @@ const styles = {
     alignItems: "center",
     display: "flex",
     flexWrap: ["wrap", null, null, "unset"],
-    justifyContent: ["center", null, null, null],
-    mt: [5, null, null, null, 0],
+    justifyContent: ["center"],
+    mt: [2, null, null, null, 0],
     li: {
-      margin: [3],
-
       "@media only screen and (max-width: 400px)": {
-        mb: 4,
         display: "block",
       },
       a: {
         color: "white",
         display: "inline-flex",
         textAlign: "right",
-        textDecoration: "none",
         "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
           {
             fontSize: "1.5rem",
