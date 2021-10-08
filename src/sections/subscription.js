@@ -21,7 +21,7 @@ const data = {
     {
       id: 3,
       icon: whatsapp,
-      link: "#!",
+      link: "https://api.whatsapp.com/send?phone=+972526020358",
     },
   ],
   navItems: [
@@ -63,7 +63,7 @@ const Subscription = () => {
         ))}
       </Box>
 
-      <Flex as="ul" sx={styles.nav} dir="rtl">
+      {/* <Flex as="ul" sx={styles.nav} dir="rtl">
         {data?.navItems?.map((item) => (
           <li key={item.id}>
             <Link path={item.link}>
@@ -71,7 +71,7 @@ const Subscription = () => {
             </Link>
           </li>
         ))}
-      </Flex>
+      </Flex> */}
     </Box>
   );
 };
@@ -82,7 +82,7 @@ const styles = {
   section: {
     backgroundColor: "#D5573B",
     pt: "3rem",
-    pb: "3rem",
+    // pb: "3rem",
   },
   featureWrapper: {
     listStyle: "none",
@@ -100,6 +100,8 @@ const styles = {
     },
   },
   nav: {
+    pr: "40px",
+    pl: "40px",
     listStyle: "none",
     alignItems: "center",
     display: "flex",
@@ -107,6 +109,7 @@ const styles = {
     justifyContent: ["center"],
     mt: [2, null, null, null, 0],
     li: {
+      padding: "0.8rem",
       "@media only screen and (max-width: 400px)": {
         display: "block",
       },

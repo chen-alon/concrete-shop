@@ -15,8 +15,8 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than thousand of worldwide happy customer."
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="מחפשים אותנו או צריכים עזרה"
+              description="ישנם דרכים שונות ליצור איתנו איתנו קשר"
             />
 
             <Box sx={{ textAlign: ["center", "center", "center", "left"] }}>
@@ -57,7 +57,7 @@ const styles = {
     m: [0, 0, 0, 0, "0px 48px 0px 0px", "0px 95px 0px 0px"],
   },
   heading: {
-    textAlign: ["center", "center", "center", "left"],
+    textAlign: ["right", null, null, null, "right"],
     marginLeft: 0,
     maxWidth: 580,
     m: ["0 auto 27px", "0 auto 27px", "0 auto 27px", "0 0 30px"],

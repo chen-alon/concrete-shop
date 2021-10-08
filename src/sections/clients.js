@@ -1,37 +1,37 @@
 /** @jsx jsx */
-import { jsx, Box, Button, Container, Image } from 'theme-ui';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import Slider from 'react-slick';
-import SectionHeading from 'components/section-heading';
-import uber from 'assets/images/clients/uber.png';
-import google from 'assets/images/clients/google.png';
-import paypal from 'assets/images/clients/paypal.png';
-import microsoft from 'assets/images/clients/microsoft.png';
-import dribbble from 'assets/images/clients/dribbble.png';
+import { jsx, Box, Button, Container, Image } from "theme-ui";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import Slider from "react-slick";
+import SectionHeading from "components/section-heading";
+import uber from "assets/images/clients/uber.png";
+import google from "assets/images/clients/google.png";
+import paypal from "assets/images/clients/paypal.png";
+import microsoft from "assets/images/clients/microsoft.png";
+import dribbble from "assets/images/clients/dribbble.png";
 const clients = [
   {
     id: 1,
-    name: 'uber',
+    name: "uber",
     logo: uber,
   },
   {
     id: 2,
-    name: 'Google',
+    name: "Google",
     logo: google,
   },
   {
     id: 3,
-    name: 'PayPal',
+    name: "PayPal",
     logo: paypal,
   },
   {
     id: 4,
-    name: 'Microsoft',
+    name: "Microsoft",
     logo: microsoft,
   },
   {
     id: 5,
-    name: 'Dribbble',
+    name: "Dribbble",
     logo: dribbble,
   },
 ];
@@ -44,7 +44,7 @@ function SlickArrow({ className, onClick, control }) {
       sx={styles.paginationButton}
       onClick={onClick}
     >
-      {control === 'prev' ? (
+      {control === "prev" ? (
         <BsArrowLeft size="32px" />
       ) : (
         <BsArrowRight size="32px" />
@@ -63,7 +63,7 @@ const Clients = () => {
     responsive: [
       {
         breakpoint: 100000,
-        settings: 'unslick',
+        settings: "unslick",
       },
       {
         breakpoint: 1024,
@@ -96,8 +96,8 @@ const Clients = () => {
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Meet Our Clients"
-          title="This guys are using our service and they're more than happier ever."
+          slogan="אביזרים משלימים שישדרגו כל חלק בבית"
+          title="כל המוצרים שלנו עשויים מבטון בעבודת יד ייצור כחול לבן"
         />
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
@@ -119,56 +119,56 @@ const styles = {
     pb: [30, 40, 50, 60, 50, 80],
   },
   clients: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-around",
     pt: [0, 0, 25, 25, 25, 6],
-    '&.slick-slider': {
-      marginBottom: '40px',
+    "&.slick-slider": {
+      marginBottom: "40px",
     },
-    '.slick-track': {
-      display: 'flex',
-      alignItems: 'center',
+    ".slick-track": {
+      display: "flex",
+      alignItems: "center",
     },
   },
   logo: {
-    display: 'flex !important',
-    justifyContent: 'center',
-    mx: '10px',
-    ':focus': {
-      outline: 'none',
+    display: "flex !important",
+    justifyContent: "center",
+    mx: "10px",
+    ":focus": {
+      outline: "none",
     },
   },
   pagination: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     marginTop: 5,
   },
   paginationButton: {
-    minHeight: '30px',
+    minHeight: "30px",
     padding: 0,
-    position: 'absolute',
-    bottom: '-60px',
-    ':focus': {
-      outline: '0 none',
+    position: "absolute",
+    bottom: "-60px",
+    ":focus": {
+      outline: "0 none",
     },
     svg: {
-      transition: 'all 0.2s ease-in-out 0s',
+      transition: "all 0.2s ease-in-out 0s",
     },
-    '&.slick-disabled': {
-      color: '#BBC7D7',
+    "&.slick-disabled": {
+      color: "#BBC7D7",
       svg: {
-        transform: 'scale(0.8)',
+        transform: "scale(0.8)",
       },
     },
-    '&.slick-prev': {
-      left: 'calc(50% - 16px)',
-      transform: 'translateX(-50%)',
+    "&.slick-prev": {
+      left: "calc(50% - 16px)",
+      transform: "translateX(-50%)",
     },
-    '&.slick-next': {
-      transform: 'translateX(50%)',
-      right: 'calc(50% - 16px)',
+    "&.slick-next": {
+      transform: "translateX(50%)",
+      right: "calc(50% - 16px)",
     },
   },
 };

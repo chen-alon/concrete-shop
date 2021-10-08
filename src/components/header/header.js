@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, Box, Container, MenuButton, Flex, Button } from "theme-ui";
+import { jsx, Box, Container, MenuButton, Flex, Button, Text } from "theme-ui";
 import { useState } from "react";
 import { GrClose } from "react-icons/gr";
+import { rgba } from "polished";
 import Sticky from "react-stickynode";
 import Logo from "components/logo";
 import { NavLink } from "components/link";
@@ -24,6 +25,11 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
+      <Box as="footer" sx={styles.top}>
+        <Flex sx={styles.copyright}>
+          <Text as="span">משלוחים חינם ברכישה מעל 250₪</Text>
+        </Flex>
+      </Box>
       <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
         <Box
           as="header"
@@ -55,8 +61,14 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
-                  שלח הודעה
+                <Button sx={styles.contact} variant="primaryMd">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+972526020358"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    שלח הודעה
+                  </a>
                 </Button>
               </Flex>
 
@@ -79,6 +91,24 @@ export default function Header() {
 }
 
 const styles = {
+  top: {
+    backgroundColor: "#D5573B",
+  },
+  copyright: {
+    textAlign: "center",
+    pt: "1rem",
+    pb: "1rem",
+    alignItems: "center",
+    justifyContent: "center",
+    span: {
+      fontSize: "1.5rem",
+      color: rgba("#FFFFFF", 0.7),
+      display: "inline-flex",
+      "@media only screen and (max-width: 400px)": {
+        fontSize: "1rem",
+      },
+    },
+  },
   headerWrapper: {
     backgroundColor: "transparent",
     ".is-sticky": {
@@ -157,10 +187,14 @@ const styles = {
       color: "#D5573B",
     },
   },
-  joinNow: {
+  contact: {
     marginLeft: "auto",
     backgroundColor: "#D5573B",
-    fontSize: "1.6rem",
+    fontSize: "1.3rem",
+    a: {
+      color: rgba("#FFFFFF", 0.7),
+      textDecoration: "none",
+    },
   },
   closeButton: {
     height: "32px",

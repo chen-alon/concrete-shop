@@ -1,7 +1,7 @@
 export default [
   {
     path: "home",
-    label: "בית",
+    label: "דף הבית",
   },
   {
     path: "clients",
