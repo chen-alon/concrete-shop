@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "product_id": "coaster",
+      "label": "This is a coaster product label"
+    },
+    {
+      "product_id": "fire_bowl",
+      "label": "This is a fire bowl product label"
+    },
+    {
+      "product_id": "candle",
+      "label": "This is a candle product label"
+    },
+    {
+      "product_id": "tray",
+      "label": "This is a tray product label"
+    },
+    {
+      "product_id": "hanukia",
+      "label": "This is a hanukia product label"
+    },
+    {
+      "product_id": "candle_holder",
+      "label": "This is a candle_holder product label"
+    }
+  ]
+}

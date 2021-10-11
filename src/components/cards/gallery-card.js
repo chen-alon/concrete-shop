@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Image } from 'theme-ui';
+import Link from 'next/link';
 
 const GalleryCard = ({ item }) => {
-  return (
+  return (<Link href={`/${item?.link}`}>
     <Flex as="figure" sx={styles.figure}>
       <Image loading="lazy" src={item?.image} alt={item?.title} />
       <Box as="figcaption">{item?.title}</Box>
-    </Flex>
+    </Flex></Link>
   );
 };
 
