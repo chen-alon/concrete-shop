@@ -17,37 +17,37 @@ const data = [
     id: 1,
     image: gallery1,
     title: "Coasters",
-    link: "coaster",
+    link: "coasters",
   },
   {
     id: 2,
     image: gallery2,
     title: "Fire Bowls",
-    link: "fire_bowl",
+    link: "fire_bowls",
   },
   {
     id: 3,
     image: gallery3,
     title: "Candles",
-    link: "candle",
+    link: "candles",
   },
   {
     id: 4,
     image: gallery4,
     title: "Trays",
-    link: "tray",
+    link: "trays",
   },
   {
     id: 6,
     image: gallery6,
     title: "Hanukiut",
-    link: "hanukia",
+    link: "hanukiut",
   },
   {
     id: 5,
     image: gallery5,
     title: "Candle Holders",
-    link: "candle_holder",
+    link: "candle_holders",
   },
 ];
 

@@ -1,28 +1,88 @@
 {
   "products": [
     {
-      "product_id": "coaster",
-      "label": "This is a coaster product label"
+      "category_id": "coasters",
+      "description": "This is coaster category page",
+      "products_list": [
+        {
+          "product_id": "coaster1",
+          "label": "This is a coaster1 product label"
+        },
+        {
+          "product_id": "coaster2",
+          "label": "This is a coaster2 product label"
+        },
+        {
+          "product_id": "coaster3",
+          "label": "This is a coaster3 product label"
+        }
+      ]
     },
     {
-      "product_id": "fire_bowl",
-      "label": "This is a fire bowl product label"
+      "category_id": "fire_bowls",
+      "description": "This is fire bowl category page",
+      "products_list": [
+        {
+          "product_id": "fire_bowl1",
+          "label": "This is a fire bowl1 product label"
+        },
+        {
+          "product_id": "fire_bowl2",
+          "label": "This is a fire bowl2 product label"
+        }
+      ]
     },
     {
-      "product_id": "candle",
-      "label": "This is a candle product label"
+      "category_id": "candles",
+      "description": "This is candle category page",
+      "products_list": [
+        {
+          "product_id": "candle1",
+          "label": "This is a candle1 product label"
+        }
+      ]
     },
     {
-      "product_id": "tray",
-      "label": "This is a tray product label"
+      "category_id": "trays",
+      "description": "This is tray category page",
+      "products_list": [
+        {
+          "product_id": "tray1",
+          "label": "This is a tray1 product label"
+        },
+        {
+          "product_id": "tray2",
+          "label": "This is a tray2 product label"
+        }
+      ]
     },
     {
-      "product_id": "hanukia",
-      "label": "This is a hanukia product label"
+      "category_id": "hanukiut",
+      "description": "This is hanukiut category page",
+      "products_list": [
+        {
+          "product_id": "hanukia1",
+          "label": "This is a hanukia1 product label"
+        },
+        {
+          "product_id": "hanukia12",
+          "label": "This is a hanukia2 product label"
+        }
+      ]
     },
     {
-      "product_id": "candle_holder",
-      "label": "This is a candle_holder product label"
+      "category_id": "candle_holders",
+      "description": "This is candle holder category page",
+      "products_list": [
+        {
+          "product_id": "candle_holder1",
+          "label": "This is a candle_holder1 product label"
+        },
+        {
+          "product_id": "candle_holder2",
+          "label": "This is a candle_holder2 product label"
+        }
+      ]
     }
   ]
 }
