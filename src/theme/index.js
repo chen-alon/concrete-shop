@@ -29,7 +29,7 @@ export default {
     body: "Guttman Myamfix",
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Courier New, Guttman Myamfix",
+    heading: "Segoe UI, sans-serif",
     // heading: 'Bree Serif',
     monospace: "Menlo, monospace",
   },

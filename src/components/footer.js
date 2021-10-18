@@ -22,7 +22,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: "#D5573B",
+    backgroundColor: "#bb6b37", //D5573B
   },
   content: {
     alignItems: "center",

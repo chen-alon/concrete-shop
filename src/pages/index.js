@@ -14,16 +14,14 @@ import Subscription from "sections/subscription";
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
-      <Layout>
-        <SEO title="Concrete Shop" />
-        <Banner />
-        <Clients />
-        <FeaturedSpace />
-        <Gallery />
-        <OurCustomer />
-        <Blog />
-        <Subscription />
-      </Layout>
+      <SEO title="Concrete Shop" />
+      <Banner />
+      <Clients />
+      <FeaturedSpace />
+      <Gallery />
+      <OurCustomer />
+      <Blog />
+      <Subscription />
     </ThemeProvider>
   );
 }

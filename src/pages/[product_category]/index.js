@@ -1,22 +1,17 @@
 import path from "path";
 import fs from "fs/promises";
-import Link from "next/link";
+import CategoryList from "../../components/productpage/category-items-list";
 
 function ProductCategoryPage(props) {
   const { currentProductCategory } = props;
 
   return (
-    <ul>
-      {currentProductCategory.products_list.map((product) => (
-        <li key={product.product_id}>
-          <Link
-            href={`/${currentProductCategory.category_id}/${product.product_id}`}
-          >
-            {product.product_id}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <CategoryList
+        categoryProductsList={currentProductCategory.products_list}
+        category_id={currentProductCategory.category_id}
+      />
+    </div>
   );
 }
 

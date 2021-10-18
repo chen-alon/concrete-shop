@@ -2,19 +2,22 @@
   "products": [
     {
       "category_id": "coasters",
-      "description": "This is coaster category page",
+      "description": "תחתיות",
       "products_list": [
         {
           "product_id": "coaster1",
-          "label": "This is a coaster1 product label"
+          "label": "תחתית עגולה",
+          "image_path": "/images/final_logo.png"
         },
         {
           "product_id": "coaster2",
-          "label": "This is a coaster2 product label"
+          "label": "תחתית מרובעת",
+          "image_path": "/images/final_logo.png"
         },
         {
           "product_id": "coaster3",
-          "label": "This is a coaster3 product label"
+          "label": "תחתית משושה",
+          "image_path": "/images/final_logo.png"
         }
       ]
     },

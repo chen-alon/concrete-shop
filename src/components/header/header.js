@@ -7,6 +7,9 @@ import Sticky from "react-stickynode";
 import Logo from "components/logo";
 import { NavLink } from "components/link";
 import menuItems from "./header.data";
+import productMenuItems from "../productpage/header.data";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -22,6 +25,27 @@ export default function Header() {
   const closeMobileMenu = () => {
     setMobileMenu(false);
   };
+
+  const router = useRouter();
+
+  const navigationBar = menuItems.map(({ path, label }, i) => (
+    <li key={i}>
+      <NavLink path={path} label={label} onClick={closeMobileMenu} />
+    </li>
+  ));
+
+  const navigationBarNotMain = productMenuItems.map(({ path, label }, i) => (
+    <li key={i}>
+      <Link href={`/${path}`} className={styles.link_test}>
+        <span onClick={closeMobileMenu}>{label}</span>
+      </Link>
+    </li>
+  ));
+
+  const currentPageNavigationLabels =
+    Object.keys(router.query).length === 0
+      ? navigationBar
+      : navigationBarNotMain;
 
   return (
     <Box sx={styles.headerWrapper}>
@@ -51,15 +75,7 @@ export default function Header() {
                   className={mobileMenu ? "active" : ""}
                   dir="rtl"
                 >
-                  {menuItems.map(({ path, label }, i) => (
-                    <li key={i}>
-                      <NavLink
-                        path={path}
-                        label={label}
-                        onClick={closeMobileMenu}
-                      />
-                    </li>
-                  ))}
+                  {currentPageNavigationLabels}
                 </Box>
                 <Button sx={styles.contact} variant="primaryMd">
                   <a
@@ -92,7 +108,7 @@ export default function Header() {
 
 const styles = {
   top: {
-    backgroundColor: "#D5573B",
+    backgroundColor: "#bb6b37",
   },
   copyright: {
     textAlign: "center",
@@ -184,12 +200,12 @@ const styles = {
         },
     },
     ".active": {
-      color: "#D5573B",
+      color: "#bb6b37",
     },
   },
   contact: {
     marginLeft: "auto",
-    backgroundColor: "#D5573B",
+    backgroundColor: "#bb6b37",
     fontSize: "1.3rem",
     a: {
       color: rgba("#FFFFFF", 0.7),

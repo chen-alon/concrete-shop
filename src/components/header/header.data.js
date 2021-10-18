@@ -13,7 +13,7 @@ export default [
   },
   {
     path: "products",
-    label: "מוצרים",
+    label: "חנות",
   },
   {
     path: "contact",
