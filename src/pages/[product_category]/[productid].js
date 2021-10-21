@@ -1,14 +1,24 @@
 import path from "path";
 import fs from "fs/promises";
+import SlideShow from "components/productpages/product/slideshow";
+import ProductDetails from "components/productpages/product/product-details";
 
 function ProductIdPage(props) {
   const { currentProduct } = props;
-  // const { currentCategory } = props;
-  // console.log(props);
 
   return (
     <div>
-      <h1>{currentProduct.label}</h1>
+      <div>
+        <SlideShow images_paths={currentProduct.product_images_paths} />
+      </div>
+      <div>
+        <ProductDetails
+          label={currentProduct.label}
+          description={currentProduct.description}
+          colors={currentProduct.colors}
+          concrete_desc={currentProduct.concrete_desc}
+        />
+      </div>
     </div>
   );
 }

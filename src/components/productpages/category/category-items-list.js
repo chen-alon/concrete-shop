@@ -1,5 +1,5 @@
 import classes from "./category-items-list.module.css";
-import CategoryItem from "../../components/productpage/category-item";
+import CategoryItem from "./category-item";
 
 function CategoryList(props) {
   const { categoryProductsList } = props;
@@ -11,7 +11,7 @@ function CategoryList(props) {
           <CategoryItem
             key={product.product_id}
             title={product.label}
-            imagePath={product.image_path}
+            imagePath={product.category_image_path}
             path={`/${category_id}/${product.product_id}`}
           />
       ))}

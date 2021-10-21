@@ -7,7 +7,7 @@ import Sticky from "react-stickynode";
 import Logo from "components/logo";
 import { NavLink } from "components/link";
 import menuItems from "./header.data";
-import productMenuItems from "../productpage/header.data";
+import productMenuItems from "../productpages/header.data";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -36,8 +36,8 @@ export default function Header() {
 
   const navigationBarNotMain = productMenuItems.map(({ path, label }, i) => (
     <li key={i}>
-      <Link href={`/${path}`} className={styles.link_test}>
-        <span onClick={closeMobileMenu}>{label}</span>
+      <Link href={`/${path}`}>
+        <a onClick={closeMobileMenu}>{label}</a>
       </Link>
     </li>
   ));
@@ -83,7 +83,7 @@ export default function Header() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    שלח הודעה
+                    להזמנה
                   </a>
                 </Button>
               </Flex>
@@ -194,6 +194,18 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: "0 20px",
+      "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
+        {
+          fontSize: "1.5rem",
+        },
+    },
+    a: {
+      cursor: "pointer",
+      fontWeight: 400,
+      padding: 0,
+      margin: "0 20px",
+      // color: rgba("#FFFFFF", 0.7),
+      textDecoration: "none",
       "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
         {
           fontSize: "1.5rem",

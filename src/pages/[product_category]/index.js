@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs/promises";
-import CategoryList from "../../components/productpage/category-items-list";
+import CategoryList from "../../components/productpages/category/category-items-list";
 
 function ProductCategoryPage(props) {
   const { currentProductCategory } = props;

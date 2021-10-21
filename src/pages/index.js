@@ -17,8 +17,8 @@ export default function IndexPage() {
       <SEO title="Concrete Shop" />
       <Banner />
       <Clients />
-      <FeaturedSpace />
       <Gallery />
+      <FeaturedSpace />
       <OurCustomer />
       <Blog />
       <Subscription />

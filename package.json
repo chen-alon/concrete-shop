@@ -38,5 +38,13 @@
   "main": "next-sitemap.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen-alon/concrete-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chen-alon/concrete-shop/issues"
+  },
+  "homepage": "https://github.com/chen-alon/concrete-shop#readme"
 }

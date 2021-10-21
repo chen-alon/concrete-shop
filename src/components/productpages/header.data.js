@@ -5,7 +5,7 @@ export default [
   },
   {
     path: "fire_bowls",
-    label: "קערות אש",
+    label: "קערות-אש",
   },
   {
     path: "candles",

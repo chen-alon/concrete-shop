@@ -6,18 +6,29 @@
       "products_list": [
         {
           "product_id": "coaster1",
-          "label": "תחתית עגולה",
-          "image_path": "/images/final_logo.png"
+          "label": "תחתיות עגולות",
+          "category_image_path": "/images/final_logo.png",
+          "product_images_paths": [
+            { "image_id": "1", "image_path": "/images/final_logo.png" },
+            { "image_id": "2", "image_path": "/images/final_logo.png" },
+            { "image_id": "3", "image_path": "/images/final_logo.png" },
+            { "image_id": "4", "image_path": "/images/final_logo.png" },
+            { "image_id": "5", "image_path": "/images/final_logo.png" },
+            { "image_id": "6", "image_path": "/images/final_logo.png" }
+          ],
+          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
+          "colors": ".מגיע בצבעים: שחור, לבן, אפור, אדום, כתום, ירוק, כחול",
+          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה"
         },
         {
           "product_id": "coaster2",
-          "label": "תחתית מרובעת",
-          "image_path": "/images/final_logo.png"
+          "label": "תחתיות מרובעות",
+          "category_image_path": "/images/final_logo.png"
         },
         {
           "product_id": "coaster3",
-          "label": "תחתית משושה",
-          "image_path": "/images/final_logo.png"
+          "label": "תחתיות משושות",
+          "category_image_path": "/images/final_logo.png"
         }
       ]
     },
