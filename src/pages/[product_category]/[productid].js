@@ -17,6 +17,7 @@ function ProductIdPage(props) {
           description={currentProduct.description}
           colors={currentProduct.colors}
           concrete_desc={currentProduct.concrete_desc}
+          prices={currentProduct.prices}
         />
       </div>
     </div>
