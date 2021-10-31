@@ -5,15 +5,15 @@ export default [
   },
   {
     path: "clients",
-    label: "חדש בחנות",
-  },
-  {
-    path: "collections",
-    label: "קולקציות",
+    label: "מי אנחנו",
   },
   {
     path: "products",
     label: "חנות",
+  },  
+  {
+    path: "collections",
+    label: "קולקציות",
   },
   {
     path: "contact",

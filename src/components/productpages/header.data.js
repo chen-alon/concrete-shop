@@ -12,8 +12,8 @@ export default [
     label: "נרות",
   },
   {
-    path: "hanukiut",
-    label: "חנוכיות",
+    path: "sets",
+    label: "סטים",
   },
   {
     path: "candle_holders",

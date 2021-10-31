@@ -76,16 +76,16 @@
       ]
     },
     {
-      "category_id": "hanukiut",
-      "description": "This is hanukiut category page",
+      "category_id": "sets",
+      "description": "This is set category page",
       "products_list": [
         {
-          "product_id": "hanukia1",
-          "label": "This is a hanukia1 product label"
+          "product_id": "set1",
+          "label": "This is a set1 product label"
         },
         {
-          "product_id": "hanukia12",
-          "label": "This is a hanukia2 product label"
+          "product_id": "set2",
+          "label": "This is a set2 product label"
         }
       ]
     },

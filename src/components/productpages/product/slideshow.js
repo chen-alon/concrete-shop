@@ -21,7 +21,7 @@ function SlideShow(props) {
         observeParents={true}
         spaceBetween={0}
         slidesPerView={1}
-        pagination
+        // pagination // dots
         scrollbar={{ draggable: true }}
         navigation={true}
         className={classes.swiper}

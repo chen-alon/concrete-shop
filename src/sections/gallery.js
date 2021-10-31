@@ -5,10 +5,10 @@ import Masonry from "react-masonry-component";
 import SectionHeading from "components/section-heading";
 import GalleryCard from "components/cards/gallery-card";
 
-import gallery1 from "assets/images/gallery/1.png";
-import gallery2 from "assets/images/gallery/2.png";
-import gallery3 from "assets/images/gallery/3.png";
-import gallery4 from "assets/images/gallery/4.png";
+import gallery1 from "assets/images/gallery/1_ready.png";
+import gallery2 from "assets/images/gallery/2_ready.png";
+import gallery3 from "assets/images/gallery/3_ready.png";
+import gallery4 from "assets/images/gallery/4_ready.png";
 import gallery5 from "assets/images/gallery/5.png";
 import gallery6 from "assets/images/gallery/6.png";
 
@@ -16,37 +16,37 @@ const data = [
   {
     id: 1,
     image: gallery1,
-    title: "Coasters",
+    title: "תחתיות",
     link: "coasters",
   },
   {
     id: 2,
     image: gallery2,
-    title: "Fire Bowls",
+    title: "קערות אש",
     link: "fire_bowls",
   },
   {
     id: 3,
     image: gallery3,
-    title: "Candles",
+    title: "נרות",
     link: "candles",
   },
   {
     id: 4,
     image: gallery4,
-    title: "Trays",
+    title: "מגשים",
     link: "trays",
   },
   {
     id: 6,
     image: gallery6,
-    title: "Hanukiut",
-    link: "hanukiut",
+    title: "סטים",
+    link: "sets",
   },
   {
     id: 5,
     image: gallery5,
-    title: "Candle Holders",
+    title: "פמוטים",
     link: "candle_holders",
   },
 ];
@@ -64,14 +64,19 @@ const Gallery = () => {
           // slogan="Working space"
           title="חנות"
         />
-        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+        <Box
+          as={Masonry}
+          dir="rtl"
+          options={masonryOptions}
+          sx={styles.galleryWrapper}
+        >
           {data?.map((item) => (
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
-        <Button variant="muted" sx={styles.button}>
+        {/* <Button variant="muted" sx={styles.button}>
           Explore More <RiArrowRightSLine size="20px" />
-        </Button>
+        </Button> */}
       </Container>
     </Box>
   );
