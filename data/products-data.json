@@ -5,20 +5,88 @@
       "description": "תחתיות",
       "products_list": [
         {
-          "product_id": "coaster1",
-          "label": "תחתיות עגולות",
-          "category_image_path": "/images/final_logo.png",
-          "product_images_paths": [
-            { "image_id": "1", "image_path": "/images/final_logo.png" },
-            { "image_id": "2", "image_path": "/images/final_logo.png" },
-            { "image_id": "3", "image_path": "/images/final_logo.png" },
-            { "image_id": "4", "image_path": "/images/final_logo.png" },
-            { "image_id": "5", "image_path": "/images/final_logo.png" },
-            { "image_id": "6", "image_path": "/images/final_logo.png" }
-          ],
+          "product_id": "coaster_le",
+          "label": "(Limited Edition) תחתיות בקולקציה מוגבלת",
           "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
           "colors": ".מגיע בצבעים: שחור, לבן, אפור, אדום, כתום, ירוק, כחול",
           "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "category_image_path": "/images/white_gold_coaster_le_2.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ],
+          "prices": [
+            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
+          ]
+        },
+        {
+          "product_id": "coaster_marble",
+          "label": "תחתיות מרבל (עיצוב שיש)",
+          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
+          "colors": ".מגיע בצבעים: שחור, לבן, אפור, אדום, כתום, ירוק, כחול",
+          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "category_image_path": "/images/white_black_coaster_marble_1.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_black_coaster_marble_1.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_black_coaster_marble_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_grey_coaster_marble_1.png"
+            },
+            {
+              "image_id": "4",
+              "image_path": "/images/white_red_coaster_marble_1.png"
+            }
+          ],
+          "prices": [
+            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
+          ]
+        },
+        {
+          "product_id": "coaster1",
+          "label": "(Basic) תחתיות עגולות",
+          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
+          "colors": ".מגיע בצבעים: שחור, לבן, אפור, אדום, כתום, ירוק, כחול",
+          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "category_image_path": "/images/orange_coaster_round_1.jpeg",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/orange_coaster_round_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/orange_coaster_round_2.jpeg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/black_couaster_round_1.png"
+            },
+            {
+              "image_id": "4",
+              "image_path": "/images/black_couaster_round_2.png"
+            }
+          ],
           "prices": [
             { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
             { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },

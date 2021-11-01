@@ -112,12 +112,12 @@ const styles = {
   },
   copyright: {
     textAlign: "center",
-    pt: "1rem",
-    pb: "1rem",
+    pt: "0.5rem",
+    pb: "0.5rem",
     alignItems: "center",
     justifyContent: "center",
     span: {
-      fontSize: "1.5rem",
+      fontSize: "1.2rem",
       color: rgba("#FFFFFF", 0.7),
       display: "inline-flex",
       "@media only screen and (max-width: 400px)": {
@@ -139,7 +139,7 @@ const styles = {
     position: "fixed",
     left: 0,
     right: 0,
-    py: [20],
+    py: [10],
     transition: "all 0.3s ease-in-out 0s",
     "&.is-mobile-menu": {
       backgroundColor: "#fff",
