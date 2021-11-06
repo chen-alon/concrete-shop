@@ -6,7 +6,7 @@ function CategoryList(props) {
   const { category_id } = props;
 
   return (
-    <ul className={classes.list}>
+    <div className={classes.list}>
       {categoryProductsList.map((product) => (
           <CategoryItem
             key={product.product_id}
@@ -15,7 +15,7 @@ function CategoryList(props) {
             path={`/${category_id}/${product.product_id}`}
           />
       ))}
-    </ul>
+    </div>
   );
 }
 

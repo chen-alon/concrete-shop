@@ -8,11 +8,11 @@ function CategoryItem(props) {
   return (
     <Link href={path}>
       <div>
-        <li className={classes.item}>
+        <div className={classes.item}>
           {/* <h1>{title}</h1> */}
           {/* <Image src={imagePath} alt={title} width={640} height={320} /> */}
           <img src={imagePath} alt={title} />
-        </li>
+        </div>
         <div className={classes.content}>
           <h2>{title}</h2>
         </div>
