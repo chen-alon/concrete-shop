@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading } from "theme-ui";
 import { rgba } from "polished";
-import bannerBg from "assets/images/banner-bg_ready.jpg";
+import bannerBg from "assets/images/banner-bg.jpg";
 
 export default function Banner() {
   return (

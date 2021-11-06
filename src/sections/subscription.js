@@ -80,7 +80,7 @@ export default Subscription;
 
 const styles = {
   section: {
-    backgroundColor: "#D5573B",
+    backgroundColor: "#141414",
     pt: "3rem",
     // pb: "3rem",
   },

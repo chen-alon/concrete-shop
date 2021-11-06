@@ -4,13 +4,9 @@ export default [
     label: "דף הבית",
   },
   {
-    path: "clients",
-    label: "מי אנחנו",
-  },
-  {
     path: "products",
     label: "חנות",
-  },  
+  },
   {
     path: "collections",
     label: "קולקציות",
@@ -20,7 +16,11 @@ export default [
     label: "צור קשר",
   },
   {
+    path: "clients",
+    label: "מי אנחנו",
+  },
+  {
     path: "customers",
-    label: "הלקוחות שלנו",
+    label: "שילוב המוצרים בבית",
   },
 ];

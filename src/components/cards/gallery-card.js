@@ -59,7 +59,7 @@ const styles = {
       fontSize: 18,
       lineHeight: 1.68,
       letterSpacing: "heading",
-      left: 30,
+      right: 30,
       bottom: 20,
       zIndex: 1,
     },

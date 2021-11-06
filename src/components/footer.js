@@ -22,7 +22,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: "#bb6b37", //D5573B
+    backgroundColor: "#141414",
   },
   content: {
     alignItems: "center",
@@ -43,10 +43,11 @@ const styles = {
     alignItems: "center",
     justifyContent: ["center", null, null, null],
     span: {
-      fontSize: "14px",
+      fontSize: "1rem",
       lineHeight: [1.8, null, null, 1.29],
       color: rgba("#FFFFFF", 0.7),
-      marginTop: 1,
+      marginTop: 3,
+      marginBottom: 5,
       display: "inline-flex",
     },
   },

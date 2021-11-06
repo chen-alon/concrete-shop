@@ -16,14 +16,15 @@ const OurCustomer = () => {
             <SectionHeading
               sx={styles.heading}
               title="מחפשים אותנו או צריכים עזרה"
-              description="ישנם דרכים שונות ליצור איתנו איתנו קשר"
+              description=".הצוות שלנו כאן בשבילך לכל שאלה או בקשה
+              ישנם דרכים שונות ליצור איתנו איתנו קשר"
             />
 
-            <Box sx={{ textAlign: ["center", "center", "center", "left"] }}>
+            {/* <Box sx={{ textAlign: ["center", "center", "center", "left"] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
                 Learn more <RiArrowRightSLine size="20px" />
               </Link>
-            </Box>
+            </Box> */}
           </Box>
         </Flex>
       </Container>

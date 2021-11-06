@@ -205,7 +205,7 @@ const styles = {
       bottom: 20,
     },
     ".swiper-pagination-bullet": {
-      backgroundColor: "#D5573B",
+      backgroundColor: "#DE7C5A",
       width: 10,
       height: 10,
       opacity: 1,
@@ -223,7 +223,7 @@ const styles = {
     left: [15, 25],
     top: [46, 53],
     zIndex: 2,
-    backgroundColor: "#D5573B",
+    backgroundColor: "#DE7C5A",
   },
   progressBar: {
     position: "relative",
@@ -237,7 +237,7 @@ const styles = {
       borderRadius: 10,
     },
     figcaption: {
-      backgroundColor: "#D5573B",
+      backgroundColor: "#DE7C5A",
       display: "flex",
       alignItems: "center",
       position: "absolute",

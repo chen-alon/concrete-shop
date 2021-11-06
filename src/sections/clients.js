@@ -99,13 +99,13 @@ const Clients = () => {
           slogan="אביזרים משלימים שישדרגו כל חלק בבית"
           title="כל המוצרים שלנו עשויים מבטון בעבודת יד ייצור כחול לבן"
         />
-        <Slider sx={styles.clients} {...settings}>
+        {/* <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>
               <Image loading="lazy" src={client.logo} alt={client.name} />
             </Box>
           ))}
-        </Slider>
+        </Slider> */}
       </Container>
     </Box>
   );

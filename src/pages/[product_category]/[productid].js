@@ -7,7 +7,7 @@ function ProductIdPage(props) {
   const { currentProduct } = props;
 
   return (
-    <div>
+    <div style={{ marginTop: "11rem" }}>
       <div>
         <SlideShow images_paths={currentProduct.product_images_paths} />
       </div>

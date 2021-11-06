@@ -108,16 +108,16 @@ export default function Header() {
 
 const styles = {
   top: {
-    backgroundColor: "#bb6b37",
+    backgroundColor: "#141414",
   },
   copyright: {
     textAlign: "center",
-    pt: "0.5rem",
-    pb: "0.5rem",
+    pt: "1rem",
+    pb: "1rem",
     alignItems: "center",
     justifyContent: "center",
     span: {
-      fontSize: "1.2rem",
+      fontSize: "1.5rem",
       color: rgba("#FFFFFF", 0.7),
       display: "inline-flex",
       "@media only screen and (max-width: 400px)": {
@@ -217,8 +217,12 @@ const styles = {
   },
   contact: {
     marginLeft: "auto",
-    backgroundColor: "#bb6b37",
+    backgroundColor: "#141414",
     fontSize: "1.3rem",
+    pt: "1rem",
+    pb: "1rem",
+    pl: "3rem",
+    pr: "3rem",
     a: {
       color: rgba("#FFFFFF", 0.7),
       textDecoration: "none",
