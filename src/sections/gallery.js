@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Image, Button } from "theme-ui";
+import { RiArrowRightSLine } from "react-icons/ri";
 import Masonry from "react-masonry-component";
 import SectionHeading from "components/section-heading";
 import GalleryCard from "components/cards/gallery-card";
@@ -68,7 +69,7 @@ const Gallery = () => {
           ))}
         </Box>
         {/* <Button variant="muted" sx={styles.button}>
-          Explore More <RiArrowRightSLine size="20px" />
+          Load More <RiArrowRightSLine size="20px" />
         </Button> */}
       </Container>
     </Box>
@@ -92,10 +93,12 @@ const styles = {
     minHeight: [50, 50, 50, 60],
     fontSize: [14, 14, 16],
     width: "100%",
+    fontWeight: 500,
     svg: {
       transition: "margin-left 0.3s ease-in-out 0s",
     },
     ":hover": {
+      backgroundColor: "#DE7C5A",
       svg: {
         ml: "5px",
       },

@@ -12,15 +12,15 @@ export default [
     label: "נרות",
   },
   {
-    path: "sets",
-    label: "סטים",
-  },
-  {
     path: "candle_holders",
     label: "פמוטים",
   },
   {
     path: "trays",
     label: "מגשים",
+  },
+  {
+    path: "sets",
+    label: "סטים",
   },
 ];

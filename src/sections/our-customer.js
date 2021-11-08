@@ -5,6 +5,10 @@ import SectionHeading from "components/section-heading";
 import customer from "assets/images/customer.png";
 
 const OurCustomer = () => {
+  const title = "מחפשים אותנו או צריכים עזרה";
+  const desc =
+    ".הצוות שלנו כאן בשבילך לכל שאלה או בקשה\nישנם דרכים שונות ליצור איתנו איתנו קשר";
+
   return (
     <Box id="contact" as="section" sx={styles.section}>
       <Container>
@@ -15,9 +19,8 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="מחפשים אותנו או צריכים עזרה"
-              description=".הצוות שלנו כאן בשבילך לכל שאלה או בקשה
-              ישנם דרכים שונות ליצור איתנו איתנו קשר"
+              title={title}
+              description={desc}
             />
 
             {/* <Box sx={{ textAlign: ["center", "center", "center", "left"] }}>
@@ -59,7 +62,7 @@ const styles = {
   },
   heading: {
     textAlign: ["right", null, null, null, "right"],
-    marginLeft: 0,
+    marginRight: 0,
     maxWidth: 580,
     m: ["0 auto 27px", "0 auto 27px", "0 auto 27px", "0 0 30px"],
     h2: {
@@ -68,6 +71,7 @@ const styles = {
       fontWeight: [500, 500, 500, 400],
     },
     p: {
+      whiteSpace: "pre-wrap",
       fontSize: ["15px", "15px", "15px", "17px"],
       mt: [3, 3, 3, 20, 5],
     },

@@ -1,13 +1,16 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Button } from "theme-ui";
 import Slider from "react-slick";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import SectionHeading from "components/section-heading";
 import BlogPost from "components/cards/blog-card";
-
 import thumb1 from "assets/images/blog/1.png";
 import thumb2 from "assets/images/blog/2.png";
 import thumb3 from "assets/images/blog/3.png";
+// import entery from "assets/images/blog/1_ready.png";
+// import livingRoom from "assets/images/blog/2_ready.png";
+// import bedRoom from "assets/images/blog/3_ready.png";
+// import bedRoom2 from "assets/images/blog/4_ready.png";
+// import terrace from "assets/images/blog/5_ready.png";
 
 const data = [
   {
@@ -15,65 +18,71 @@ const data = [
     thumb: thumb1,
     commentCount: 22,
     link: "#!",
-    title: `How to work with prototype design with adobe xd featuring tools`,
+    title: `חדרי שינה`,
   },
   {
     id: 2,
     thumb: thumb2,
     commentCount: 15,
     link: "#!",
-    title: `Create multiple artboard by using figma prototyping development`,
+    title: `קונסולה`,
   },
   {
     id: 3,
     thumb: thumb3,
     commentCount: 18,
     link: "#!",
-    title: `Convert your web layout theming easily with sketch zeplin extension`,
+    title: `סלון`,
+  },
+  {
+    id: 4,
+    thumb: thumb1,
+    commentCount: 18,
+    link: "#!",
+    title: `מרפסת`,
+  },
+  {
+    id: 5,
+    thumb: thumb3,
+    commentCount: 18,
+    link: "#!",
+    title: `מטבח`,
+  },
+  {
+    id: 6,
+    thumb: thumb2,
+    commentCount: 18,
+    link: "#!",
+    title: `חדרי שינה`,
   },
 ];
 
-function SlickArrow({ className, onClick, control }) {
-  return (
-    <Button
-      variant="text"
-      onClick={onClick}
-      className={className}
-      sx={styles.paginationButton}
-    >
-      {control === "prev" ? (
-        <BsArrowLeft size="32px" />
-      ) : (
-        <BsArrowRight size="32px" />
-      )}
-    </Button>
-  );
-}
-
 const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  speed: 500,
-  nextArrow: <SlickArrow control="next" />,
-  prevArrow: <SlickArrow control="prev" />,
+  initialSlide: 0,
   responsive: [
     {
-      breakpoint: 100000,
-      settings: "unslick",
-    },
-    {
-      breakpoint: 768,
+      breakpoint: 1100,
       settings: {
-        infinite: false,
         slidesToShow: 2,
         slidesToScroll: 1,
+        initialSlide: 2,
       },
     },
     {
-      breakpoint: 767,
-      settings: "unslick",
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+      },
     },
   ],
+  // centerMode: true,
 };
 
 const Blog = () => {
@@ -81,11 +90,21 @@ const Blog = () => {
     <Box id="customers" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          sx={styles.heading}
-          // slogan="Blog Post"
-          title="שילוב המוצרים שלנו בבית שלכם"
+          // slogan="תמונות"
+          title="שילוב המוצרים שלנו בחלל הבית"
         />
-        <Slider sx={styles.blogWrapper} {...settings}>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+        <Slider {...settings} sx={styles.slider}>
           {data?.map((post) => (
             <BlogPost key={post.id} post={post} />
           ))}
@@ -99,48 +118,17 @@ export default Blog;
 
 const styles = {
   section: {
-    pt: [30, 30, 6],
     pb: [50, 50, 50, 100, 8, 9],
   },
-  heading: {
-    mb: [30, 30, 30, 50, 60],
-  },
-  blogWrapper: {
-    gap: 30,
-    display: ["grid", "grid", "grid", "block", "grid"],
-    gridTemplateColumns: [
-      "repeat(1, 1fr)",
-      "repeat(1, 1fr)",
-      "repeat(2, 1fr)",
-      "repeat(2, 1fr)",
-      "repeat(3, 1fr)",
-    ],
-    m: [0, 0, 0, "0 -15px", 0],
-  },
-  paginationButton: {
-    minHeight: "30px",
-    padding: 0,
-    position: "absolute",
-    bottom: "-60px",
-    ":focus": {
-      outline: "0 none",
+  slider: {
+    ".slick-prev:before": {
+      color: "#DE7C5A",
     },
-    svg: {
-      transition: "all 0.2s ease-in-out 0s",
+    ".slick-next:before": {
+      color: "#DE7C5A",
     },
-    "&.slick-disabled": {
-      color: "#BBC7D7",
-      svg: {
-        transform: "scale(0.8)",
-      },
-    },
-    "&.slick-prev": {
-      left: "calc(50% - 16px)",
-      transform: "translateX(-50%)",
-    },
-    "&.slick-next": {
-      transform: "translateX(50%)",
-      right: "calc(50% - 16px)",
+    ".slick-dots li.slick-active button:before": {
+      color: "#DE7C5A",
     },
   },
 };

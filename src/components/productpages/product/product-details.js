@@ -28,6 +28,13 @@ function ProductDetails(props) {
       <p>{shipping_desc}</p>
       <h3>?צריכים עזרה</h3>
       <p>{contact_desc}</p>
+      <a
+        href="https://www.instagram.com/concrete_shop_israel/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        instegram
+      </a>
     </div>
   );
 }

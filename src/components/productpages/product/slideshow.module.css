@@ -10,3 +10,13 @@
   max-width: 40rem;
   margin-top: 1rem;
 }
+
+.swiper-button-prev {
+  color: #de7c5a;
+  background-color: #de7c5a;
+}
+
+.swiper-button-next {
+  color: #de7c5a;
+  background-color: #de7c5a;
+}

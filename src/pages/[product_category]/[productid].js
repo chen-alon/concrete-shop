@@ -1,17 +1,35 @@
 import path from "path";
 import fs from "fs/promises";
+import { useRouter } from "next/router";
+import { Button } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
 
 function ProductIdPage(props) {
   const { currentProduct } = props;
+  const router = useRouter();
 
   return (
-    <div style={{ marginTop: "11rem" }}>
+    <div style={{ marginTop: "11rem", marginBottom: "11rem" }}>
+      <div sx={styles.button}>
+        {router.pathname !== "/" && (
+          <Button onClick={() => router.back()} sx={styles.buttonBack}>
+            חזרה לעמוד הקודם
+          </Button>
+        )}
+      </div>
+
+      {/* <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          position: "static",
+        }}
+      > */}
       <div>
         <SlideShow images_paths={currentProduct.product_images_paths} />
       </div>
-      <div>
+      <div sx={{ marginRight: "5rem" }}>
         <ProductDetails
           label={currentProduct.label}
           description={currentProduct.description}
@@ -19,7 +37,17 @@ function ProductIdPage(props) {
           concrete_desc={currentProduct.concrete_desc}
           prices={currentProduct.prices}
         />
+        <Button sx={styles.contact} variant="primaryMd">
+          <a
+            href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
+            target="_blank"
+            rel="noreferrer"
+          >
+            להזמנה
+          </a>
+        </Button>
       </div>
+      {/* </div> */}
     </div>
   );
 }
@@ -84,3 +112,34 @@ export async function getStaticPaths() {
 }
 
 export default ProductIdPage;
+
+const styles = {
+  button: {
+    pt: "0.8rem",
+    pb: "0.8rem",
+    pl: "1.5rem",
+    pr: "1.5rem",
+    float: "left",
+  },
+  buttonBack: {
+    // marginLeft: "18rem",
+    backgroundColor: "#DE7C5A",
+    fontSize: "1rem",
+    borderRadius: 0,
+    fontWeight: 300,
+  },
+  contact: {
+    marginLeft: "auto",
+    backgroundColor: "#DE7C5A",
+    borderRadius: 0,
+    fontSize: "1.3rem",
+    pt: "1rem",
+    pb: "1rem",
+    pl: "3rem",
+    pr: "3rem",
+    a: {
+      color: "#fff",
+      textDecoration: "none",
+    },
+  },
+};

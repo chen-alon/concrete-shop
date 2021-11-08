@@ -120,7 +120,7 @@ const styles = {
       fontSize: "1.5rem",
       color: rgba("#FFFFFF", 0.7),
       display: "inline-flex",
-      "@media only screen and (max-width: 400px)": {
+      "@media only screen and (max-width: 700px)": {
         fontSize: "1rem",
       },
     },
@@ -204,7 +204,7 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: "0 20px",
-      // color: rgba("#FFFFFF", 0.7),
+      color: "#141414",
       textDecoration: "none",
       "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
         {
@@ -212,7 +212,7 @@ const styles = {
         },
     },
     ".active": {
-      color: "#bb6b37",
+      color: "#DE7C5A",
     },
   },
   contact: {

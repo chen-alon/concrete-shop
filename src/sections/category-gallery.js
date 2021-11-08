@@ -15,11 +15,7 @@ const CategoryGallery = (props) => {
   return (
     <Box id="products" as="section" sx={styles.section}>
       <Container sx={styles.container}>
-        <SectionHeading
-          sx={styles.heading}
-          // slogan="Working space"
-          title="חנות"
-        />
+        {/* <SectionHeading sx={styles.heading} title="חנות" /> */}
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {categoryProductsList?.map((item) => (
             <CategoryGalleryCard
@@ -37,12 +33,16 @@ const CategoryGallery = (props) => {
 export default CategoryGallery;
 
 const styles = {
+  container: {
+    mt: "10rem",
+  },
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
   },
   heading: {
     mb: [30, 30, 40, 60],
+    mt: "5rem",
   },
   galleryWrapper: {
     mx: "-15px",

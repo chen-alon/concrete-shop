@@ -21,6 +21,6 @@ export default [
   },
   {
     path: "customers",
-    label: "שילוב המוצרים בבית",
+    label: "תמונות",
   },
 ];
