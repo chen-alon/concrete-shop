@@ -8,7 +8,7 @@ const CategoryGalleryCard = (props) => {
 
   return (
     <Link href={path}>
-      <Flex sx={styles.figure}>
+      <Flex as="figure" sx={styles.figure}>
         <Image
           loading="lazy"
           src={item.category_image_path ? item.category_image_path : image}
@@ -31,7 +31,6 @@ export default CategoryGalleryCard;
 
 const styles = {
   figure: {
-    flexDirection: "column",
     position: "relative",
     overflow: "hidden",
     mb: 30,
