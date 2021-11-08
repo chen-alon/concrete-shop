@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Image } from "theme-ui";
-// import classes from "../category-item.module.css";
+import { jsx, Flex, Image } from "theme-ui";
 import Link from "next/link";
 import image from "../../../public/images/logo.png";
 
@@ -9,18 +8,19 @@ const CategoryGalleryCard = (props) => {
 
   return (
     <Link href={path}>
-      <Flex as="figure" sx={styles.figure}>
-        <div style={{ flexDirection: "column" }}>
-          <Image
-            loading="lazy"
-            src={item.category_image_path ? item.category_image_path : image}
-            alt={item?.label}
-          />
-          <div style={{ margin: "0" }} dir="rtl">
-            {item?.label}
-            <br />
-            {item?.one_piece_price} ש"ח
-          </div>
+      <Flex sx={styles.figure}>
+        <Image
+          loading="lazy"
+          src={item.category_image_path ? item.category_image_path : image}
+          alt={item?.label}
+        />
+        <div
+          style={{ margin: "0", fontWeight: "bold", fontSize: "1.2rem" }}
+          dir="rtl"
+        >
+          {item?.label}
+          <br />
+          {item?.one_piece_price} ש"ח
         </div>
       </Flex>
     </Link>
@@ -31,6 +31,7 @@ export default CategoryGalleryCard;
 
 const styles = {
   figure: {
+    flexDirection: "column",
     position: "relative",
     overflow: "hidden",
     mb: 30,
@@ -58,7 +59,7 @@ const styles = {
     },
     ":hover": {
       img: {
-        opacity: "60%",
+        opacity: "0.6",
       },
     },
   },

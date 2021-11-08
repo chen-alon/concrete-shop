@@ -177,7 +177,7 @@
 import { jsx, Box, Container } from "theme-ui";
 import SectionHeading from "components/section-heading";
 
-const clients = [
+const facts = [
   {
     id: 1,
     name: "אביזרים משלימים שישדרגו כל חלק בבית ⋐",
@@ -208,10 +208,10 @@ const Clients = () => {
           slogan="מי אנחנו"
           title="כמה עובדות שיעשו לכם קצת סדר"
         />
-        <div sx={styles.clients}>
-          {clients?.map((client) => (
-            <p key={client.id} as="figure" sx={styles.text}>
-              {client.name}
+        <div sx={styles.facts}>
+          {facts?.map((fact) => (
+            <p key={fact.id} as="figure" sx={styles.text}>
+              {fact.name}
             </p>
           ))}
         </div>
@@ -227,7 +227,7 @@ const styles = {
     pt: [50, 50, 50, 70, 60, 80],
     pb: [30, 40, 50, 60, 50, 80],
   },
-  clients: {
+  facts: {
     alignItems: "center",
     justifyContent: "space-around",
   },

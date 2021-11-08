@@ -43,6 +43,5 @@ const styles = {
   description: {
     fontSize: 17,
     lineHeight: 2.07,
-    color: (theme) => theme.colors.text,
   },
 };

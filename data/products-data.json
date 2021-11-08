@@ -5,11 +5,16 @@
       "description": "תחתיות",
       "products_list": [
         {
-          "product_id": "coaster_le",
-          "label": "נגיעות של זהב",
+          "product_id": "coaster_gold",
+          "label": "טיפות של זהב",
+          "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
+          "colors": "בסיס שמנת עם נגיעות של זהב",
+          "size": "8X8",
           "one_piece_price": "30",
-          "description": ".התחתיות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "30", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
+          ],
           "category_image_path": "/images/white_gold_coaster_le_2.png",
           "product_images_paths": [
             {
@@ -24,19 +29,19 @@
               "image_id": "3",
               "image_path": "/images/white_gold_coaster_le_3.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_marble_black_white",
-          "label": "מרבל שחור לבן",
+          "label": "מרבל מנצח",
+          "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
+          "colors": "שחור לבן",
+          "size": "8X8",
           "one_piece_price": "30",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "30", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "/images/white_black_coaster_marble_1.png",
           "product_images_paths": [
             {
@@ -47,57 +52,57 @@
               "image_id": "2",
               "image_path": "/images/white_black_coaster_marble_2.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_marble_white_grey",
-          "label": "מרבל אפור לבן",
+          "label": "מרבל קלאסי",
+          "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
+          "colors": "אפור לבן",
+          "size": "8X8",
           "one_piece_price": "30",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "30", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "/images/white_grey_coaster_marble_1.png",
           "product_images_paths": [
             {
               "image_id": "1",
               "image_path": "/images/white_grey_coaster_marble_1.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_marble_white_red",
-          "label": "מרבל אדום לבן",
+          "label": "מרבל רומנטי",
+          "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
+          "colors": "אדום לבן",
+          "size": "8X8",
           "one_piece_price": "30",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "30", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "/images/white_red_coaster_marble_1.png",
           "product_images_paths": [
             {
               "image_id": "1",
               "image_path": "/images/white_red_coaster_marble_1.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_basic_orange",
           "label": "עגול שלכת",
+          "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
+          "colors": "כתום",
+          "size": "8X8",
           "one_piece_price": "25",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "25", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "80", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "/images/orange_coaster_round_1.jpeg",
           "product_images_paths": [
             {
@@ -108,19 +113,19 @@
               "image_id": "2",
               "image_path": "/images/orange_coaster_round_2.jpeg"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_basic_black",
-          "label": "עגול שחור",
+          "label": "עגול אלגנטי",
+          "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
+          "colors": "שחור",
+          "size": "8X8",
           "one_piece_price": "25",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "25", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "80", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "/images/black_coaster_round_1.png",
           "product_images_paths": [
             {
@@ -131,19 +136,19 @@
               "image_id": "2",
               "image_path": "/images/black_coaster_round_1.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         },
         {
           "product_id": "coaster_terrazzo",
           "label": "טרצו",
+          "description": "תחתיות בצורת * לכוסות שתיה, חם או קר",
+          "colors": "בסיס לבן עם שברי צבע שונים",
+          "size": "8X8",
           "one_piece_price": "35",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [
+            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
+            { "reg_price": "120", "desc": "ארבע תחתיות", "discount": "" }
+          ],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -154,11 +159,6 @@
               "image_id": "2",
               "image_path": "/images/black_coaster_round_1.png"
             }
-          ],
-          "prices": [
-            { "reg_price": "35", "desc": "תחתית אחת", "discount": "" },
-            { "reg_price": "60", "desc": "שתי תחתיות", "discount": "" },
-            { "reg_price": "100", "desc": "ארבע תחתיות", "discount": "90" }
           ]
         }
       ]
@@ -169,10 +169,13 @@
       "products_list": [
         {
           "product_id": "fire_bowl1",
-          "label": "קערת אש",
+          "label": "קערת אש טהורה",
+          "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים",
+          "colors": "כלי לבן",
+          "size": "26X11",
           "one_piece_price": "250",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "250", "discount": "" }],
+          "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות",
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -183,15 +186,17 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "250", "discount": "" }]
+          ]
         },
         {
           "product_id": "fire_bowl2",
-          "label": "קערת אש",
+          "label": "קערת אש אלגנטית",
+          "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים",
+          "colors": "כלי שחור",
+          "size": "26X11",
           "one_piece_price": "250",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "250", "discount": "" }],
+          "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות",
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -202,8 +207,7 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "250", "discount": "" }]
+          ]
         }
       ]
     },
@@ -213,10 +217,12 @@
       "products_list": [
         {
           "product_id": "candle1",
-          "label": "נר צדפה",
+          "label": "צדפה",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "70",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "70", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -227,15 +233,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "70", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle2",
-          "label": "נר בועות גדול",
+          "label": "בועות גדול",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "60",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "60", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -246,15 +253,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "60", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle3",
-          "label": "נר בועות קטן",
+          "label": "בועות קטן",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "40",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "40", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -265,15 +273,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "40", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle4",
-          "label": "נר איש ירח",
+          "label": "איש ירח",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "50",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "50", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -284,15 +293,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "50", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle5",
-          "label": "נר אישה",
+          "label": "אישה",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "70",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "70", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -303,15 +313,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "70", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle6",
-          "label": "נר פרש",
+          "label": "פרש",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "60",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "60", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -322,15 +333,16 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "60", "discount": "" }]
+          ]
         },
         {
           "product_id": "candle7",
-          "label": "נר מלכה",
+          "label": "מלכה",
+          "description": "",
+          "colors": "",
+          "sizes": "",
           "one_piece_price": "70",
-          "description": ".התחתיות העגולות שלנו ישתלבו עם כוסות עגולות\n .מוצר קלאסי שמתאים לכל שולחן\n",
-          "concrete_desc": ".התחתיות עשויות מבטון קשיח שנוצר מתערובת מיוחדת שתבטיח את עמידותו\n !התחתית מצופה בחומר האוטם מפני חדירת נוזלים ובנוסף מעניק ברק יפהפה",
+          "prices": [{ "reg_price": "70", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -341,8 +353,87 @@
               "image_id": "2",
               "image_path": ""
             }
-          ],
-          "prices": [{ "reg_price": "70", "discount": "" }]
+          ]
+        },
+        {
+          "product_id": "candle8",
+          "label": "קשת בענן",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
+            },
+            {
+              "image_id": "2",
+              "image_path": ""
+            }
+          ]
+        },
+        {
+          "product_id": "candle9",
+          "label": "קשת",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "50",
+          "prices": [{ "reg_price": "50", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
+            },
+            {
+              "image_id": "2",
+              "image_path": ""
+            }
+          ]
+        },
+        {
+          "product_id": "candle10",
+          "label": "רכס הרים",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "60",
+          "prices": [{ "reg_price": "60", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
+            },
+            {
+              "image_id": "2",
+              "image_path": ""
+            }
+          ]
+        },
+        {
+          "product_id": "candle11",
+          "label": "משולש",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "50",
+          "prices": [{ "reg_price": "50", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
+            },
+            {
+              "image_id": "2",
+              "image_path": ""
+            }
+          ]
         }
       ]
     },
@@ -352,11 +443,30 @@
       "products_list": [
         {
           "product_id": "candle_holder1",
-          "label": "This is a candle_holder1 product label"
+          "label": "פמוטים של סתיו",
+          "description": "הפמוטים בעיצוב ייחודי לכבוד קולקציית הסתיו יוסיפו לשולחן שלכם אווירה מיוחדת",
+          "colors": "לבן אדום וחום",
+          "sizes": "",
+          "one_piece_price": "90",
+          "prices": [{ "reg_price": "90", "discount": "" }]
         },
         {
           "product_id": "candle_holder2",
-          "label": "This is a candle_holder2 product label"
+          "description": "הפמוטים האלגנטים יפים לכל יום ובכל מקום בחלל הבית",
+          "label": "פמוטים אלגנטים",
+          "colors": "שחור",
+          "sizes": "",
+          "one_piece_price": "80",
+          "prices": [{ "reg_price": "80", "discount": "" }]
+        },
+        {
+          "product_id": "candle_holder3",
+          "label": "פמוטים טהורים",
+          "description": "הפמוטים הטהורים בגוון לבן שמנת עדין, מתאימים גם כאקססוריז לבית וגם להדלקת נרות שבת או חג",
+          "colors": "לבן",
+          "sizes": "",
+          "one_piece_price": "80",
+          "prices": [{ "reg_price": "80", "discount": "" }]
         }
       ]
     },
@@ -366,11 +476,147 @@
       "products_list": [
         {
           "product_id": "tray1",
-          "label": "This is a tray1 product label"
+          "label": "גל דקורטיבי מרבל ישראל",
+          "description": "",
+          "colors": "לבן וכחול",
+          "sizes": "",
+          "one_piece_price": "90",
+          "prices": [{ "reg_price": "90", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
         },
         {
           "product_id": "tray2",
-          "label": "This is a tray2 product label"
+          "label": "קשת דקורטיבית מרבל נועז",
+          "description": "",
+          "colors": "אפור שחור ולבן",
+          "sizes": "",
+          "one_piece_price": "100",
+          "prices": [{ "reg_price": "100", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray3",
+          "label": "גל דקורטיבי אש",
+          "description": "",
+          "colors": "אדום",
+          "sizes": "",
+          "one_piece_price": "80",
+          "prices": [{ "reg_price": "80", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray4",
+          "label": "קשת דקורטיבית אביב",
+          "description": "",
+          "colors": "ירוק",
+          "sizes": "",
+          "one_piece_price": "80",
+          "prices": [{ "reg_price": "80", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray5",
+          "label": "מגש אובלי מרבל נועז",
+          "description": "",
+          "colors": "אפור שחור ולבן",
+          "sizes": "",
+          "one_piece_price": "80",
+          "prices": [{ "reg_price": "80", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray6",
+          "label": "מגש אובלי טרצו",
+          "description": "",
+          "colors": "בסיס לבן עם שברי צבע שונים",
+          "sizes": "",
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
+          "category_image_path": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/white_gold_coaster_le.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_gold_coaster_le_2.png"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_gold_coaster_le_3.png"
+            }
+          ]
         }
       ]
     },
@@ -380,11 +626,17 @@
       "products_list": [
         {
           "product_id": "set1",
-          "label": "This is a set1 product label"
+          "label": "This is a set1 product label",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "90"
         },
         {
           "product_id": "set2",
-          "label": "This is a set2 product label"
+          "label": "This is a set2 product label",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "90"
         }
       ]
     }

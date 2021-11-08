@@ -1,19 +1,15 @@
 import path from "path";
 import fs from "fs/promises";
 import CategoryGallery from "sections/category-gallery";
-import CategoryList from "../../components/productpages/category/category-items-list";
 
 function ProductCategoryPage(props) {
   const { currentProductCategory } = props;
 
   return (
-    <div>
-      {/* <CategoryList
-        categoryProductsList={currentProductCategory.products_list}
-        category_id={currentProductCategory.category_id}
-      /> */}
-      <CategoryGallery categoryProductsList={currentProductCategory.products_list} category_id={currentProductCategory.category_id}/>
-    </div>
+    <CategoryGallery
+      categoryProductsList={currentProductCategory.products_list}
+      category_id={currentProductCategory.category_id}
+    />
   );
 }
 

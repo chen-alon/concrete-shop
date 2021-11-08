@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image } from "theme-ui";
-import { RiArrowRightSLine } from "react-icons/ri";
+import { jsx, Box, Container } from "theme-ui";
 import Masonry from "react-masonry-component";
 import SectionHeading from "components/section-heading";
 import CategoryGalleryCard from "components/cards/category-gallery-card";
@@ -33,12 +32,12 @@ const CategoryGallery = (props) => {
 export default CategoryGallery;
 
 const styles = {
-  container: {
-    mt: "10rem",
-  },
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
+  },
+  container: {
+    mt: "10rem",
   },
   heading: {
     mb: [30, 30, 40, 60],

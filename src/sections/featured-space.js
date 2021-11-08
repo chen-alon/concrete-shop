@@ -195,7 +195,7 @@ const styles = {
       "repeat(3,180px)",
       "repeat(3,1fr)",
     ],
-    justifyContent: ["unset", null, null, "center", "flex-start"],
+    justifyContent: ["unset", null, null, "center", "flex-end"],
   },
   rightContent: {
     position: "relative",

@@ -5,53 +5,6 @@ import { Button } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
 
-function ProductIdPage(props) {
-  const { currentProduct } = props;
-  const router = useRouter();
-
-  return (
-    <div style={{ marginTop: "11rem", marginBottom: "11rem" }}>
-      <div sx={styles.button}>
-        {router.pathname !== "/" && (
-          <Button onClick={() => router.back()} sx={styles.buttonBack}>
-            חזרה לעמוד הקודם
-          </Button>
-        )}
-      </div>
-
-      {/* <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          position: "static",
-        }}
-      > */}
-      <div>
-        <SlideShow images_paths={currentProduct.product_images_paths} />
-      </div>
-      <div sx={{ marginRight: "5rem" }}>
-        <ProductDetails
-          label={currentProduct.label}
-          description={currentProduct.description}
-          colors={currentProduct.colors}
-          concrete_desc={currentProduct.concrete_desc}
-          prices={currentProduct.prices}
-        />
-        <Button sx={styles.contact} variant="primaryMd">
-          <a
-            href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
-            target="_blank"
-            rel="noreferrer"
-          >
-            להזמנה
-          </a>
-        </Button>
-      </div>
-      {/* </div> */}
-    </div>
-  );
-}
-
 async function getData() {
   const dataFilePath = path.join(process.cwd(), "data", "products-data.json");
   const jsonData = await fs.readFile(dataFilePath);
@@ -82,12 +35,6 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  // we create all possible paths. Structure:
-  // { params: { product_category: 'coasters', productid: 'coaster1' } },
-  // { params: { product_category: 'coasters', productid: 'coaster2' } },
-  // { params: { product_category: 'fire_bowls', productid: 'fire_bowl1' }},
-  // etc...
-
   const data = await getData();
   const pathsList = [];
   const amountOfCatrgories = data.products.length;
@@ -111,6 +58,44 @@ export async function getStaticPaths() {
   };
 }
 
+function ProductIdPage(props) {
+  const { currentProduct } = props;
+  const router = useRouter();
+
+  return (
+    <div style={{ marginTop: "11rem", marginBottom: "11rem" }}>
+      <div sx={styles.button}>
+        {router.pathname !== "/" && (
+          <Button onClick={() => router.back()} sx={styles.buttonBack}>
+            חזרה לעמוד הקודם
+          </Button>
+        )}
+      </div>
+
+      <div>
+        <SlideShow images_paths={currentProduct.product_images_paths} />
+      </div>
+      <ProductDetails
+        label={currentProduct.label}
+        description={currentProduct.description}
+        colors={currentProduct.colors}
+        prices={currentProduct.prices}
+        more={currentProduct.more}
+        size={currentProduct.size}
+      />
+      <Button sx={styles.contact} variant="secondary">
+        <a
+          href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
+          target="_blank"
+          rel="noreferrer"
+        >
+          להזמנה לחצו כאן
+        </a>
+      </Button>
+    </div>
+  );
+}
+
 export default ProductIdPage;
 
 const styles = {
@@ -129,17 +114,14 @@ const styles = {
     fontWeight: 300,
   },
   contact: {
-    marginLeft: "auto",
-    backgroundColor: "#DE7C5A",
-    borderRadius: 0,
+    bg: "#fff",
     fontSize: "1.3rem",
-    pt: "1rem",
-    pb: "1rem",
-    pl: "3rem",
-    pr: "3rem",
     a: {
-      color: "#fff",
+      color: "#141414",
       textDecoration: "none",
+      ":hover": {
+        color: "#DE7C5A",
+      },
     },
   },
 };
