@@ -31,6 +31,7 @@ export default CategoryGalleryCard;
 
 const styles = {
   figure: {
+    flexDirection: "column",
     position: "relative",
     overflow: "hidden",
     mb: 30,
