@@ -196,7 +196,7 @@ const styles = {
       margin: "0 20px",
       "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
         {
-          fontSize: "1.5rem",
+          fontSize: "1.2rem",
         },
     },
     a: {
@@ -208,7 +208,7 @@ const styles = {
       textDecoration: "none",
       "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
         {
-          fontSize: "1.5rem",
+          fontSize: "1.2rem",
         },
     },
     ".active": {

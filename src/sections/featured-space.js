@@ -11,7 +11,7 @@ import users from "assets/images/icons/users.png";
 import wifi from "assets/images/icons/wifi.png";
 import slider1 from "assets/images/features/1.png";
 import slider2 from "assets/images/features/2.webp";
-import slider3 from "assets/images/features/3.png";
+import slider3 from "assets/images/features/collection_marble.png";
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
 // Import Swiper React components

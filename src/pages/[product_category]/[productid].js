@@ -114,13 +114,19 @@ const styles = {
     fontWeight: 300,
   },
   contact: {
+    ml: "2rem",
+    border: "3px solid #DE7C5A",
+    ":hover": {
+      border: "3px solid #141414",
+    },
+    fontWeight: "bold",
     bg: "#fff",
     fontSize: "1.3rem",
     a: {
-      color: "#141414",
+      color: "#DE7C5A",
       textDecoration: "none",
       ":hover": {
-        color: "#DE7C5A",
+        color: "#141414",
       },
     },
   },

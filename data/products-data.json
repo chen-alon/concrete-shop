@@ -134,7 +134,7 @@
             },
             {
               "image_id": "2",
-              "image_path": "/images/black_coaster_round_1.png"
+              "image_path": "/images/black_coaster_round_2.png"
             }
           ]
         },
@@ -157,7 +157,7 @@
             },
             {
               "image_id": "2",
-              "image_path": "/images/black_coaster_round_1.png"
+              "image_path": "/images/black_coaster_round_2.png"
             }
           ]
         }
@@ -202,10 +202,6 @@
             {
               "image_id": "1",
               "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
             }
           ]
         }
@@ -223,15 +219,11 @@
           "sizes": "",
           "one_piece_price": "70",
           "prices": [{ "reg_price": "70", "discount": "" }],
-          "category_image_path": "",
+          "category_image_path": "/images/candle_shell.png",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
+              "image_path": "/images/candle_shell.png"
             }
           ]
         },
@@ -243,15 +235,11 @@
           "sizes": "",
           "one_piece_price": "60",
           "prices": [{ "reg_price": "60", "discount": "" }],
-          "category_image_path": "",
+          "category_image_path": "/images/candle_big_bubble.png",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
+              "image_path": "/images/candle_big_bubble.png"
             }
           ]
         },
@@ -263,15 +251,75 @@
           "sizes": "",
           "one_piece_price": "40",
           "prices": [{ "reg_price": "40", "discount": "" }],
-          "category_image_path": "",
+          "category_image_path": "/images/candle_small_bubble.png",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
+              "image_path": "/images/candle_small_bubble.png"
+            }
+          ]
+        },
+        {
+          "product_id": "candle8",
+          "label": "קשת בענן",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
+          "category_image_path": "/images/candle_rainbow.png",
+          "product_images_paths": [
             {
-              "image_id": "2",
-              "image_path": ""
+              "image_id": "1",
+              "image_path": "/images/candle_rainbow.png"
+            }
+          ]
+        },
+        {
+          "product_id": "candle9",
+          "label": "קשת",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "50",
+          "prices": [{ "reg_price": "50", "discount": "" }],
+          "category_image_path": "/images/candle_arch.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/candle_arch.png"
+            }
+          ]
+        },
+        {
+          "product_id": "candle10",
+          "label": "רכס הרים",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "60",
+          "prices": [{ "reg_price": "60", "discount": "" }],
+          "category_image_path": "/images/candle_mountain.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/candle_mountain.png"
+            }
+          ]
+        },
+        {
+          "product_id": "candle11",
+          "label": "משולש",
+          "description": "",
+          "colors": "",
+          "sizes": "",
+          "one_piece_price": "50",
+          "prices": [{ "reg_price": "50", "discount": "" }],
+          "category_image_path": "/images/candle_triangle.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/candle_triangle.png"
             }
           ]
         },
@@ -287,10 +335,6 @@
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
               "image_path": ""
             }
           ]
@@ -308,10 +352,6 @@
             {
               "image_id": "1",
               "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
             }
           ]
         },
@@ -327,10 +367,6 @@
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
               "image_path": ""
             }
           ]
@@ -348,90 +384,6 @@
             {
               "image_id": "1",
               "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
-            }
-          ]
-        },
-        {
-          "product_id": "candle8",
-          "label": "קשת בענן",
-          "description": "",
-          "colors": "",
-          "sizes": "",
-          "one_piece_price": "70",
-          "prices": [{ "reg_price": "70", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
-            }
-          ]
-        },
-        {
-          "product_id": "candle9",
-          "label": "קשת",
-          "description": "",
-          "colors": "",
-          "sizes": "",
-          "one_piece_price": "50",
-          "prices": [{ "reg_price": "50", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
-            }
-          ]
-        },
-        {
-          "product_id": "candle10",
-          "label": "רכס הרים",
-          "description": "",
-          "colors": "",
-          "sizes": "",
-          "one_piece_price": "60",
-          "prices": [{ "reg_price": "60", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
-            }
-          ]
-        },
-        {
-          "product_id": "candle11",
-          "label": "משולש",
-          "description": "",
-          "colors": "",
-          "sizes": "",
-          "one_piece_price": "50",
-          "prices": [{ "reg_price": "50", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
-              "image_path": ""
             }
           ]
         }
@@ -448,7 +400,14 @@
           "colors": "לבן אדום וחום",
           "sizes": "",
           "one_piece_price": "90",
-          "prices": [{ "reg_price": "90", "discount": "" }]
+          "prices": [{ "reg_price": "90", "discount": "" }],
+          "category_image_path": "/images/candle_holder_autumn.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/candle_holder_autumn.png"
+            }
+          ]
         },
         {
           "product_id": "candle_holder2",
@@ -473,7 +432,91 @@
     {
       "category_id": "trays",
       "description": "מגשים",
-      "products_list": [
+      "products_list": [        
+        {
+          "product_id": "tray5",
+          "label": "מגש אובלי מרבל נועז",
+          "description": "",
+          "colors": "אפור שחור ולבן",
+          "sizes": "",
+          "one_piece_price": "60",
+          "prices": [{ "reg_price": "60", "discount": "" }],
+          "category_image_path": "/images/oval_tray_marble_black_white_grey.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/oval_tray_marble_black_white_grey.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray6",
+          "label": "מגש אובלי טרצו",
+          "description": "",
+          "colors": "בסיס לבן עם שברי צבע שונים",
+          "sizes": "",
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
+          "category_image_path": "/images/oval_tray_terazzo.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/oval_tray_terazzo.png"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/terazzo_tray_grey_white.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray7",
+          "label": "מגש אובלי של סתיו",
+          "description": "",
+          "colors": "לבן אדום וחום",
+          "sizes": "",
+          "one_piece_price": "60",
+          "prices": [{ "reg_price": "60", "discount": "" }],
+          "category_image_path": "/images/oval_tray_marble_autumn.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/oval_tray_marble_autumn.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray8",
+          "label": "טיפות של זהב",
+          "description": "",
+          "colors": "בסיס שמנת עם נגיעות של זהב",
+          "sizes": "",
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
+          "category_image_path": "/images/oval_tray_gold.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/oval_tray_gold.png"
+            }
+          ]
+        },
+        {
+          "product_id": "tray9",
+          "label": "מרבל קלאסי",
+          "description": "",
+          "colors": "אפור לבן",
+          "sizes": "",
+          "one_piece_price": "60",
+          "prices": [{ "reg_price": "60", "discount": "" }],
+          "category_image_path": "/images/oval_tray_marble.png",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/oval_tray_marble.png"
+            }
+          ]
+        },
         {
           "product_id": "tray1",
           "label": "גל דקורטיבי מרבל ישראל",
@@ -528,8 +571,8 @@
           "description": "",
           "colors": "אדום",
           "sizes": "",
-          "one_piece_price": "80",
-          "prices": [{ "reg_price": "80", "discount": "" }],
+          "one_piece_price": "70",
+          "prices": [{ "reg_price": "70", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {
@@ -554,54 +597,6 @@
           "sizes": "",
           "one_piece_price": "80",
           "prices": [{ "reg_price": "80", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": "/images/white_gold_coaster_le.png"
-            },
-            {
-              "image_id": "2",
-              "image_path": "/images/white_gold_coaster_le_2.png"
-            },
-            {
-              "image_id": "3",
-              "image_path": "/images/white_gold_coaster_le_3.png"
-            }
-          ]
-        },
-        {
-          "product_id": "tray5",
-          "label": "מגש אובלי מרבל נועז",
-          "description": "",
-          "colors": "אפור שחור ולבן",
-          "sizes": "",
-          "one_piece_price": "80",
-          "prices": [{ "reg_price": "80", "discount": "" }],
-          "category_image_path": "",
-          "product_images_paths": [
-            {
-              "image_id": "1",
-              "image_path": "/images/white_gold_coaster_le.png"
-            },
-            {
-              "image_id": "2",
-              "image_path": "/images/white_gold_coaster_le_2.png"
-            },
-            {
-              "image_id": "3",
-              "image_path": "/images/white_gold_coaster_le_3.png"
-            }
-          ]
-        },
-        {
-          "product_id": "tray6",
-          "label": "מגש אובלי טרצו",
-          "description": "",
-          "colors": "בסיס לבן עם שברי צבע שונים",
-          "sizes": "",
-          "one_piece_price": "70",
-          "prices": [{ "reg_price": "70", "discount": "" }],
           "category_image_path": "",
           "product_images_paths": [
             {

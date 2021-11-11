@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Flex, Image } from "theme-ui";
 import Link from "next/link";
-import image from "../../../public/images/logo.png";
+import image from "../../../public/images/soon1.png";
 
 const CategoryGalleryCard = (props) => {
   const { item, path } = props;

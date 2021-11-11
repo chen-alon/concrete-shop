@@ -1,6 +1,7 @@
 .text {
   text-align: right;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .text h1 {
