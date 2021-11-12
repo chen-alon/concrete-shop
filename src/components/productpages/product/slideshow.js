@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./slideshow.module.css";
-import Image from "components/image";
+import Image from "next/image";
 import SwiperCore, { Pagination, Navigation, Thumbs, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Navigation, Pagination, Thumbs, Scrollbar]);
@@ -35,7 +35,13 @@ function SlideShow(props) {
             tag="li"
             style={{ listStyle: "none", transform: "none" }}
           >
-            <Image loading="lazy" src={image.image_path} alt="" />
+            <Image
+              src={image.image_path}
+              alt=""
+              height={746}
+              width={840}
+              layout="responsive"
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -59,7 +65,13 @@ function SlideShow(props) {
             tag="li"
             style={{ listStyle: "none" }}
           >
-            <Image loading="lazy" src={image.image_path} alt="" />
+            <Image
+              src={image.image_path}
+              alt=""
+              height={746}
+              width={840}
+              layout="responsive"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

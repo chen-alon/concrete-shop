@@ -5,7 +5,7 @@ import { jsx, Box, Container, Heading, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Progressbar from "components/progressbar";
 import Feature from "components/cards/feature";
-import Image from "components/image";
+import Image from "next/image";
 import expand from "assets/images/icons/expand.png";
 import users from "assets/images/icons/users.png";
 import wifi from "assets/images/icons/wifi.png";
@@ -50,7 +50,7 @@ const data = {
     {
       id: 2,
       image: slider2,
-      title: "קולקציית טרזו",
+      title: "קולקציית טרצו",
       desc: "צבעוני, פיגמנטים שונים",
     },
     {
@@ -136,7 +136,7 @@ const FeaturedSpace = () => {
               {data?.gallery?.map((item) => (
                 <SwiperSlide key={item.id}>
                   <Box as="figure" sx={styles.image}>
-                    <Image loading="lazy" src={item.image} alt="" />
+                    <Image src={item.image} alt="" height={650} width={650} />
                     <Box as="figcaption">
                       <Box>
                         <Heading as="h4">{item.title}</Heading>

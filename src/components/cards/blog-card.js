@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Image, Heading, Text } from "theme-ui";
+import { jsx, Box, Flex, Heading, Text } from "theme-ui";
+import Image from "next/image";
 import { Link } from "components/link";
 import { rgba } from "polished";
 
@@ -7,7 +8,13 @@ const BlogPost = ({ post }) => {
   return (
     <Box sx={styles.post}>
       <Flex as="figure" sx={styles.postImage}>
-        <Image loading="lazy" src={post?.thumb} alt={post?.title} />
+        <Image
+          loading="lazy"
+          src={post?.thumb}
+          alt={post?.title}
+          height={300}
+          width={410}
+        />
       </Flex>
       <Box sx={styles.meta}>
         <Heading as="h4">

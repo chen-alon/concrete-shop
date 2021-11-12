@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, Flex, Image } from "theme-ui";
+import { jsx, Flex } from "theme-ui";
+import Image from "next/image";
 import Link from "next/link";
-import image from "../../../public/images/soon1.png";
+import image1 from "../../../public/images/soon1.png";
 
 const CategoryGalleryCard = (props) => {
   const { item, path } = props;
@@ -10,9 +11,11 @@ const CategoryGalleryCard = (props) => {
     <Link href={path}>
       <Flex as="figure" sx={styles.figure}>
         <Image
-          loading="lazy"
-          src={item.category_image_path ? item.category_image_path : image}
+          src={item.category_image_path ? item.category_image_path : image1}
           alt={item?.label}
+          height={746}
+          width={840}
+          layout="responsive"
         />
         <div
           style={{ margin: "0", fontWeight: "bold", fontSize: "1.2rem" }}

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Flex, Link } from "theme-ui";
+import { jsx, Box, Container, Flex, Image, Link } from "theme-ui";
 import { RiArrowRightSLine } from "react-icons/ri";
 import SectionHeading from "components/section-heading";
 import customer from "assets/images/customer.png";
@@ -14,7 +14,7 @@ const OurCustomer = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" />
+            <Image loading="lazy" src={customer} alt="customer"/>
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading

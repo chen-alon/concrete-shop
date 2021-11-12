@@ -1,12 +1,18 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Image } from "theme-ui";
+import { jsx, Box, Flex } from "theme-ui";
+import Image from "next/image";
 import Link from "next/link";
 
 const GalleryCard = ({ item }) => {
   return (
     <Link href={`/${item?.link}`}>
       <Flex as="figure" sx={styles.figure}>
-        <Image loading="lazy" src={item?.image} alt={item?.title} />
+        <Image
+          src={item?.image}
+          alt={item?.title}
+          height={item.height}
+          width={item.width}
+        />
         <Box as="figcaption">{item?.title}</Box>
       </Flex>
     </Link>

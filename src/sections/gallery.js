@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Button } from "theme-ui";
+import { jsx, Box, Container, Button } from "theme-ui";
 import { RiArrowRightSLine } from "react-icons/ri";
 import Masonry from "react-masonry-component";
 import SectionHeading from "components/section-heading";
 import GalleryCard from "components/cards/gallery-card";
-import gallery1 from "assets/images/gallery/1_ready.png";
 import gallery2 from "assets/images/gallery/2_ready.png";
+import gallery1 from "assets/images/gallery/1_ready.png";
 import gallery3 from "assets/images/gallery/3_ready.png";
 import gallery4 from "assets/images/gallery/4_ready.png";
 import gallery5 from "assets/images/gallery/5.png";
@@ -17,36 +17,48 @@ const data = [
     image: gallery1,
     title: "תחתיות",
     link: "coasters",
+    height: "400",
+    width: "420"
   },
   {
     id: 2,
     image: gallery2,
     title: "קערות אש",
     link: "fire_bowls",
+    height: "530",
+    width: "420"
   },
   {
     id: 3,
     image: gallery3,
     title: "נרות",
     link: "candles",
+    height: "450",
+    width: "420"
   },
   {
     id: 4,
     image: gallery4,
     title: "מגשים",
     link: "trays",
+    height: "550",
+    width: "420"
   },
   {
     id: 6,
     image: gallery6,
     title: "סטים",
     link: "sets",
+    height: "500",
+    width: "420"
   },
   {
     id: 5,
     image: gallery5,
     title: "פמוטים",
     link: "candle_holders",
+    height: "420",
+    width: "420"
   },
 ];
 
