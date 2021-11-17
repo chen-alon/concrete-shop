@@ -2,7 +2,6 @@
 import { jsx, Box, Flex, Heading, Text } from "theme-ui";
 import Image from "next/image";
 import { Link } from "components/link";
-import { rgba } from "polished";
 
 const BlogPost = ({ post }) => {
   return (
@@ -20,10 +19,6 @@ const BlogPost = ({ post }) => {
         <Heading as="h4">
           <Link path={post.link}>{post?.title}</Link>
         </Heading>
-        {/* <Text as="span" sx={styles.commentCount}>
-          <Image loading="lazy" src={chat} alt="chat icon" />
-          {post?.commentCount} Comments
-        </Text> */}
       </Box>
     </Box>
   );
@@ -52,20 +47,10 @@ const styles = {
     },
   },
   postImage: {
-    margin: "1rem",
+    display: "flex !important",
+    justifyContent: "center",
+    margin: "0.5rem",
     alignItems: "center",
     justifyItems: "center",
-  },
-  commentCount: {
-    display: "flex",
-    alignItems: "center",
-    mt: ["10px", "10px", "10px", "15px", "20px"],
-    fontWeight: 500,
-    fontSize: [13, 14, 14, 16],
-    lineHeight: 1.6,
-    color: rgba("#343D48", 0.8),
-    img: {
-      mr: "8px",
-    },
   },
 };

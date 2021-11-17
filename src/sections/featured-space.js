@@ -4,42 +4,16 @@ import { useState, useRef, useEffect } from "react";
 import { jsx, Box, Container, Heading, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Progressbar from "components/progressbar";
-import Feature from "components/cards/feature";
 import Image from "next/image";
-import expand from "assets/images/icons/expand.png";
-import users from "assets/images/icons/users.png";
-import wifi from "assets/images/icons/wifi.png";
-import slider1 from "assets/images/features/1.png";
-import slider2 from "assets/images/features/2.webp";
+import slider1 from "assets/images/features/collection_basic.png";
+import slider2 from "assets/images/features/collection_terrazzo_2.png";
 import slider3 from "assets/images/features/collection_marble.png";
-
 import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
 const data = {
-  feature: [
-    {
-      id: 1,
-      icon: expand,
-      title: "עבודת יד",
-      description: "you will get 1000ft square space facility here.",
-    },
-    {
-      id: 2,
-      icon: users,
-      title: "ידידותי לסביבה",
-      description: "you will get advantage to live 80+ member here.",
-    },
-    {
-      id: 3,
-      icon: wifi,
-      title: "100 mbps",
-      description: "Internet speed is much better than others.",
-    },
-  ],
   gallery: [
     {
       id: 1,
@@ -102,6 +76,9 @@ const FeaturedSpace = () => {
     setTogglePlay((prev) => !prev);
   };
 
+  const desc =
+    "מתוך אהבה טהורה לאומנות ובטון יצרנו קולקציות מוקפדות של אקססוריז ופרטי נוי מיוחדים לפנים וחוץ הבית במיוחד עבורכם או לאהובים עליכם.\nהפריטים שלנו יכניסו אור לבית ויוסיפו טאצ'ים עיצוביים.\nהקולקציות קבועות רק הצבעים משתנים.\nכל המוצרים עשויים בקפידה, בעבודת יד מחומרי הגלם האיכותיים ביותר.";
+
   return (
     <Box id="collections" as="section" sx={styles.section}>
       <Container>
@@ -109,14 +86,10 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="איך נולדו הקולקציות שלנו? מתוך אהבה טהורה לאומנות ובטון"
-              description="צרנו עבורכם קולקציות מוקפדות של אקססוריס. יצרנו עבורכם פרטי נוי מיוחדים לפנים וחוץ הבית במיוחד עבורכם או לאהובים עליכם, מתנות שיכניסו אור לבית. הקולקציות קבועות רק הצבעים והשילובים משתנים."
+              dir="rtl"
+              title="איך נולדו הקולקציות שלנו?"
+              description={desc}
             />
-            {/* <Box sx={styles.featureWrapper}>
-              {data?.feature?.map((feature) => (
-                <Feature key={feature.id} data={feature} />
-              ))}
-            </Box> */}
           </Box>
           <Box sx={styles.rightContent}>
             <Progressbar
@@ -181,21 +154,10 @@ const styles = {
       fontWeight: [500, null, null, 400],
     },
     p: {
-      fontSize: ["15px", null, null, "17px"],
+      whiteSpace: "pre-wrap",
+      fontSize: ["17px", null, null, "20px"],
       mt: [3, null, null, 5],
     },
-  },
-  featureWrapper: {
-    gap: ["40px 20px", null, null, null, "30px"],
-    display: "grid",
-    gridTemplateColumns: [
-      "repeat(2,1fr)",
-      null,
-      null,
-      "repeat(3,180px)",
-      "repeat(3,1fr)",
-    ],
-    justifyContent: ["unset", null, null, "center", "flex-end"],
   },
   rightContent: {
     position: "relative",

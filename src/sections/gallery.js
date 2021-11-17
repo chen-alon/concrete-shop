@@ -8,8 +8,8 @@ import gallery2 from "assets/images/gallery/2_ready.png";
 import gallery1 from "assets/images/gallery/1_ready.png";
 import gallery3 from "assets/images/gallery/3_ready.png";
 import gallery4 from "assets/images/gallery/4_ready.png";
-import gallery5 from "assets/images/gallery/5.png";
-import gallery6 from "assets/images/gallery/6.png";
+import gallery5 from "assets/images/gallery/5_ready.png";
+import gallery6 from "assets/images/gallery/6_ready.png";
 
 const data = [
   {
@@ -18,7 +18,7 @@ const data = [
     title: "תחתיות",
     link: "coasters",
     height: "400",
-    width: "420"
+    width: "420",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const data = [
     title: "קערות אש",
     link: "fire_bowls",
     height: "530",
-    width: "420"
+    width: "420",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const data = [
     title: "נרות",
     link: "candles",
     height: "450",
-    width: "420"
+    width: "420",
   },
   {
     id: 4,
@@ -42,15 +42,15 @@ const data = [
     title: "מגשים",
     link: "trays",
     height: "550",
-    width: "420"
+    width: "420",
   },
   {
     id: 6,
     image: gallery6,
-    title: "סטים",
+    title: "סטים ועוד",
     link: "sets",
     height: "500",
-    width: "420"
+    width: "420",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const data = [
     title: "פמוטים",
     link: "candle_holders",
     height: "420",
-    width: "420"
+    width: "420",
   },
 ];
 

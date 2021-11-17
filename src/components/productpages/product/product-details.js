@@ -1,7 +1,7 @@
 import classes from "./product-details.module.css";
 
 function ProductDetails(props) {
-  const { label, description, colors, prices, more, size, discount } = props;
+  const { description, colors, prices, more, size, discount } = props;
 
   // const prices_formatted = prices
   //   .map((price) => `${price.desc}: ${price.reg_price} ש\"ח`)
@@ -18,7 +18,6 @@ function ProductDetails(props) {
 
   return (
     <div className={classes.text}>
-      <h1>{label}</h1>
       {/* {discount ? (
         <div>
           <p style={{ textDecoration: "line-through" }}>{prices_formatted}</p>

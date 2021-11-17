@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { rgba } from "polished";
 import Image from "components/image";
-
 import { jsx, Box, Heading, Text } from "theme-ui";
 
 const Feature = ({ data: feature }) => {
@@ -18,16 +17,16 @@ export default Feature;
 
 const styles = {
   featureItem: {
-    textAlign: ["center", null, null, null, "left"],
+    textAlign: ["center", null, null, null, "center"],
     h3: {
       lineHeight: 2.5,
       fontWeight: 500,
       letterSpacing: "heading",
-      fontSize: [18, null, null, null, null, 20],
+      fontSize: [20, null, null, null, null, 22],
     },
     p: {
       color: rgba("#343D48", 0.75),
-      fontSize: [null, null, null, null, 14, 15],
+      fontSize: [null, null, null, null, 14, 17],
       lineHeight: 1.47,
     },
   },

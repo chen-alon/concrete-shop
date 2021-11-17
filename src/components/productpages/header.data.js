@@ -21,6 +21,6 @@ export default [
   },
   {
     path: "sets",
-    label: "סטים",
+    label: "סטים ועוד",
   },
 ];

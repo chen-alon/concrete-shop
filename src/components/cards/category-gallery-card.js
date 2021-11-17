@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Flex } from "theme-ui";
+import { jsx, Flex, Box } from "theme-ui";
 import Image from "next/image";
 import Link from "next/link";
 import image1 from "../../../public/images/soon1.png";
@@ -10,13 +10,18 @@ const CategoryGalleryCard = (props) => {
   return (
     <Link href={path}>
       <Flex as="figure" sx={styles.figure}>
-        <Image
-          src={item.category_image_path ? item.category_image_path : image1}
-          alt={item?.label}
-          height={746}
-          width={840}
-          layout="responsive"
-        />
+        <Box sx={styles.container}>
+          <Image
+            src={item.category_image_path ? item.category_image_path : image1}
+            alt={item?.label}
+            height={746}
+            width={840}
+            layout="responsive"
+          />
+          <Box sx={item.category ? styles.category : null}>
+            {item.category ? item.category : null}
+          </Box>
+        </Box>
         <div
           style={{ margin: "0", fontWeight: "bold", fontSize: "1.2rem" }}
           dir="rtl"
@@ -35,7 +40,7 @@ export default CategoryGalleryCard;
 const styles = {
   figure: {
     flexDirection: "column",
-    position: "relative",
+    // position: "relative",
     overflow: "hidden",
     mb: 30,
     mx: 15,
@@ -65,5 +70,20 @@ const styles = {
         opacity: "0.6",
       },
     },
+  },
+  container: {
+    position: "relative",
+    textAlign: "center",
+  },
+  category: {
+    position: "absolute",
+    backgroundColor: "#de7c5a",
+    color: "#141414",
+    fontWeight: "bold",
+    padding: "1rem",
+    opacity: 0.8,
+    borderRadius: 10,
+    top: "20px",
+    left: "20px",
   },
 };

@@ -5,23 +5,19 @@ import SectionHeading from "components/section-heading";
 import customer from "assets/images/customer.png";
 
 const OurCustomer = () => {
-  const title = "מחפשים אותנו או צריכים עזרה";
   const desc =
-    ".הצוות שלנו כאן בשבילך לכל שאלה או בקשה\nישנם דרכים שונות ליצור איתנו איתנו קשר";
+    "הצוות שלנו כאן בשבילך לכל שאלה או בקשה.\nישנם דרכים שונות ליצור איתנו איתנו קשר.\nבחרו את אחת האפשרויות";
 
   return (
     <Box id="contact" as="section" sx={styles.section}>
       <Container>
+        <SectionHeading slogan="צור קשר" title="מחפשים אותנו או צריכים עזרה" />
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer"/>
+            <Image loading="lazy" src={customer} alt="customer" />
           </Flex>
-          <Box sx={styles.rightContent}>
-            <SectionHeading
-              sx={styles.heading}
-              title={title}
-              description={desc}
-            />
+          <Box sx={styles.rightContent} dir="rtl">
+            <SectionHeading sx={styles.heading} description={desc} />
 
             {/* <Box sx={{ textAlign: ["center", "center", "center", "left"] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
@@ -43,14 +39,17 @@ const styles = {
     pb: [30, 30, 6],
   },
   contentWrapper: {
-    display: ["flex"],
-    alignItems: ["center"],
+    display: ["flex", null, null, null, "grid"],
+    flexDirection: ["column", null, null, null, null],
+    alignItems: "center",
     flexDirection: [
       "column-reverse",
       "column-reverse",
       "column-reverse",
       "row",
     ],
+    gap: [null, null, null, null, "30px"],
+    gridTemplateColumns: ["unset", null, null, null, "repeat(2,1fr)"],
   },
   illustration: {
     alignItems: ["flex-start"],
@@ -62,19 +61,19 @@ const styles = {
   },
   heading: {
     textAlign: ["right", null, null, null, "right"],
-    marginRight: 0,
     maxWidth: 580,
-    m: ["0 auto 27px", "0 auto 27px", "0 auto 27px", "0 0 30px"],
+    margin: ["0 auto 40px", null, null, null, "0 0 80px"],
     h2: {
-      fontSize: [22, 22, 22, 28, 30, 36, 46],
-      lineHeight: [1.6, 1.6, 1.6, 1.41],
-      fontWeight: [500, 500, 500, 400],
+      fontSize: [22, null, null, 30, null, 36, 46],
+      lineHeight: [1.6, null, null, 1.41],
+      fontWeight: [500, null, null, 400],
     },
     p: {
       whiteSpace: "pre-wrap",
-      fontSize: ["15px", "15px", "15px", "17px"],
-      mt: [3, 3, 3, 20, 5],
+      fontSize: ["18px", null, null, "22px"],
+      textAlign: "center",
     },
+    // m: ["0 auto 27px", "0 auto 27px", "0 auto 27px", "0 0 30px"],
   },
   link: {
     svg: {

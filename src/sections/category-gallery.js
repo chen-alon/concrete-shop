@@ -38,10 +38,9 @@ const styles = {
   },
   container: {
     mt: "10rem",
-    "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-      {
-        mt: "5rem",
-      },
+    "@media only screen and (max-width: 900px) ": {
+      mt: "3rem",
+    },
   },
   heading: {
     mb: [30, 30, 40, 60],

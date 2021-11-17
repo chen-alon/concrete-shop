@@ -3,9 +3,10 @@ import { jsx, Box, Container, Button } from "theme-ui";
 import Slider from "react-slick";
 import SectionHeading from "components/section-heading";
 import BlogPost from "components/cards/blog-card";
-import thumb1 from "assets/images/blog/1.png";
-import thumb2 from "assets/images/blog/2.png";
-import thumb3 from "assets/images/blog/3.png";
+import thumb1 from "assets/images/blog/blog_bedroom.png";
+import thumb2 from "assets/images/blog/blog_console.png";
+import thumb3 from "assets/images/blog/blog_salon.png";
+import thumb4 from "assets/images/blog/blog_balcon.png";
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
   },
   {
     id: 4,
-    thumb: thumb1,
+    thumb: thumb4,
     commentCount: 18,
     link: "#!",
     title: `מרפסת`,
@@ -69,7 +70,7 @@ const settings = {
       },
     },
     {
-      breakpoint: 500,
+      breakpoint: 690,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -112,9 +113,7 @@ const Blog = () => {
 export default Blog;
 
 const styles = {
-  section: {
-    pb: [50, 50, 50, 100, 8, 9],
-  },
+  section: { mr: "2rem", ml: "2rem", pb: [50, 50, 50, 100, 8, 9] },
   slider: {
     ".slick-prev:before": {
       color: "#DE7C5A",

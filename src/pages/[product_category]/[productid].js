@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 import { useRouter } from "next/router";
-import { Button } from "theme-ui";
+import { Button, Container, Box } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
 
@@ -63,57 +63,66 @@ function ProductIdPage(props) {
   const router = useRouter();
 
   return (
-    <div style={{ marginTop: "11rem", marginBottom: "11rem" }}>
-      <div sx={styles.button}>
+    <Box id="products" as="section" sx={styles.section}>
+      <Container sx={styles.container}>
         {router.pathname !== "/" && (
           <Button onClick={() => router.back()} sx={styles.buttonBack}>
             חזרה לעמוד הקודם
           </Button>
         )}
-      </div>
-
-      <div>
+        <h1 style={{ textAlign: "center" }}>{currentProduct.label}</h1>
         <SlideShow images_paths={currentProduct.product_images_paths} />
-      </div>
-      <ProductDetails
-        label={currentProduct.label}
-        description={currentProduct.description}
-        colors={currentProduct.colors}
-        prices={currentProduct.prices}
-        more={currentProduct.more}
-        size={currentProduct.size}
-      />
-      <Button sx={styles.contact} variant="secondary">
-        <a
-          href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
-          target="_blank"
-          rel="noreferrer"
-        >
-          להזמנה לחצו כאן
-        </a>
-      </Button>
-    </div>
+        <ProductDetails
+          description={currentProduct.description}
+          colors={currentProduct.colors}
+          prices={currentProduct.prices}
+          more={currentProduct.more}
+          size={currentProduct.size}
+        />
+        <div style={{ textAlign: "center" }}>
+          <Button sx={styles.contact} variant="secondary">
+            <a
+              href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
+              target="_blank"
+              rel="noreferrer"
+            >
+              להזמנה לחצו כאן
+            </a>
+          </Button>
+        </div>
+      </Container>
+    </Box>
   );
 }
 
 export default ProductIdPage;
 
 const styles = {
-  button: {
-    pt: "0.8rem",
-    pb: "0.8rem",
-    pl: "1.5rem",
-    pr: "1.5rem",
-    float: "left",
+  section: {
+    pt: [30, 30, 40, 50, 60],
+    pb: [60, 60, 60, 90, 80, 120],
+  },
+  container: {
+    mt: "5rem",
+    "@media only screen and (max-width: 900px) ": {
+      mt: "3rem",
+    },
   },
   buttonBack: {
-    // marginLeft: "18rem",
     backgroundColor: "#DE7C5A",
     fontSize: "1rem",
     borderRadius: 0,
     fontWeight: 300,
+    "@media only screen and (max-width: 900px) ": {
+      fontSize: "0.8rem",
+    },
+    ":hover": {
+      backgroundColor: "#DE7C5A",
+      opacity: "0.8",
+    },
   },
   contact: {
+    mt: "2rem",
     ml: "2rem",
     border: "3px solid #DE7C5A",
     ":hover": {

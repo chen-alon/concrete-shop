@@ -1,6 +1,7 @@
 import path from "path";
-import fs from "fs/promises";
+// import fs from "fs/promises";
 import CategoryGallery from "sections/category-gallery";
+import { products } from "../../../data/products-data.json";
 
 function ProductCategoryPage(props) {
   const { currentProductCategory } = props;
@@ -25,9 +26,9 @@ export async function getStaticProps(context) {
   const { params } = context;
   const productCategoryId = params.product_category;
 
-  const data = await getData();
+  // const data = await getData();
 
-  const productCategory = data.products.find(
+  const productCategory = products.find(
     (product) => product.category_id === productCategoryId
   );
 
@@ -39,8 +40,8 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const data = await getData();
-  const productsCategoryIds = data.products.map(
+  // const data = await getData();
+  const productsCategoryIds = products.map(
     (product) => product.category_id
   );
   const productsInParams = productsCategoryIds.map((product) => ({
