@@ -16,7 +16,7 @@ const data = {
     {
       id: 2,
       icon: instagram,
-      link: "https://www.instagram.com/concrete_shop_israel/",
+      link: "https://www.instagram.com/concrete_shop_il/",
     },
     {
       id: 3,
@@ -82,7 +82,6 @@ const styles = {
   section: {
     backgroundColor: "#141414",
     pt: "3rem",
-    // pb: "3rem",
   },
   featureWrapper: {
     listStyle: "none",
@@ -117,10 +116,9 @@ const styles = {
         color: "white",
         display: "inline-flex",
         textAlign: "right",
-        "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-          {
-            fontSize: "1.5rem",
-          },
+        "@media only screen and (max-height: 760px) ": {
+          fontSize: "0.7rem",
+        },
       },
     },
   },

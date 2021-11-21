@@ -73,7 +73,7 @@ const Gallery = () => {
         <SectionHeading
           sx={styles.heading}
           slogan="חנות"
-          title="המוצרים שלנו"
+          title="הפריטים שלנו"
         />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (

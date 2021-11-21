@@ -50,21 +50,16 @@ const styles = {
     ],
     borderRadius: 5,
     m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
-    "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-      {
-        maxWidth: 515,
-        mt: 70,
-        padding: "80px 40px 80px 60px",
-      },
+    "@media only screen and (max-height: 760px)": {
+      maxWidth: 515,
+      mt: 70,
+      padding: "80px 40px 80px 60px",
+    },
   },
   heroTitle: {
-    fontSize: [22, 28, 28, 40, , 5, 6],
+    fontSize: [21, 26, 30, 40],
     fontWeight: 700,
     letterSpacing: "heading",
     lineHeight: [1.4, null, null, null, null, null, 1.57],
-    "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-      {
-        fontSize: 40,
-      },
   },
 };

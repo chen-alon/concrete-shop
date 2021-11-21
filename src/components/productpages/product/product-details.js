@@ -1,23 +1,20 @@
 import classes from "./product-details.module.css";
 
 function ProductDetails(props) {
-  const { description, colors, prices, more, size, discount } = props;
+  const { description, colors, price, more, size, discount } = props;
 
   // const prices_formatted = prices
   //   .map((price) => `${price.desc}: ${price.reg_price} ש\"ח`)
   //   .join("\n");
 
   const cleaning_desc =
-    ".על מנת לנקות פשוט העבירו סמרטוט לח\nהמוצרים שלנו עמידים בפני נוזלים אך אנו ממליצים לנקות נוזלים וכתמים כמה שיותר מהר\n.על מנת למנוע שינוי באיכות ובגוון המשטח";
+    "הפריט אטום וניתן לניקוי עם מטלית לחה. שימוש בכל מוצרי ניקוי קשים או קרצוף קשה יפגע בפני השטח של היצירה שלך.\nאנו ממליצים לנגב כל מזהם חזק כמו יין או קפה בהקדם האפשרי.";
 
   const contact_desc =
-    "ניתן ליצור קשר בכל נושא בווטסאפ שמספרו 0525991183\n@concrete_shop_israel או דרך עמוד האינסטגרם שלנו"; // add link to instagram
-
-  const shipping_desc =
-    '.משלוחים באיזור המרכז וירושלים בעלות של 30 ש"ח. משלוח חינם בהזמנה מעל 250 שקלים';
+    "ניתן ליצור קשר בכל נושא בווטסאפ שמספרו 0525991183\n@concrete_shop_il או דרך עמוד האינסטגרם שלנו"; // add link to instagram
 
   return (
-    <div className={classes.text}>
+    <div className={classes.text} dir="rtl">
       {/* {discount ? (
         <div>
           <p style={{ textDecoration: "line-through" }}>{prices_formatted}</p>
@@ -30,33 +27,25 @@ function ProductDetails(props) {
         </div>
       )} */}
       {/* <p>{prices_formatted}</p> */}
+      <h1>תיאור</h1>
+
+      {description ? <p>{description}</p> : null}
+      {more ? <p>{more}</p> : null}
       {colors ? (
-        <div>
-          <h3>צבע, גוון</h3>
-          <p>{colors}</p>
-        </div>
-      ) : null}
-      {description ? (
-        <div>
-          <h3>פירוט</h3>
-          <p>{description}</p>
-        </div>
+        <p>
+          <strong>צבע:</strong> {colors}
+        </p>
       ) : null}
       {size ? (
-        <div>
-          <h3>מידות</h3> <p>{size}</p>
-        </div>
+        <p>
+          <strong>גודל:</strong> {size}
+        </p>
       ) : null}
-      {more ? (
-        <div>
-          <h3>מידע נוסף</h3> <p>{more}</p>
-        </div>
-      ) : null}
-      <h3>ניקוי</h3>
-      <p>{cleaning_desc}</p>
-      <h3>משלוחים</h3>
-      <p>{shipping_desc}</p>
-      <h3>?צריכים עזרה</h3>
+      <p>
+        <strong>ניקיון המוצר:</strong> {cleaning_desc}
+      </p>
+
+      <h1>צריכים עזרה</h1>
       <p>{contact_desc}</p>
       {/* <a
         href="https://www.instagram.com/concrete_shop_israel/"

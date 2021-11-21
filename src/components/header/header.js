@@ -77,13 +77,13 @@ export default function Header() {
                 >
                   {currentPageNavigationLabels}
                 </Box>
-                <Button sx={styles.contact} variant="primaryMd">
+                <Button sx={styles.contact}>
                   <a
                     href="https://api.whatsapp.com/send?phone=+972526020358"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    להזמנה
+                    לחצו פה להזמנה
                   </a>
                 </Button>
               </Flex>
@@ -120,7 +120,7 @@ const styles = {
       fontSize: "1.5rem",
       color: rgba("#FFFFFF", 0.7),
       display: "inline-flex",
-      "@media only screen and (max-width: 700px)": {
+      "@media only screen and (max-width: 760px)": {
         fontSize: "1rem",
       },
     },
@@ -149,7 +149,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    "@media only screen and (max-width: 768px)": {
+    "@media only screen and (max-width: 760px)": {
       ".navbar": {
         position: "absolute",
         top: "100%",
@@ -194,10 +194,9 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: "0 20px",
-      "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-        {
-          fontSize: "1.2rem",
-        },
+      "@media only screen and (max-height: 760px)": {
+        fontSize: "1.2rem",
+      },
     },
     a: {
       cursor: "pointer",
@@ -206,10 +205,9 @@ const styles = {
       margin: "0 20px",
       color: "#141414",
       textDecoration: "none",
-      "@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ":
-        {
-          fontSize: "1.2rem",
-        },
+      "@media only screen and (max-height: 760px) ": {
+        fontSize: "1.2rem",
+      },
     },
     ".active": {
       color: "#DE7C5A",
@@ -217,15 +215,25 @@ const styles = {
   },
   contact: {
     marginLeft: "auto",
-    backgroundColor: "#141414",
-    fontSize: "1.3rem",
-    pt: "1rem",
+    bg: "#fff",
+    fontSize: "1.2rem",
+    borderRadius: 0,
+    // border: "0.8px solid #141414",
+    p: "1rem",
     pb: "1rem",
-    pl: "3rem",
-    pr: "3rem",
+    pl: "2rem",
+    pr: "2rem",
     a: {
-      color: rgba("#FFFFFF", 0.7),
+      color: "#141414",
       textDecoration: "none",
+    },
+    ":hover": {
+      a: {
+        color: rgba("#FFFFFF", 0.7),
+      },
+      transform: "scale(1.1)",
+      bg: "#141414",
+      opacity: "0.9",
     },
   },
   closeButton: {

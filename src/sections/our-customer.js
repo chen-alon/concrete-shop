@@ -11,7 +11,11 @@ const OurCustomer = () => {
   return (
     <Box id="contact" as="section" sx={styles.section}>
       <Container>
-        <SectionHeading slogan="צור קשר" title="מחפשים אותנו או צריכים עזרה" />
+        <SectionHeading
+          slogan="צור קשר"
+          title="מחפשים אותנו או צריכים עזרה?"
+          dir="rtl"
+        />
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
             <Image loading="lazy" src={customer} alt="customer" />

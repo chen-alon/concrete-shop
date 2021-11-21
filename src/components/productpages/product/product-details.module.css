@@ -6,6 +6,7 @@
 
 .text h1 {
   max-width: 40rem;
+  text-decoration: underline;
   margin: 1rem auto;
 }
 

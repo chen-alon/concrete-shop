@@ -12,7 +12,12 @@ const CategoryGalleryCard = (props) => {
       <Flex as="figure" sx={styles.figure}>
         <Box sx={styles.container}>
           <Image
-            src={item.category_image_path ? item.category_image_path : image1}
+            src={
+              item?.product_images_paths[0].image_path
+                ? item.product_images_paths[0].image_path
+                : image1
+            }
+            key={item.product_images_paths.image_id}
             alt={item?.label}
             height={746}
             width={840}
@@ -22,14 +27,20 @@ const CategoryGalleryCard = (props) => {
             {item.category ? item.category : null}
           </Box>
         </Box>
-        <div
-          style={{ margin: "0", fontWeight: "bold", fontSize: "1.2rem" }}
-          dir="rtl"
-        >
-          {item?.label}
-          <br />
-          {item?.one_piece_price} ש"ח
-        </div>
+        <Box sx={styles.details} dir="rtl">
+          <Box style={{ fontWeight: "bold" }}>
+            {item?.label}
+            <hr width="20%" style={{ backgroundColor: "#141414" }} />
+          </Box>
+          <Box sx={styles.prices}>
+            <div style={item?.discount ? styles.sale : null}>
+              {item?.price} ₪
+            </div>
+            {item.discount ? (
+              <div> &nbsp;&nbsp;&nbsp;{item.discount} ₪</div>
+            ) : null}
+          </Box>
+        </Box>
       </Flex>
     </Link>
   );
@@ -40,7 +51,7 @@ export default CategoryGalleryCard;
 const styles = {
   figure: {
     flexDirection: "column",
-    // position: "relative",
+    position: "relative",
     overflow: "hidden",
     mb: 30,
     mx: 15,
@@ -77,13 +88,27 @@ const styles = {
   },
   category: {
     position: "absolute",
+    color: "#fff",
     backgroundColor: "#de7c5a",
-    color: "#141414",
-    fontWeight: "bold",
-    padding: "1rem",
-    opacity: 0.8,
+    opacity: 0.9,
     borderRadius: 10,
+    padding: "1rem",
     top: "20px",
     left: "20px",
+  },
+  details: {
+    textAlign: "center",
+    alignItems: "center",
+    mt: "1rem",
+    fontSize: [15, 19],
+  },
+  prices: {
+    display: "flex",
+    alignItems: "center",
+    textAlign: "center",
+    justifyContent: "center",
+  },
+  sale: {
+    textDecoration: "line-through",
   },
 };

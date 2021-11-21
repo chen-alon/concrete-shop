@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 import { useRouter } from "next/router";
-import { Button, Container, Box } from "theme-ui";
+import { Button, Container, Box, Flex } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
 
@@ -70,26 +70,33 @@ function ProductIdPage(props) {
             חזרה לעמוד הקודם
           </Button>
         )}
-        <h1 style={{ textAlign: "center" }}>{currentProduct.label}</h1>
-        <SlideShow images_paths={currentProduct.product_images_paths} />
-        <ProductDetails
-          description={currentProduct.description}
-          colors={currentProduct.colors}
-          prices={currentProduct.prices}
-          more={currentProduct.more}
-          size={currentProduct.size}
-        />
-        <div style={{ textAlign: "center" }}>
-          <Button sx={styles.contact} variant="secondary">
-            <a
-              href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
-              target="_blank"
-              rel="noreferrer"
-            >
-              להזמנה לחצו כאן
-            </a>
-          </Button>
-        </div>
+
+        <Flex sx={styles.contentWrapper} dir="rtl">
+          <Box sx={styles.rightContent}>
+            <Box>
+              <p sx={styles.label}>{currentProduct.label}</p>
+              <p sx={styles.price}>{currentProduct.price} ₪</p>
+            </Box>
+            <Button sx={styles.contact} variant="secondary">
+              <a
+                href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
+                target="_blank"
+                rel="noreferrer"
+              >
+                להזמנה לחצו כאן
+              </a>
+            </Button>
+            <ProductDetails
+              description={currentProduct.description}
+              colors={currentProduct.colors}
+              more={currentProduct.more}
+              size={currentProduct.size}
+            />
+          </Box>
+          <Flex as="figure" sx={styles.illustration}>
+            <SlideShow images_paths={currentProduct.product_images_paths} />
+          </Flex>
+        </Flex>
       </Container>
     </Box>
   );
@@ -101,6 +108,29 @@ const styles = {
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
+  },
+  contentWrapper: {
+    justifyContent: "center",
+    display: ["flex", null, null, null, "grid"],
+    flexDirection: ["column", null, null, null, null],
+    flexDirection: [
+      "column-reverse",
+      "column-reverse",
+      "column-reverse",
+      "row",
+    ],
+    mt: "2rem",
+    gap: [null, null, null, null, "30px"],
+    gridTemplateColumns: ["unset", null, null, null, "4fr 4fr"],
+  },
+  illustration: {
+    flexDirection: "column",
+    display: ["flex", null, null, null, "grid"],
+    flexDirection: ["column", null, null, null, null],
+    alignItems: "center",
+  },
+  rightContent: {
+    textAlign: "center",
   },
   container: {
     mt: "5rem",
@@ -122,21 +152,19 @@ const styles = {
     },
   },
   contact: {
-    mt: "2rem",
-    ml: "2rem",
-    border: "3px solid #DE7C5A",
-    ":hover": {
-      border: "3px solid #141414",
-    },
-    fontWeight: "bold",
-    bg: "#fff",
-    fontSize: "1.3rem",
+    borderRadius: 0,
+    bg: "#333333",
+    fontSize: [15, 20],
+    width: "50%",
+    p: "1rem",
     a: {
-      color: "#DE7C5A",
+      color: "#fff",
       textDecoration: "none",
-      ":hover": {
-        color: "#141414",
-      },
+    },
+    ":hover": {
+      opacity: "0.8",
     },
   },
+  label: {},
+  price: {},
 };
