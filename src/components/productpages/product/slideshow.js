@@ -3,6 +3,8 @@ import classes from "./slideshow.module.css";
 import Image from "next/image";
 import SwiperCore, { Pagination, Navigation, Thumbs, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import soon from "../../../../public/images/soon1.png";
+
 SwiperCore.use([Navigation, Pagination, Thumbs, Scrollbar]);
 
 function SlideShow(props) {
@@ -11,41 +13,50 @@ function SlideShow(props) {
 
   return (
     <React.Fragment>
-      <Swiper
-        id="main"
-        tag="section"
-        loop={false}
-        thumbs={{ swiper: thumbsSwiper }}
-        effect="coverflow"
-        observer={true}
-        observeParents={true}
-        spaceBetween={0}
-        slidesPerView={1}
-        // pagination ..
-        // pagination={{
-        //   type: "progressbar",
-        // }}
-        scrollbar={{ draggable: true }}
-        navigation={true}
-        className={classes.swiper}
-      >
-        {images_paths?.map((image) => (
-          <SwiperSlide
-            key={image.image_id}
-            tag="li"
-            style={{ listStyle: "none", transform: "none" }}
-          >
-            <Image
-              src={image.image_path}
-              alt=""
-              height={746}
-              width={840}
-              layout="responsive"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
+      {images_paths ? (
+        <Swiper
+          id="main"
+          tag="section"
+          loop={false}
+          thumbs={{ swiper: thumbsSwiper }}
+          effect="coverflow"
+          observer={true}
+          observeParents={true}
+          spaceBetween={0}
+          slidesPerView={1}
+          // pagination ..
+          // pagination={{
+          //   type: "progressbar",
+          // }}
+          scrollbar={{ draggable: true }}
+          navigation={true}
+          className={classes.swiper}
+        >
+          {images_paths?.map((image) => (
+            <SwiperSlide
+              key={image.image_id}
+              tag="li"
+              style={{ listStyle: "none", transform: "none" }}
+            >
+              <Image
+                src={image.image_path}
+                alt="product"
+                height={746}
+                width={840}
+                layout="responsive"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <Image
+          src={soon}
+          alt="soon"
+          height={746}
+          width={840}
+          layout="responsive"
+        />
+      )}
       <Swiper
         id="thumbs"
         tag="ul"

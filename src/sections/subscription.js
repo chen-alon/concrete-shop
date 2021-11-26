@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Flex } from "theme-ui";
-import { Link } from "components/link";
+import Link from "next/link";
 import facebook from "assets/images/icons/facebook.png";
 import instagram from "assets/images/icons/instagram.png";
 import whatsapp from "assets/images/icons/whatsapp.png";
@@ -27,29 +27,30 @@ const data = {
   navItems: [
     {
       id: 1,
-      link: "#!",
+      link: "about",
       title: "אודות",
     },
     {
       id: 2,
-      link: "#!",
-      title: "תקנון",
+      link: "policy",
+      title: "מדיניות ביטולים והחזרות",
     },
     {
       id: 3,
-      link: "#!",
-      title: "שאלות ותשובות",
+      link: "qanda",
+      title: "שאלות נפוצות",
     },
-    {
-      id: 4,
-      link: "#!",
-      title: "מדיניות משלוחים והחזרות",
-    },
-    {
-      id: 5,
-      link: "#!",
-      title: "צור קשר",
-    },
+    // {
+    //   id: 4,
+    //   link: "#!",
+    //   title: "תקנון",
+    // },
+
+    // {
+    //   id: 5,
+    //   link: "#!",
+    //   title: "צור קשר",
+    // },
   ],
 };
 const Subscription = () => {
@@ -63,15 +64,13 @@ const Subscription = () => {
         ))}
       </Box>
 
-      {/* <Flex as="ul" sx={styles.nav} dir="rtl">
+      <Flex as="ul" sx={styles.nav} dir="rtl">
         {data?.navItems?.map((item) => (
           <li key={item.id}>
-            <Link path={item.link}>
-              <a>{item.title}</a>
-            </Link>
+            <Link href={`/${item?.link}`}>{item.title}</Link>
           </li>
         ))}
-      </Flex> */}
+      </Flex>
     </Box>
   );
 };
@@ -102,10 +101,11 @@ const styles = {
     pr: "40px",
     pl: "40px",
     listStyle: "none",
+    flexDiraction: "row",
     alignItems: "center",
     display: "flex",
     flexWrap: ["wrap", null, null, "unset"],
-    justifyContent: ["center"],
+    justifyContent: "center",
     mt: [2, null, null, null, 0],
     li: {
       padding: "0.8rem",
@@ -114,9 +114,9 @@ const styles = {
       },
       a: {
         color: "white",
-        display: "inline-flex",
-        textAlign: "right",
-        "@media only screen and (max-height: 760px) ": {
+        justifyContent: "center",
+        textDecoration: "none",
+        "@media only screen and (max-width: 760px) ": {
           fontSize: "0.7rem",
         },
       },

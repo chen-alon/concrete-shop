@@ -31,7 +31,7 @@ export async function getStaticProps(context) {
   const productCategory = products.find(
     (product) => product.category_id === productCategoryId
   );
-
+  
   return {
     props: {
       currentProductCategory: productCategory,
@@ -41,9 +41,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   // const data = await getData();
-  const productsCategoryIds = products.map(
-    (product) => product.category_id
-  );
+  const productsCategoryIds = products.map((product) => product.category_id);
   const productsInParams = productsCategoryIds.map((product) => ({
     params: { product_category: product },
   }));

@@ -1,7 +1,10 @@
+import { size } from "polished";
 import classes from "./product-details.module.css";
 
 function ProductDetails(props) {
-  const { description, colors, price, more, size, discount } = props;
+  const { description, colors, price, more, sizes, discount } = props;
+
+  const coasters_desc = "";
 
   // const prices_formatted = prices
   //   .map((price) => `${price.desc}: ${price.reg_price} ש\"ח`)
@@ -30,17 +33,23 @@ function ProductDetails(props) {
       <h1>תיאור</h1>
 
       {description ? <p>{description}</p> : null}
-      {more ? <p>{more}</p> : null}
+
       {colors ? (
         <p>
           <strong>צבע:</strong> {colors}
         </p>
       ) : null}
-      {size ? (
-        <p>
-          <strong>גודל:</strong> {size}
-        </p>
+      {more ? <p>{more}</p> : null}
+      {sizes ? (
+        <div>
+          <strong>מידות:</strong> אורך: {sizes.h} ס"מ, רוחב: {sizes.w} ס"מ,
+          עומק: {sizes.d} ס"מ
+          <p style={{ marginRight: "3.2rem", fontSize: "0.8rem" }}>
+            * ייתכנו סטיות קטנות בגודל המוצר בפועל של עד 1 ס"מ
+          </p>
+        </div>
       ) : null}
+      {/* {path === "candles" ? <p>ddd</p> : null} */}
       <p>
         <strong>ניקיון המוצר:</strong> {cleaning_desc}
       </p>

@@ -34,7 +34,7 @@ export default function Header() {
     </li>
   ));
 
-  const navigationBarNotMain = productMenuItems.map(({ path, label }, i) => (
+  const navigationBarProducts = productMenuItems.map(({ path, label }, i) => (
     <li key={i}>
       <Link href={`/${path}`}>
         <a onClick={closeMobileMenu}>{label}</a>
@@ -42,10 +42,27 @@ export default function Header() {
     </li>
   ));
 
+  const returnMainAndCloseMobileMenu = () => {
+    router.back();
+    setMobileMenu(false);
+  };
+
+  const navigationBarDetails = (
+    <li>
+      <Link href={`/`}>
+        <a onClick={closeMobileMenu}>חזור לדף הבית</a>
+      </Link>
+    </li>
+  );
+
   const currentPageNavigationLabels =
-    Object.keys(router.query).length === 0
+    router.pathname === "/"
       ? navigationBar
-      : navigationBarNotMain;
+      : router.pathname === "/about" ||
+        router.pathname === "/policy" ||
+        router.pathname === "/qanda"
+      ? navigationBarDetails
+      : navigationBarProducts;
 
   return (
     <Box sx={styles.headerWrapper}>
@@ -194,7 +211,7 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: "0 20px",
-      "@media only screen and (max-height: 760px)": {
+      "@media only screen and (max-width: 760px)": {
         fontSize: "1.2rem",
       },
     },
@@ -205,7 +222,7 @@ const styles = {
       margin: "0 20px",
       color: "#141414",
       textDecoration: "none",
-      "@media only screen and (max-height: 760px) ": {
+      "@media only screen and (max-width: 760px) ": {
         fontSize: "1.2rem",
       },
     },
@@ -215,17 +232,19 @@ const styles = {
   },
   contact: {
     marginLeft: "auto",
-    bg: "#fff",
+    // bg: "#fff",
+    bg: "transparent",
     fontSize: "1.2rem",
     borderRadius: 0,
-    // border: "0.8px solid #141414",
     p: "1rem",
     pb: "1rem",
     pl: "2rem",
     pr: "2rem",
     a: {
-      color: "#141414",
+      // color: "#141414",
+      color: "#de7c5a",
       textDecoration: "none",
+      textAlign: "center",
     },
     ":hover": {
       a: {

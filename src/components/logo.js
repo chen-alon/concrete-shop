@@ -12,7 +12,7 @@ export default function Logo({ white }) {
         variant: "links.logo",
       }}
     >
-      <Image src={white ? logoWhite : logo} alt="concrete-shop landing logo" />
+      <Image src={white ? logoWhite : logo} alt="concrete-shop" />
     </Link>
   );
 }

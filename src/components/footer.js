@@ -2,10 +2,12 @@
 import { jsx, Box, Flex, Text, Container } from "theme-ui";
 import Logo from "components/logo";
 import { rgba } from "polished";
+import Subscription from "sections/subscription";
 
 export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
+      <Subscription />
       <Container sx={styles.container}>
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>

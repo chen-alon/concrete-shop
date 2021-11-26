@@ -50,7 +50,7 @@ const styles = {
     ],
     borderRadius: 5,
     m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
-    "@media only screen and (max-height: 760px)": {
+    "@media only screen and (max-width: 760px)": {
       maxWidth: 515,
       mt: 70,
       padding: "80px 40px 80px 60px",

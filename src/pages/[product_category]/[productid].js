@@ -17,7 +17,6 @@ export async function getStaticProps(context) {
   const { params } = context;
   const productId = params.productid;
   const categorytId = params.product_category;
-
   const data = await getData();
   const currentCategory = data.products.find(
     (category) => category.category_id === categorytId
@@ -26,7 +25,6 @@ export async function getStaticProps(context) {
   const product = currentCategory.products_list.find(
     (product) => product.product_id === productId
   );
-
   return {
     props: {
       currentProduct: product,
@@ -74,8 +72,15 @@ function ProductIdPage(props) {
         <Flex sx={styles.contentWrapper} dir="rtl">
           <Box sx={styles.rightContent}>
             <Box>
-              <p sx={styles.label}>{currentProduct.label}</p>
-              <p sx={styles.price}>{currentProduct.price} ₪</p>
+              <div style={styles.name}>{currentProduct.label}</div>
+              <div style={styles.price}>
+                <div style={currentProduct?.discount ? styles.sale : null}>
+                  {currentProduct.price} ₪
+                </div>
+                {currentProduct?.discount ? (
+                  <div> &nbsp;&nbsp;&nbsp;{currentProduct.discount} ₪</div>
+                ) : null}
+              </div>
             </Box>
             <Button sx={styles.contact} variant="secondary">
               <a
@@ -90,11 +95,17 @@ function ProductIdPage(props) {
               description={currentProduct.description}
               colors={currentProduct.colors}
               more={currentProduct.more}
-              size={currentProduct.size}
+              sizes={currentProduct.sizes}
             />
           </Box>
           <Flex as="figure" sx={styles.illustration}>
-            <SlideShow images_paths={currentProduct.product_images_paths} />
+            <SlideShow
+              images_paths={
+                currentProduct.product_images_paths[0].image_path
+                  ? currentProduct.product_images_paths
+                  : null
+              }
+            />
           </Flex>
         </Flex>
       </Container>
@@ -112,7 +123,6 @@ const styles = {
   contentWrapper: {
     justifyContent: "center",
     display: ["flex", null, null, null, "grid"],
-    flexDirection: ["column", null, null, null, null],
     flexDirection: [
       "column-reverse",
       "column-reverse",
@@ -165,6 +175,19 @@ const styles = {
       opacity: "0.8",
     },
   },
-  label: {},
-  price: {},
+  name: {
+    fontSize: 30,
+    fontWeight: "bold",
+    paddingBottom: "0.8rem",
+  },
+  price: {
+    fontSize: 25,
+    flexDirection: "row",
+    display: "flex",
+    justifyContent: "center",
+    paddingBottom: "2rem",
+  },
+  sale: {
+    textDecoration: "line-through",
+  },
 };

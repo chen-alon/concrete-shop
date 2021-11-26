@@ -10,7 +10,7 @@
           "category": "Limited edition",
           "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
           "colors": "בסיס שמנת עם נגיעות של זהב",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
           "price": "110",
           "discount": "",
           "product_images_paths": [
@@ -34,7 +34,7 @@
           "category": "",
           "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
           "colors": "שחור לבן",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
           "price": "100",
           "discount": "",
           "product_images_paths": [
@@ -54,7 +54,7 @@
           "category": "",
           "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
           "colors": "אפור לבן",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
           "discount": "",
           "product_images_paths": [
@@ -74,7 +74,7 @@
           "category": "",
           "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
           "colors": "אדום לבן",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
           "discount": "",
           "product_images_paths": [
@@ -94,7 +94,7 @@
           "category": "Autumn collection",
           "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
           "colors": "כתום",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "one_piece_price": "25",
           "price": "100",
           "discount": "90",
@@ -115,7 +115,7 @@
           "category": "",
           "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
           "colors": "שחור",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "price": "100",
           "discount": "90",
           "product_images_paths": [
@@ -135,7 +135,7 @@
           "category": "",
           "description": "תחתיות בצורת * לכוסות שתיה, חם או קר",
           "colors": "שחור אפור",
-          "size": "8X8",
+          "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
           "discount": "",
           "product_images_paths": [
@@ -155,17 +155,17 @@
           "category": "Limited edition",
           "description": "תחתיות בצורת * לכוסות שתיה, חם או קר",
           "colors": "בסיס לבן עם שברי צבע שונים",
-          "size": "8X8",
-          "price": "130",
+          "sizes": { "h": "", "w": "", "d": "" },
+          "price": "140",
           "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": "/images/black_coaster_round_1.png"
+              "image_path": ""
             },
             {
               "image_id": "2",
-              "image_path": "/images/black_coaster_round_2.png"
+              "image_path": ""
             }
           ]
         }
@@ -176,12 +176,12 @@
       "description": "קערות אש",
       "products_list": [
         {
-          "product_id": "fire_bowl1",
-          "label": "קערת אש קדושה",
+          "product_id": "classic_fire_bowl",
+          "label": "קערת אש קלאסית",
           "category": "",
           "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים.",
           "colors": "כלי לבן, צבע אבנים לבחירה",
-          "size": "26X11",
+          "sizes": "26X11",
           "price": "250",
           "discount": "",
           "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות.",
@@ -193,12 +193,12 @@
           ]
         },
         {
-          "product_id": "fire_bowl2",
+          "product_id": "elegant_fire_bowl",
           "label": "קערת אש אלגנטית",
           "category": "",
           "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים.",
           "colors": "כלי שחור, צבע אבנים לבחירה",
-          "size": "26X11",
+          "sizes": "26X11",
           "price": "250",
           "discount": "",
           "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות.",
@@ -216,18 +216,18 @@
       "description": "נרות",
       "products_list": [
         {
-          "product_id": "candle1",
+          "product_id": "shell",
           "label": "צדפה",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "7", "w": "9", "d": "4" },
           "price": "80",
           "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": "/images/candle_shell.png"
+              "image_path": "/images/candle_shell1.jpg"
             },
             {
               "image_id": "2",
@@ -236,12 +236,12 @@
           ]
         },
         {
-          "product_id": "candle2",
+          "product_id": "bubbles",
           "label": "בועות גדול",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "5.5", "w": "5.5", "d": "5.5" },
           "price": "80",
           "discount": "",
           "product_images_paths": [
@@ -261,12 +261,12 @@
           ]
         },
         {
-          "product_id": "candle3",
+          "product_id": "small_bubbles",
           "label": "בועות קטן",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "3.5", "w": "3.5", "d": "3.5" },
           "price": "30",
           "discount": "",
           "product_images_paths": [
@@ -281,12 +281,12 @@
           ]
         },
         {
-          "product_id": "candle5",
+          "product_id": "womans_body",
           "label": "גוף אישה",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "9", "w": "5.5", "d": "2" },
           "price": "70",
           "discount": "",
           "product_images_paths": [
@@ -297,12 +297,12 @@
           ]
         },
         {
-          "product_id": "candle8",
+          "product_id": "rainbow",
           "label": "קשת בענן",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "11.8", "w": "5.8", "d": "1.8" },
           "price": "70",
           "discount": "",
           "product_images_paths": [
@@ -313,12 +313,12 @@
           ]
         },
         {
-          "product_id": "candle9",
+          "product_id": "arch",
           "label": "קשת",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "11", "w": "6.5", "d": "2" },
           "price": "50",
           "discount": "",
           "product_images_paths": [
@@ -329,12 +329,12 @@
           ]
         },
         {
-          "product_id": "candle10",
+          "product_id": "mountains",
           "label": "רכס הרים",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "10.5", "w": "5.5", "d": "2" },
           "price": "60",
           "discount": "",
           "product_images_paths": [
@@ -345,12 +345,12 @@
           ]
         },
         {
-          "product_id": "candle11",
+          "product_id": "triangular",
           "label": "משולש",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "8.5", "w": "8.5", "d": "2" },
           "price": "50",
           "discount": "",
           "product_images_paths": [
@@ -361,12 +361,12 @@
           ]
         },
         {
-          "product_id": "candle4",
+          "product_id": "moon_man",
           "label": "איש ירח",
           "category": "",
           "description": "",
           "colors": "",
-          "sizes": "",
+          "sizes": { "h": "9.5", "w": "9.5", "d": "2" },
           "price": "60",
           "discount": "",
           "product_images_paths": [
@@ -377,7 +377,7 @@
           ]
         },
         {
-          "product_id": "candle6",
+          "product_id": "knight",
           "label": "פרש",
           "category": "",
           "description": "",
@@ -393,7 +393,7 @@
           ]
         },
         {
-          "product_id": "candle7",
+          "product_id": "queen",
           "label": "מלכה",
           "category": "",
           "description": "",
@@ -415,12 +415,12 @@
       "description": "פמוטים",
       "products_list": [
         {
-          "product_id": "candle_holder1",
+          "product_id": "candle_holder_autumn",
           "label": "פמוטים של סתיו",
           "category": "Autumn collection",
           "description": "הפמוטים בעיצוב ייחודי לכבוד קולקציית הסתיו יוסיפו לשולחן שלכם אווירה מיוחדת",
           "colors": "לבן אדום וחום",
-          "sizes": "",
+          "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
           "discount": "",
           "product_images_paths": [
@@ -431,12 +431,12 @@
           ]
         },
         {
-          "product_id": "candle_holder2",
+          "product_id": "candle_holder_black",
           "label": "פמוטים אלגנטיים",
           "category": "",
           "description": "הפמוטים האלגנטים יפים לכל יום ובכל מקום בחלל הבית",
           "colors": "שחור",
-          "sizes": "",
+          "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
           "discount": "",
           "product_images_paths": [
@@ -447,12 +447,12 @@
           ]
         },
         {
-          "product_id": "candle_holder3",
+          "product_id": "candle_holder_white",
           "label": "פמוטים קלאסיים",
           "category": "",
           "description": "הפמוטים הקלאסים בגוון לבן שמנת עדין, מתאימים גם כאקססוריז לבית וגם להדלקת נרות שבת או חג",
           "colors": "לבן",
-          "sizes": "",
+          "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
           "discount": "",
           "product_images_paths": [
@@ -469,12 +469,12 @@
       "description": "מגשים",
       "products_list": [
         {
-          "product_id": "tray5",
+          "product_id": "oval_tray_marble_bold",
           "label": "מגש אובלי מרבל נועז",
           "category": "",
-          "description": "",
+          "description": "מגש אובלי מושלם לעיצוב בחדר השינה, בחדר רצחה",
           "colors": "אפור שחור ולבן",
-          "sizes": "",
+          "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
           "price": "60",
           "discount": "",
           "product_images_paths": [
@@ -485,13 +485,13 @@
           ]
         },
         {
-          "product_id": "tray6",
+          "product_id": "oval_tray_terazzo",
           "label": "מגש אובלי טרצו",
           "category": "Limited edition",
           "description": "",
           "colors": "בסיס לבן עם שברי צבע שונים",
-          "sizes": "",
-          "price": "80",
+          "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
+          "price": "90",
           "discount": "",
           "product_images_paths": [
             {
@@ -505,12 +505,12 @@
           ]
         },
         {
-          "product_id": "tray7",
+          "product_id": "oval_tray_autumn",
           "label": "מגש אובלי של סתיו",
           "category": "Autumn collection",
           "description": "",
           "colors": "לבן אדום וחום",
-          "sizes": "",
+          "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
           "price": "60",
           "discount": "",
           "product_images_paths": [
@@ -521,12 +521,12 @@
           ]
         },
         {
-          "product_id": "tray8",
+          "product_id": "tray_gold",
           "label": "טיפות של זהב",
           "category": "Limited edition",
           "description": "",
           "colors": "בסיס שמנת עם נגיעות של זהב",
-          "sizes": "",
+          "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
           "price": "70",
           "discount": "",
           "product_images_paths": [
@@ -537,12 +537,12 @@
           ]
         },
         {
-          "product_id": "tray9",
+          "product_id": "tray_marble_white_grey",
           "label": "מרבל שיש",
           "category": "",
           "description": "",
           "colors": "אפור לבן",
-          "sizes": "",
+          "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
           "price": "60",
           "discount": "",
           "product_images_paths": [
@@ -551,8 +551,9 @@
               "image_path": "/images/oval_tray_marble.png"
             }
           ]
-        },        {
-          "product_id": "tray1",
+        },
+        {
+          "product_id": "decorative_wave_green",
           "label": "גל דקורטיבי אביב",
           "category": "",
           "description": "",
@@ -576,7 +577,7 @@
           ]
         },
         {
-          "product_id": "tray4",
+          "product_id": "decorative_arch_fire",
           "label": "קשת דקורטיבית אש",
           "category": "",
           "description": "",
@@ -596,7 +597,7 @@
           ]
         },
         {
-          "product_id": "tray1",
+          "product_id": "decorative_wave_marble_israel",
           "label": "גל דקורטיבי מרבל ישראל",
           "category": "",
           "description": "",
@@ -612,7 +613,7 @@
           ]
         },
         {
-          "product_id": "tray2",
+          "product_id": "decorative_arch_marble_bold",
           "label": "קשת דקורטיבית מרבל נועז",
           "category": "",
           "description": "",
@@ -628,7 +629,7 @@
           ]
         },
         {
-          "product_id": "tray3",
+          "product_id": "decorative_wave_fire",
           "label": "גל דקורטיבי אש",
           "category": "",
           "description": "",
@@ -644,7 +645,7 @@
           ]
         },
         {
-          "product_id": "tray4",
+          "product_id": "decorative_arch_green",
           "label": "קשת דקורטיבית אביב",
           "category": "",
           "description": "",
