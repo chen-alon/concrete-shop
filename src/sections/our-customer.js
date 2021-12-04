@@ -54,13 +54,8 @@ const OurCustomer = () => {
           <SectionHeading sx={styles.heading} description={desc} />
           <Box sx={styles.featureWrapper}>
             {data?.contact?.map((link) => (
-              <Box sx={styles.icon}>
-                <a
-                  key={link.id}
-                  href={link.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+              <Box sx={styles.icon} key={link.id}>
+                <a href={link.link} target="_blank" rel="noreferrer">
                   <Feature data={link}></Feature>
                 </a>
                 <span sx={styles.linkText}>{link.text}</span>
