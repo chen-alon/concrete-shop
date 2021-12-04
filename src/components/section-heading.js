@@ -39,6 +39,7 @@ const styles = {
     fontWeight: [500, 400],
     lineHeight: 1.68,
     letterSpacing: "heading",
+    fontWeight: "bold",
   },
   description: {
     fontSize: 17,

@@ -18,8 +18,9 @@ const facts = [
   {
     id: 2,
     icon: roller,
-    title: "ניתן להתאמה אישית",
-    description: "כל המוצרים ניתנים להתאמה אישית כדי להתאים את הצבעים לבית שלך",
+    title: "התאמה אישית",
+    description:
+      "ניתן לבחור את הצבע או שילוב צבעים עבור כל מוצר שיתאימו בדיוק לבית שלך ולאווירה שאת רוצה ליצור בו",
   },
   {
     id: 3,
@@ -54,12 +55,8 @@ export default Clients;
 
 const styles = {
   section: {
-    pt: [50, 50, 50, 70, 60, 80],
-    pb: [30, 40, 50, 60, 50, 80],
-  },
-  text: {
-    display: "flex !important",
-    justifyContent: "center",
+    pt: [30, null, null, null, 60],
+    pb: [30, null, null, 50, 60],
   },
   featureWrapper: {
     textAlign: "center",

@@ -7,8 +7,8 @@
         {
           "product_id": "coaster_gold",
           "label": "טיפות של זהב",
-          "category": "Limited edition",
-          "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
+          "category": "",
+          "description": "תחתיות עם מסגרת בצורת משושה לכוסות שתיה, חם או קר",
           "colors": "בסיס שמנת עם נגיעות של זהב",
           "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
           "price": "110",
@@ -32,7 +32,7 @@
           "product_id": "coaster_marble_black_white",
           "label": "מרבל מנצח",
           "category": "",
-          "description": "תחתיות בצורת משושה לכוסות שתיה, חם או קר",
+          "description": "תחתיות עם מסגרת בצורת משושה לכוסות שתיה, חם או קר",
           "colors": "שחור לבן",
           "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
           "price": "100",
@@ -52,7 +52,7 @@
           "product_id": "coaster_marble_white_grey",
           "label": "מרבל קלאסי",
           "category": "",
-          "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
+          "description": "תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר",
           "colors": "אפור לבן",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
@@ -72,7 +72,7 @@
           "product_id": "coaster_marble_white_red",
           "label": "מרבל רומנטי",
           "category": "",
-          "description": "תחתיות בצורת ריבוע לכוסות שתיה, חם או קר",
+          "description": "תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר",
           "colors": "אדום לבן",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
@@ -91,8 +91,8 @@
         {
           "product_id": "coaster_basic_orange",
           "label": "עגול שלכת",
-          "category": "Autumn collection",
-          "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
+          "category": "קולקציית סתיו",
+          "description": "תחתיות עם מסגרת בצורת עיגול לכוסות שתיה, חם או קר",
           "colors": "כתום",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "one_piece_price": "25",
@@ -113,7 +113,7 @@
           "product_id": "coaster_basic_black",
           "label": "עגול אלגנטי",
           "category": "",
-          "description": "תחתיות בצורת עיגול לכוסות שתיה, חם או קר",
+          "description": "תחתיות עם מסגרת בצורת עיגול לכוסות שתיה, חם או קר",
           "colors": "שחור",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "price": "100",
@@ -133,7 +133,7 @@
           "product_id": "coaster_marble_black_grey",
           "label": "מרבל בסיסי",
           "category": "",
-          "description": "תחתיות בצורת * לכוסות שתיה, חם או קר",
+          "description": "תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר",
           "colors": "שחור אפור",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
           "price": "100",
@@ -151,20 +151,16 @@
         },
         {
           "product_id": "coaster_terrazzo",
-          "label": "טרצו",
-          "category": "Limited edition",
-          "description": "תחתיות בצורת * לכוסות שתיה, חם או קר",
+          "label": "טרצ'ו",
+          "category": "",
+          "description": "תחתיות ללא מסגרת בצורת עגול לכוסות שתיה, חם או קר",
           "colors": "בסיס לבן עם שברי צבע שונים",
-          "sizes": { "h": "", "w": "", "d": "" },
-          "price": "140",
+          "sizes": "",
+          "price": "130",
           "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
-            },
-            {
-              "image_id": "2",
               "image_path": ""
             }
           ]
@@ -176,15 +172,15 @@
       "description": "קערות אש",
       "products_list": [
         {
-          "product_id": "classic_fire_bowl",
-          "label": "קערת אש קלאסית",
+          "product_id": "fire_bowl_26",
+          "label": "קערת אש מעוגלת",
           "category": "",
-          "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים.",
-          "colors": "כלי לבן, צבע אבנים לבחירה",
-          "sizes": "26X11",
-          "price": "250",
+          "description": "",
+          "colors": "צבע הקערה והאבנים לבחירה",
+          "sizes": "קוטר 24",
+          "price": "200",
           "discount": "",
-          "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות.",
+          "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -193,15 +189,15 @@
           ]
         },
         {
-          "product_id": "elegant_fire_bowl",
-          "label": "קערת אש אלגנטית",
+          "product_id": "fire_bowl_27",
+          "label": "קערת אש רחבה",
           "category": "",
-          "description": "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה. מגיעה עם נר ציטרונלה להרחקת יתושים.",
-          "colors": "כלי שחור, צבע אבנים לבחירה",
-          "sizes": "26X11",
-          "price": "250",
+          "description": "",
+          "colors": "צבע הקערה והאבנים לבחירה",
+          "sizes": "קוטר 27",
+          "price": "220",
           "discount": "",
-          "more": "ניתן לשנות את צבע האבנים או לבחור בשילוב של מספר אבנים לפי המלאי הקיים בחנות.",
+          "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -222,7 +218,7 @@
           "description": "",
           "colors": "",
           "sizes": { "h": "7", "w": "9", "d": "4" },
-          "price": "80",
+          "price": "70",
           "discount": "",
           "product_images_paths": [
             {
@@ -242,7 +238,7 @@
           "description": "",
           "colors": "",
           "sizes": { "h": "5.5", "w": "5.5", "d": "5.5" },
-          "price": "80",
+          "price": "70",
           "discount": "",
           "product_images_paths": [
             {
@@ -287,7 +283,7 @@
           "description": "",
           "colors": "",
           "sizes": { "h": "9", "w": "5.5", "d": "2" },
-          "price": "70",
+          "price": "60",
           "discount": "",
           "product_images_paths": [
             {
@@ -417,8 +413,8 @@
         {
           "product_id": "candle_holder_autumn",
           "label": "פמוטים של סתיו",
-          "category": "Autumn collection",
-          "description": "הפמוטים בעיצוב ייחודי לכבוד קולקציית הסתיו יוסיפו לשולחן שלכם אווירה מיוחדת",
+          "category": "קולקציית סתיו",
+          "description": "הפמוטים בעיצוב ייחודי לכבוד קולקציית הסתיו יוסיפו לשולחן שלכם אווירה מיוחדת.",
           "colors": "לבן אדום וחום",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
@@ -434,7 +430,7 @@
           "product_id": "candle_holder_black",
           "label": "פמוטים אלגנטיים",
           "category": "",
-          "description": "הפמוטים האלגנטים יפים לכל יום ובכל מקום בחלל הבית",
+          "description": "הפמוטים האלגנטים יפים לכל יום ובכל מקום בחלל הבית.",
           "colors": "שחור",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
@@ -450,7 +446,7 @@
           "product_id": "candle_holder_white",
           "label": "פמוטים קלאסיים",
           "category": "",
-          "description": "הפמוטים הקלאסים בגוון לבן שמנת עדין, מתאימים גם כאקססוריז לבית וגם להדלקת נרות שבת או חג",
+          "description": "הפמוטים הקלאסים בגוון לבן שמנת עדין, מתאימים גם כאקססוריז לבית וגם להדלקת נרות שבת או חג.",
           "colors": "לבן",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
           "price": "80",
@@ -486,8 +482,8 @@
         },
         {
           "product_id": "oval_tray_terazzo",
-          "label": "מגש אובלי טרצו",
-          "category": "Limited edition",
+          "label": "מגש אובלי טרצ'ו",
+          "category": "",
           "description": "",
           "colors": "בסיס לבן עם שברי צבע שונים",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
@@ -507,7 +503,7 @@
         {
           "product_id": "oval_tray_autumn",
           "label": "מגש אובלי של סתיו",
-          "category": "Autumn collection",
+          "category": "קולקציית סתיו",
           "description": "",
           "colors": "לבן אדום וחום",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
@@ -523,7 +519,7 @@
         {
           "product_id": "tray_gold",
           "label": "טיפות של זהב",
-          "category": "Limited edition",
+          "category": "",
           "description": "",
           "colors": "בסיס שמנת עם נגיעות של זהב",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
@@ -672,7 +668,7 @@
       "products_list": [
         {
           "product_id": "set1",
-          "label": "This is a set1 product label",
+          "label": "סט סתיו",
           "category": "",
           "description": "",
           "colors": "",
@@ -692,7 +688,7 @@
         },
         {
           "product_id": "set2",
-          "label": "This is a set2 product label",
+          "label": "סט אביב",
           "category": "",
           "description": "",
           "colors": "",

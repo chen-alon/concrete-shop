@@ -1,12 +1,12 @@
 .swiper {
-  width: 89%;
-  max-width: 40rem;
+  width: 100%;
+  max-width: 50rem;
   max-height: 40rem;
 }
 
 .sub_swiper {
-  width: 89%;
-  max-width: 40rem;
+  width: 100%;
+  max-width: 50rem;
   margin-top: 1rem;
 }
 

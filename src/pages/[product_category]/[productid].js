@@ -28,6 +28,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       currentProduct: product,
+      currentCategory: currentCategory,
     },
   };
 }
@@ -57,8 +58,11 @@ export async function getStaticPaths() {
 }
 
 function ProductIdPage(props) {
-  const { currentProduct } = props;
+  const { currentProduct, currentCategory } = props;
   const router = useRouter();
+  const whatsAppMessage =
+    "whatsapp://send?phone=+972526020358&text=היי אשמח לבצע הזמנה של המוצר " +
+    currentProduct.label;
 
   return (
     <Box id="products" as="section" sx={styles.section}>
@@ -82,16 +86,13 @@ function ProductIdPage(props) {
                 ) : null}
               </div>
             </Box>
-            <Button sx={styles.contact} variant="secondary">
-              <a
-                href="whatsapp://send?text=היי אשמח לבצע הזמנה.&phone=+972526020358"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <Button sx={styles.order} variant="secondary">
+              <a href={whatsAppMessage} target="_blank" rel="noreferrer">
                 להזמנה לחצו כאן
               </a>
             </Button>
             <ProductDetails
+              id={currentCategory.category_id}
               description={currentProduct.description}
               colors={currentProduct.colors}
               more={currentProduct.more}
@@ -120,6 +121,12 @@ const styles = {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
   },
+  container: {
+    mt: "5rem",
+    "@media only screen and (max-width: 900px) ": {
+      mt: "3rem",
+    },
+  },
   contentWrapper: {
     justifyContent: "center",
     display: ["flex", null, null, null, "grid"],
@@ -142,12 +149,7 @@ const styles = {
   rightContent: {
     textAlign: "center",
   },
-  container: {
-    mt: "5rem",
-    "@media only screen and (max-width: 900px) ": {
-      mt: "3rem",
-    },
-  },
+
   buttonBack: {
     backgroundColor: "#DE7C5A",
     fontSize: "1rem",
@@ -161,18 +163,21 @@ const styles = {
       opacity: "0.8",
     },
   },
-  contact: {
+  order: {
     borderRadius: 0,
-    bg: "#333333",
+    // bg: "#333333",
+    bg: "#DE7C5A",
     fontSize: [15, 20],
     width: "50%",
     p: "1rem",
     a: {
       color: "#fff",
       textDecoration: "none",
+      fontWeight: "bold",
     },
     ":hover": {
       opacity: "0.8",
+      transform: "scale(1.1)",
     },
   },
   name: {

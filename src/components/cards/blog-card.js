@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Heading, Text } from "theme-ui";
+import { jsx, Box, Flex, Heading } from "theme-ui";
 import Image from "next/image";
-import { Link } from "components/link";
+import Link from "next/link";
 
 const BlogPost = ({ post }) => {
   return (
@@ -17,7 +17,7 @@ const BlogPost = ({ post }) => {
       </Flex>
       <Box sx={styles.meta}>
         <Heading as="h4">
-          <Link path={post.link}>{post?.title}</Link>
+          <Link href={post.link}>{post?.title}</Link>
         </Heading>
       </Box>
     </Box>

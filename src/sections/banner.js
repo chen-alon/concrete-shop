@@ -5,12 +5,12 @@ import bannerBg from "assets/images/banner-bg.jpg";
 
 export default function Banner() {
   return (
-    <Box as="section" id="home" sx={styles.section}>
+    <Box as="section" id="home" sx={styles.section} dir="rtl">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
-              Welcome home. <br /> You are at Concrete Shop.
+              ברוכים הבאים <br /> הגעתם למקום לעיצוב הבית מבטון
             </Heading>
           </Box>
         </Box>
@@ -57,6 +57,7 @@ const styles = {
     },
   },
   heroTitle: {
+    textAlign: "center",
     fontSize: [21, 26, 30, 40],
     fontWeight: 700,
     letterSpacing: "heading",

@@ -32,7 +32,6 @@ const styles = {
     },
   },
   list: {
-    fontFamily: "Calibri Light",
     paddingTop: "2rem",
     alignItems: "center",
     display: "flex",

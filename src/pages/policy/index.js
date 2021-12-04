@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 function Policy() {
   const router = useRouter();
+  const back = ">";
 
   return (
     <Box dir="rtl" sx={styles.policy}>
@@ -13,7 +14,7 @@ function Policy() {
       </Heading>
       {router.pathname !== "/" && (
         <Button onClick={() => router.back()} sx={styles.buttonBack}>
-          חזרה לעמוד הקודם
+          חזרה לעמוד הקודם {back}
         </Button>
       )}
       <Box sx={styles.text}>
@@ -54,7 +55,6 @@ export default Policy;
 const styles = {
   policy: {
     mb: "5rem",
-    fontFamily: "Calibri Light",
   },
   buttonBack: {
     float: "left",
@@ -71,7 +71,6 @@ const styles = {
     },
   },
   heading: {
-    fontFamily: "Calibri Light",
     fontSize: 40,
     fontWeight: "bold",
     mt: "7rem",
@@ -79,6 +78,7 @@ const styles = {
     p: "5rem",
     "@media only screen and (max-width: 760px)": {
       mt: 0,
+      pr: "1.5rem",
     },
   },
   text: { fontSize: [20, 25], pr: "5%", pl: "4%", mt: "7rem" },

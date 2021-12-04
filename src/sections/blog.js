@@ -3,53 +3,49 @@ import { jsx, Box, Container, Button } from "theme-ui";
 import Slider from "react-slick";
 import SectionHeading from "components/section-heading";
 import BlogPost from "components/cards/blog-card";
-import thumb1 from "assets/images/blog/blog_bedroom.png";
-import thumb2 from "assets/images/blog/blog_console.png";
-import thumb3 from "assets/images/blog/blog_salon.png";
-import thumb4 from "assets/images/blog/blog_balcon.png";
+import dresser from "assets/images/blog/blog_bedroom.jpg";
+import console from "assets/images/blog/blog_console.jpg";
+import salon from "assets/images/blog/blog_salon.png";
+import dresser_2 from "assets/images/blog/room_2.jpg";
+import balcony from "assets/images/blog/balcony.jpg";
+import side_dresser from "assets/images/blog/room_2_2.jpg";
 
 const data = [
   {
     id: 1,
-    thumb: thumb1,
-    commentCount: 22,
-    link: "#!",
-    title: `חדרי שינה`,
+    thumb: dresser_2,
+    link: "/trays/decorative_arch_fire",
+    title: `שידה`,
   },
   {
     id: 2,
-    thumb: thumb2,
-    commentCount: 15,
-    link: "#!",
-    title: `קונסולה`,
-  },
-  {
-    id: 3,
-    thumb: thumb3,
-    commentCount: 18,
-    link: "#!",
-    title: `סלון`,
-  },
-  {
-    id: 4,
-    thumb: thumb4,
-    commentCount: 18,
-    link: "#!",
+    thumb: balcony,
+    link: "/fire_bowls",
     title: `מרפסת`,
   },
   {
+    id: 3,
+    thumb: side_dresser,
+    link: "/trays/oval_tray_terazzo",
+    title: `חדרי שינה`,
+  },
+  {
+    id: 4,
+    thumb: salon,
+    link: "/coasters/coaster_terrazzo",
+    title: `סלון`,
+  },
+  {
     id: 5,
-    thumb: thumb3,
-    commentCount: 18,
-    link: "#!",
-    title: `מטבח`,
+    thumb: console,
+    link: "/tray_marble_white_grey",
+    title: `קונסולה`,
   },
   {
     id: 6,
-    thumb: thumb2,
-    commentCount: 18,
+    thumb: dresser,
     link: "#!",
-    title: `חדרי שינה`,
+    title: `שידת טואלט`,
   },
 ];
 
@@ -113,7 +109,12 @@ const Blog = () => {
 export default Blog;
 
 const styles = {
-  section: { mr: "2rem", ml: "2rem", pb: [50, 50, 50, 100, 8, 9] },
+  section: {
+    mr: "2rem",
+    ml: "2rem",
+    pt: [30, null, null, null, 60],
+    pb: [30, null, null, 50, 60],
+  },
   slider: {
     ".slick-prev:before": {
       color: "#DE7C5A",

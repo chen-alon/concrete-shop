@@ -54,7 +54,6 @@ function SlideShow(props) {
           alt="soon"
           height={746}
           width={840}
-          layout="responsive"
         />
       )}
       <Swiper

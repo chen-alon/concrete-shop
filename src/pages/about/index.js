@@ -1,22 +1,21 @@
 import React from "react";
 import { Box, Heading, Image, Button } from "theme-ui";
 import customer from "../../assets/images/customer.png";
-
 import { rgba } from "polished";
-
 import { useRouter } from "next/router";
 
 function QandAPage() {
   const router = useRouter();
+  const back = ">";
 
   return (
     <Box sx={{ pb: "5rem" }} dir="rtl">
-      <Heading as="h1" sx={styles.headingWrapper}>
+      <Heading as="h1" sx={styles.heading}>
         קצת עלינו...
       </Heading>
       {router.pathname !== "/" && (
         <Button onClick={() => router.back()} sx={styles.buttonBack}>
-          חזרה לעמוד הקודם
+          חזרה לעמוד הקודם {back}
         </Button>
       )}
       <Box sx={styles.bannerContent}>
@@ -75,8 +74,7 @@ const styles = {
       backgroundColor: "transparent",
     },
   },
-  headingWrapper: {
-    fontFamily: "Calibri Light",
+  heading: {
     fontSize: 40,
     fontWeight: "bold",
     mt: "7rem",
@@ -84,6 +82,7 @@ const styles = {
     p: "5rem",
     "@media only screen and (max-width: 760px)": {
       mt: 0,
+      pr: "1.5rem",
     },
   },
   bannerContent: {
@@ -91,13 +90,12 @@ const styles = {
     display: ["grid", null, null, null, "flex"],
     mt: "2rem",
     alignItems: "center",
-    border: `0.2px solid ${rgba("#de7c5a", 0.9)}`,
+    // border: `0.2px solid ${rgba("#de7c5a", 0.9)}`,
     p: "2rem",
     "@media only screen and (max-width: 760px)": {
       display: "inline-Block",
-      mt: 70,
       padding: "80px 40px 80px 60px",
-      // p: "0.6rem",
+      p: "1rem",
     },
   },
 };

@@ -6,6 +6,7 @@ import { rgba } from "polished";
 
 function QandAPage() {
   const router = useRouter();
+  const back = ">";
 
   const data = {
     product: [
@@ -40,7 +41,7 @@ function QandAPage() {
       {
         question: "איך עליי לטפל במוצר שלי?",
         answer:
-          "הפריט אטום וניתן לניקוי עם מטלית לחה. שימוש בכל מוצרי ניקוי קשים או קרצוף קשה, יפגע בפני השטח של היצירה שלך. אנו ממליצים לנגב כל חומר נוזלי כמו יין או קפה בהקדם האפשרי.",
+          "הפריט אטום וניתן לניקוי עם מטלית לחה. שימוש בכל מוצרי ניקוי קשים או קרצוף קשה, יפגע בפני השטח של היצירה שלך. אנו ממליצים לנגב כל נוזל כמו יין או קפה בהקדם האפשרי.",
         open: false,
         id: "5",
       },
@@ -111,7 +112,7 @@ function QandAPage() {
       </Heading>
       {router.pathname !== "/" && (
         <Button onClick={() => router.back()} sx={styles.buttonBack}>
-          חזרה לעמוד הקודם
+          חזרה לעמוד הקודם {back}
         </Button>
       )}
       <p style={styles.title}>כללי</p>
@@ -127,7 +128,6 @@ export default QandAPage;
 const styles = {
   qanda: {
     mb: "5rem",
-    fontFamily: "Calibri Light",
   },
   buttonBack: {
     float: "left",
@@ -144,7 +144,6 @@ const styles = {
     },
   },
   heading: {
-    fontFamily: "Calibri Light",
     fontSize: 40,
     fontWeight: "bold",
     mt: "7rem",
@@ -152,6 +151,7 @@ const styles = {
     p: "5rem",
     "@media only screen and (max-width: 760px)": {
       mt: 0,
+      pr: "1.5rem",
     },
   },
   title: {

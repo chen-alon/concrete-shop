@@ -16,8 +16,8 @@ export default function IndexPage() {
       <Banner />
       <Gallery />
       <FeaturedSpace />
-      <OurCustomer />
       <Clients />
+      <OurCustomer />
       <Blog />
     </ThemeProvider>
   );

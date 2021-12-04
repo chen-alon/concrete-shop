@@ -12,13 +12,14 @@ export default [
     label: "קולקציות",
   },
   {
-    path: "contact",
-    label: "צור קשר",
-  },
-  {
     path: "clients",
     label: "מי אנחנו",
   },
+  {
+    path: "contact",
+    label: "צור קשר",
+  },
+
   {
     path: "customers",
     label: "תמונות",

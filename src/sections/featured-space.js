@@ -24,7 +24,7 @@ const data = {
     {
       id: 2,
       image: slider2,
-      title: "קולקציית טרצו",
+      title: "קולקציית טרצ'ו",
       desc: "צבעוני, פיגמנטים שונים",
     },
     {
@@ -152,6 +152,7 @@ const styles = {
       fontSize: [22, null, null, 30, null, 36, 46],
       lineHeight: [1.6, null, null, 1.41],
       fontWeight: [500, null, null, 400],
+      fontWeight: "bold",
     },
     p: {
       whiteSpace: "pre-wrap",

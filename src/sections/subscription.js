@@ -21,7 +21,7 @@ const data = {
     {
       id: 3,
       icon: whatsapp,
-      link: "https://api.whatsapp.com/send?phone=+972526020358",
+      link: "whatsapp://send?phone=+972526020358",
     },
   ],
   navItems: [
@@ -116,9 +116,6 @@ const styles = {
         color: "white",
         justifyContent: "center",
         textDecoration: "none",
-        "@media only screen and (max-width: 760px) ": {
-          fontSize: "0.7rem",
-        },
       },
     },
   },

@@ -26,12 +26,12 @@ export default {
     },
   },
   fonts: {
-    body: "Guttman Myamfix",
+    body: "Calibri Light, Roboto",
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Segoe UI, sans-serif",
+    heading: "Calibri Light, Roboto",
     // heading: 'Bree Serif',
-    monospace: "Menlo, monospace",
+    monospace: "Calibri Light, Roboto",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {

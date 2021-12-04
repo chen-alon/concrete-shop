@@ -96,7 +96,7 @@ export default function Header() {
                 </Box>
                 <Button sx={styles.contact}>
                   <a
-                    href="https://api.whatsapp.com/send?phone=+972526020358"
+                    href="whatsapp://send?phone=+972526020358&text=היי אשמח לבצע הזמנה"
                     target="_blank"
                     rel="noreferrer"
                   >

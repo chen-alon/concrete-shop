@@ -9,7 +9,7 @@ const CategoryGalleryCard = (props) => {
 
   return (
     <Link href={path}>
-      <Flex as="figure" sx={styles.figure}>
+      <Flex as="figure" sx={styles.figure} dir="rtl">
         <Box sx={styles.container}>
           <Image
             src={
@@ -23,7 +23,8 @@ const CategoryGalleryCard = (props) => {
             width={840}
             layout="responsive"
           />
-          <Box sx={item.category ? styles.category : null}>
+          {item?.discount ? <Box sx={styles.sale}>מבצע</Box> : null}
+          <Box sx={item?.category ? styles.category : null}>
             {item.category ? item.category : null}
           </Box>
         </Box>
@@ -33,7 +34,7 @@ const CategoryGalleryCard = (props) => {
             <hr width="20%" style={{ backgroundColor: "#141414" }} />
           </Box>
           <Box sx={styles.prices}>
-            <div style={item?.discount ? styles.sale : null}>
+            <div style={item?.discount ? styles.discount : null}>
               {item?.price} ₪
             </div>
             {item.discount ? (
@@ -94,6 +95,18 @@ const styles = {
     borderRadius: 10,
     padding: "1rem",
     top: "20px",
+    right: "20px",
+  },
+  sale: {
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    position: "absolute",
+    color: "#fff",
+    backgroundColor: "#141414",
+    opacity: 0.9,
+    // borderRadius: 10,
+    padding: "1.5rem",
+    top: "0px",
     left: "20px",
   },
   details: {
@@ -108,7 +121,7 @@ const styles = {
     textAlign: "center",
     justifyContent: "center",
   },
-  sale: {
+  discount: {
     textDecoration: "line-through",
   },
 };
