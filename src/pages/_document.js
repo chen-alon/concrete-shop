@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,7 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head />
-        <link href="/fonts/calibril.ttf" rel="stylesheet" as="font"/>
+        <link href="/fonts/calibril.ttf" rel="preload" as="font" />
         <body>
           <Main />
           <NextScript />

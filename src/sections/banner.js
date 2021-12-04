@@ -39,21 +39,13 @@ const styles = {
       "none",
     ],
     maxWidth: [null, null, null, 600, 500, null, 650],
-    padding: [
-      "20px",
-      "30px",
-      null,
-      null,
-      null,
-      "30px 50px 60px",
-      "50px 60px 90px",
-    ],
+    padding: "5rem",
     borderRadius: 5,
     m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
     "@media only screen and (max-width: 760px)": {
       maxWidth: 515,
       mt: 70,
-      padding: "80px 40px 80px 60px",
+      padding: "2.5rem",
     },
   },
   heroTitle: {

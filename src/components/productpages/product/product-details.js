@@ -9,6 +9,8 @@ function ProductDetails(props) {
 
   const exstra = "המוצר מצופה בשכבת הגנה מפני מים וכתמים.";
 
+  const coasters_supply = "ניתן גם להוסיף תחתיות נוספות לפי דרישה.";
+
   const fireBowl =
     "קערת אש דקורטיבית המתאימה לפנים וחוץ הבית, תדאג לכם לאווירה חמימה ונעימה.\nמגיעה עם פחית בתוספת ציטרונלה להרחקת יתושים המתאימה לחוץ בלבד.\nניתן להחליף לפחית המתאימה לפנים הבית בתוספת 30₪.\nפחית הלהבה מחזיקה עד 5 שעות בעירה. כשהפחית נגמרת ניתן להחליף אותה בחדשה.\nניתן לרכוש פחיות בעירה בנפרד.";
 
@@ -17,6 +19,7 @@ function ProductDetails(props) {
       <h1>תיאור</h1>
       {description ? <p>{description}</p> : null}
       {id === "fire_bowls" ? <p>{fireBowl}</p> : null}
+      {id === "coasters" ? <p>{coasters_supply}</p> : null}
       {id != "candles" ? <p>{exstra}</p> : null}
       {colors ? (
         <p>
