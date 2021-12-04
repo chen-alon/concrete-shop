@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Flex, Image } from "theme-ui";
+import { jsx, Box, Container, Flex } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Feature from "components/cards/feature";
 import { rgba } from "polished";
@@ -18,26 +18,26 @@ const OurCustomer = () => {
         id: 1,
         icon: whatsapp,
         link: "whatsapp://send?phone=+972526020358",
-        text: "ווטסאפ",
+        description: "ווטסאפ",
       },
       {
         id: 2,
         icon: mail,
         link: "mailto:concrete.and.more0609@gmail.com",
-        text: "מייל",
+        description: "מייל",
       },
 
       {
         id: 3,
         icon: phone,
         link: "tel:+972526020358",
-        text: "טלפון",
+        description: "טלפון",
       },
       {
         id: 4,
         icon: instagram,
         link: "https://www.instagram.com/concrete_shop_il/",
-        text: "אינסטגרם",
+        description: "אינסטגרם",
       },
     ],
   };
@@ -58,7 +58,6 @@ const OurCustomer = () => {
                 <a href={link.link} target="_blank" rel="noreferrer">
                   <Feature data={link}></Feature>
                 </a>
-                <span sx={styles.linkText}>{link.text}</span>
               </Box>
             ))}
           </Box>
@@ -75,15 +74,6 @@ const styles = {
     pt: [30, null, null, null, 60],
     pb: [30, null, null, 50, 60],
     backgroundColor: rgba("#000", 0.1),
-    boxShadow: [
-      "0px 10px 16px rgba(52, 61, 72, 0.12)",
-      null,
-      null,
-      null,
-      "none",
-    ],
-    // background: `url(${bannerBg}) no-repeat center top / cover`,
-    // backgroundSize: ["100%", null, null, null, "cover"],
   },
   contentWrapper: {
     textAlign: "center",
@@ -91,50 +81,34 @@ const styles = {
     display: "grid",
   },
   heading: {
-    textAlign: ["right", null, null, null, "right"],
-    maxWidth: 580,
     p: {
       whiteSpace: "pre-wrap",
       fontSize: ["18px", null, null, "22px"],
       textAlign: "center",
     },
-    // m: ["0 auto 27px", "0 auto 27px", "0 auto 27px", "0 0 30px"],
   },
   featureWrapper: {
-    listStyle: "none",
-    alignItems: "center",
     display: "flex",
+    m: 0,
     flexWrap: ["wrap", null, null, "unset"],
     justifyContent: ["center"],
     a: {
-      color: "white",
+      textDecoration: "none",
+      color: "#de7c5a",
       pr: "2rem",
       pl: "2rem",
       display: "inline-block",
       "@media only screen and (max-width: 400px)": {
-        padding: "0.5rem",
+        p: "1rem",
       },
     },
   },
   icon: {
+    pt: "1rem",
     flexDirection: "row",
     textAlign: "center",
-    gap: ["40px 20px", null, null, null, "30px"],
-    display: "grid",
-    // gridTemplateColumns: [
-    //   "repeat(1,1fr)",
-    //   null,
-    //   null,
-    //   "repeat(2,180px)",
-    //   "repeat(2,1fr)",
-    // ],
-    // justifyContent: ["unset", null, null, "center", "flex-end"],
-  },
-  linkText: {
-    mt: 0,
-    display: "inline-block",
-    // fontWeight: "bold",
-    fontSize: [15, 20],
-    color: "#de7c5a",
+    "@media only screen and (max-width: 490px)": {
+      p: "1.8rem",
+    },
   },
 };

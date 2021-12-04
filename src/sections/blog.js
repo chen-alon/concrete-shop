@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Button } from "theme-ui";
+import { jsx, Box, Container } from "theme-ui";
 import Slider from "react-slick";
 import SectionHeading from "components/section-heading";
 import BlogPost from "components/cards/blog-card";

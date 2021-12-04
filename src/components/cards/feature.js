@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { rgba } from "polished";
 import Image from "components/image";
 import { jsx, Box, Heading, Text } from "theme-ui";
 
@@ -25,7 +24,6 @@ const styles = {
       fontSize: [20, null, null, null, null, 22],
     },
     p: {
-      color: rgba("#343D48", 0.75),
       fontSize: [null, null, null, null, 14, 17],
       lineHeight: 1.47,
     },

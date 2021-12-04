@@ -26,12 +26,12 @@ export default {
     },
   },
   fonts: {
-    body: "Calibri Light, Roboto",
+    body: "Calibri Light, Tahoma",
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Calibri Light, Roboto",
+    heading: "Calibri Light, Tahoma",
     // heading: 'Bree Serif',
-    monospace: "Calibri Light, Roboto",
+    monospace: "Calibri Light, Tahoma",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {
