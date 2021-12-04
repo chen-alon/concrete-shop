@@ -10,6 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head />
+        <link href="/fonts/calibril.ttf" rel="stylesheet" as="font"/>
         <body>
           <Main />
           <NextScript />

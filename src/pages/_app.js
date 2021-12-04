@@ -7,6 +7,7 @@ import "typeface-dm-sans";
 import Layout from "components/layout";
 import { ThemeProvider } from "theme-ui";
 import theme from "theme";
+import "../../global.css";
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
