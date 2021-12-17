@@ -81,10 +81,7 @@ const Blog = () => {
   return (
     <Box id="customers" as="section" sx={styles.section}>
       <Container>
-        <SectionHeading
-          // slogan="תמונות"
-          title="שילוב המוצרים שלנו בחלל הבית"
-        />
+        <SectionHeading slogan="תמונות" title="שילוב המוצרים שלנו בחלל הבית" />
         <link
           rel="stylesheet"
           type="text/css"
@@ -113,17 +110,17 @@ const styles = {
     mr: "2rem",
     ml: "2rem",
     pt: [30, null, null, null, 60],
-    pb: [30, null, null, 50, 60],
+    pb: [60, null, null, null, 120],
   },
   slider: {
     ".slick-prev:before": {
-      color: "#DE7C5A",
+      color: "#6A7B76",
     },
     ".slick-next:before": {
-      color: "#DE7C5A",
+      color: "#6A7B76",
     },
     ".slick-dots li.slick-active button:before": {
-      color: "#DE7C5A",
+      color: "#6A7B76",
     },
   },
 };

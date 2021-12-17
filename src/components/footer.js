@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
       <Subscription />
-      <Container sx={styles.container}>
+      <Container>
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
             <Text as="span">
@@ -29,9 +29,7 @@ const styles = {
   content: {
     alignItems: "center",
     borderTop: `1px solid ${rgba("#fff", 0.15)}`,
-    // display: ["block", null, null, null, "flex"],
     display: ["block", null, null, null, "block"],
-    // justifyContent: "space-between",
     justifyContent: ["center", null, null, null],
     paddingTop: "20px",
     paddingBottom: "60px",

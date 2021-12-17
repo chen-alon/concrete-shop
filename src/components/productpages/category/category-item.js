@@ -10,7 +10,6 @@ function CategoryItem(props) {
       <div>
         <div className={classes.item}>
           {/* <h1>{title}</h1> */}
-          {/* <Image src={imagePath} alt={title} width={640} height={320} /> */}
           <Image src={imagePath} alt={title} width={640} height={320} />
         </div>
         <div className={classes.content}>

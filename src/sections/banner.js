@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading } from "theme-ui";
 import { rgba } from "polished";
-import bannerBg from "assets/images/banner-bg.jpg";
+import bannerBg from "assets/images/banner-bg1.jpg";
 
 export default function Banner() {
   return (
@@ -28,9 +28,12 @@ const styles = {
     display: "flex",
     alignItems: "center",
     minHeight: [null, null, null, null, "50vh", "100vh"],
+    "@media only screen and (max-width: 760px)": {
+      justifyContent: "center",
+    },
   },
   bannerContent: {
-    backgroundColor: rgba("#fff", 0.93),
+    backgroundColor: rgba("#fff", 0.85),
     boxShadow: [
       "0px 10px 16px rgba(52, 61, 72, 0.12)",
       null,
@@ -41,16 +44,17 @@ const styles = {
     maxWidth: [null, null, null, 600, 500, null, 650],
     padding: "5rem",
     borderRadius: 5,
-    m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
+    mt: "12rem",
+    // m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
     "@media only screen and (max-width: 760px)": {
       maxWidth: 515,
-      mt: 70,
-      padding: "2.5rem",
+      padding: "3rem",
+      mt: "10rem",
     },
   },
   heroTitle: {
     textAlign: "center",
-    fontSize: [21, 26, 30, 40],
+    fontSize: [27, 40],
     fontWeight: 700,
     letterSpacing: "heading",
     lineHeight: [1.4, null, null, null, null, null, 1.57],

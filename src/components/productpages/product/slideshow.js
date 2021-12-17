@@ -73,7 +73,7 @@ function SlideShow(props) {
           <SwiperSlide
             key={image.image_id}
             tag="li"
-            style={{ listStyle: "none" }}
+            style={{ listStyle: "none", cursor: "pointer" }}
           >
             <Image
               src={image.image_path}

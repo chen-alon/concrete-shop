@@ -26,7 +26,7 @@ export default function Accordion(props) {
       <div
         style={{
           display: isShowing ? "block" : "none",
-          fontSize: "1.3rem",
+          fontSize: [15, 20],
           marginRight: "4%",
           marginLeft: "4%",
           marginBottom: "2rem",

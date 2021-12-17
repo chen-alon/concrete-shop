@@ -20,14 +20,16 @@ const facts = [
     icon: roller,
     title: "התאמה אישית",
     description:
-      "ניתן לבחור את הצבע או שילוב צבעים עבור כל מוצר שיתאימו בדיוק לבית שלך ולאווירה שאת רוצה ליצור בו",
+      "ניתן לבחור את הצבע או שילוב צבעים עבור כל מוצר שיתאימו בדיוק לבית שלך ולאווירה שתרצי ליצור בו",
   },
   {
     id: 3,
     icon: home,
-    title: "השלמת האווירה בבית",
+    title: "אווירה בבית",
     description:
-      "עסק קטן שמעצב ויוצר פרטי נוי בקפידה שיעניקו תחושה ייחודית של בית מעוצב ומושקע ויעזרו להשלמת האווירה בבית",
+      "אנחנו דואגים לעצב וליצור פרטי נוי דקורטיביים תוך הקפדה על הפרטים הקטנים שיעניקו תחושה ייחודית של בית מעוצב ומושקע ויתרמו להשלמת האווירה בבית",
+    // description:
+    //   "עסק קטן שמעצב ויוצר פרטי נוי בקפידה שיעניקו תחושה ייחודית של בית מעוצב ומושקע ויעזרו להשלמת האווירה בבית",
   },
 ];
 
@@ -35,10 +37,6 @@ const Clients = () => {
   return (
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
-        <SectionHeading
-          slogan="מי אנחנו"
-          title="כמה עובדות שיעשו לכם קצת סדר"
-        />
         <Box sx={styles.featureWrapper} dir="rtl">
           {facts?.map((fact) => (
             <Feature key={fact.id} data={fact} />
@@ -53,7 +51,7 @@ export default Clients;
 
 const styles = {
   section: {
-    pt: [30, null, null, null, 60],
+    pt: [50, null, null, null, 100],
     pb: [30, null, null, 50, 60],
   },
   featureWrapper: {

@@ -33,7 +33,7 @@ export default CategoryGallery;
 
 const styles = {
   section: {
-    pt: [30, 30, 40, 50, 60],
+    pt: [80],
     pb: [60, 60, 60, 90, 80, 120],
   },
   container: {

@@ -44,18 +44,18 @@ const data = [
     width: "420",
   },
   {
-    id: 6,
-    image: gallery6,
-    title: "סטים ועוד",
-    link: "sets",
-    height: "500",
-    width: "420",
-  },
-  {
     id: 5,
     image: gallery5,
     title: "פמוטים",
     link: "candle_holders",
+    height: "500",
+    width: "420",
+  },
+  {
+    id: 6,
+    image: gallery6,
+    title: "סטים ועוד",
+    link: "sets",
     height: "420",
     width: "420",
   },
@@ -68,7 +68,7 @@ const masonryOptions = {
 const Gallery = () => {
   return (
     <Box id="products" as="section" sx={styles.section}>
-      <Container sx={styles.container}>
+      <Container>
         <SectionHeading
           sx={styles.heading}
           slogan="חנות"
@@ -88,8 +88,8 @@ export default Gallery;
 
 const styles = {
   section: {
-    pt: [30, 30, 40, 50, 60],
-    pb: [60, 60, 60, 90, 80, 120],
+    pt: [30],
+    pb: [30, null, null, 50, 60],
   },
   heading: {
     mb: [30, 30, 40, 60],
@@ -106,7 +106,7 @@ const styles = {
       transition: "margin-left 0.3s ease-in-out 0s",
     },
     ":hover": {
-      backgroundColor: "#DE7C5A",
+      backgroundColor: "#6A7B76",
       svg: {
         ml: "5px",
       },

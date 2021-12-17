@@ -11,7 +11,7 @@
           "description": "ארבע תחתיות עם מסגרת בצורת משושה לכוסות שתיה, חם או קר.",
           "colors": "בסיס שמנת עם נגיעות של זהב",
           "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
-          "price": "110",
+          "price": "130",
           "discount": "",
           "product_images_paths": [
             {
@@ -35,7 +35,7 @@
           "description": "ארבע תחתיות עם מסגרת בצורת משושה לכוסות שתיה, חם או קר.",
           "colors": "שחור לבן",
           "sizes": { "h": "10", "w": "11.5", "d": "1.5" },
-          "price": "100",
+          "price": "120",
           "discount": "",
           "product_images_paths": [
             {
@@ -52,10 +52,10 @@
           "product_id": "coaster_marble_white_grey",
           "label": "סט 4 תחתיות מרבל קלאסי",
           "category": "",
-          "description": "ארבע תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות מרובעות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "אפור לבן",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
-          "price": "100",
+          "price": "120",
           "discount": "",
           "product_images_paths": [
             {
@@ -72,10 +72,10 @@
           "product_id": "coaster_marble_white_red",
           "label": "סט 4 תחתיות מרבל רומנטי",
           "category": "",
-          "description": "ארבע תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות מרובעות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "אדום לבן",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
-          "price": "100",
+          "price": "120",
           "discount": "",
           "product_images_paths": [
             {
@@ -92,12 +92,12 @@
           "product_id": "coaster_basic_orange",
           "label": "סט 4 תחתיות עגול שלכת",
           "category": "קולקציית סתיו",
-          "description": "ארבע תחתיות עם מסגרת בצורת עיגול לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות עגולות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "כתום",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "one_piece_price": "25",
-          "price": "100",
-          "discount": "90",
+          "price": "110",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -113,11 +113,11 @@
           "product_id": "coaster_basic_black",
           "label": "סט 4 תחתיות עגול אלגנטי",
           "category": "",
-          "description": "ארבע תחתיות עם מסגרת בצורת עיגול לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות עגולות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "שחור",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
-          "price": "100",
-          "discount": "90",
+          "price": "110",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -133,10 +133,10 @@
           "product_id": "coaster_marble_black_grey",
           "label": "סט 4 תחתיות מרבל בסיסי",
           "category": "",
-          "description": "ארבע תחתיות עם מסגרת בצורת ריבוע לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות מרובעות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "שחור אפור",
           "sizes": { "h": "10", "w": "10", "d": "1.8" },
-          "price": "100",
+          "price": "120",
           "discount": "",
           "product_images_paths": [
             {
@@ -151,17 +151,85 @@
         },
         {
           "product_id": "coaster_terrazzo",
-          "label": "סט 4 תחתיות טרצ'ו",
+          "label": "סט 4 תחתיות טרצ'ו עם מסגרת",
           "category": "",
-          "description": "ארבע תחתיות ללא מסגרת בצורת עגול לכוסות שתיה, חם או קר.",
+          "description": "ארבע תחתיות עגולות עם מסגרת לכוסות שתיה, חם או קר.",
           "colors": "בסיס לבן עם שברי צבע שונים",
-          "sizes": "",
+          "sizes": { "h": "10", "w": "10", "d": "1.5" },
+          "price": "150",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/terazzo_coaster_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/terazzo_coaster_2.jpeg"
+            }
+          ]
+        },
+        {
+          "product_id": "coaster_silver_trail",
+          "label": "סט 4 תחתיות שביל הכסף",
+          "category": "",
+          "description": "ארבע תחתיות עגולות עם מסגרת לכוסות שתיה, חם או קר.",
+          "colors": "בסיס לבן עם שביל כסף",
+          "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "price": "130",
           "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
+              "image_path": "/images/white_silver_coaster_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/white_silver_coaster_2.jpeg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/white_silver_coaster_3.jpeg"
+            }
+          ]
+        },
+        {
+          "product_id": "coaster_red",
+          "label": "סט 4 תחתיות אש",
+          "category": "",
+          "description": "ארבע תחתיות עגולות ללא מסגרת לכוסות שתיה, חם או קר.",
+          "colors": "אדום",
+          "sizes": "",
+          "price": "110",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/red_coaster_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/red_coaster_2.jpeg"
+            }
+          ]
+        },
+        {
+          "product_id": "coaster_clouds",
+          "label": "סט 4 תחתיות עננים",
+          "category": "",
+          "description": "ארבע תחתיות עגולות ללא מסגרת לכוסות שתיה, חם או קר.",
+          "colors": "תכלת",
+          "sizes": "",
+          "price": "110",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/clouds_coaster_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/clouds_coaster_2.jpeg"
             }
           ]
         }
@@ -263,7 +331,7 @@
           "description": "",
           "colors": "",
           "sizes": { "h": "3.5", "w": "3.5", "d": "3.5" },
-          "price": "30",
+          "price": "40",
           "discount": "",
           "product_images_paths": [
             {
@@ -417,7 +485,7 @@
           "description": "הפמוטים בעיצוב ייחודי לכבוד קולקציית הסתיו יוסיפו לשולחן שלכם אווירה מיוחדת.",
           "colors": "לבן אדום וחום",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
-          "price": "80",
+          "price": "120",
           "discount": "",
           "product_images_paths": [
             {
@@ -431,9 +499,9 @@
           "label": "פמוטים אלגנטיים",
           "category": "",
           "description": "הפמוטים האלגנטים יפים לכל יום ובכל מקום בחלל הבית.",
-          "colors": "שחור",
+          "colors": "שחור לבן",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
-          "price": "80",
+          "price": "100",
           "discount": "",
           "product_images_paths": [
             {
@@ -449,12 +517,36 @@
           "description": "הפמוטים הקלאסים בגוון לבן שמנת עדין, מתאימים גם כאקססוריז לבית וגם להדלקת נרות שבת או חג.",
           "colors": "לבן",
           "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
-          "price": "80",
+          "price": "100",
           "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
               "image_path": "/images/candle_holder_natural_white.png"
+            }
+          ]
+        },
+        {
+          "product_id": "candle_holder_marble_black_white",
+          "label": "פמוטים מרבל מנצח",
+          "category": "",
+          "description": "הפמוטים בגוון שחור לבן, בזכות הצבעים הנטרליים הפמוטים משתלבים בכל פינה בבית.",
+          "colors": "לבן",
+          "sizes": { "h": "7.2", "w": "7.2", "d": "3" },
+          "price": "100",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/candle_holder_marble_black_white_1.jpeg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/candle_holder_marble_black_white_2.jpeg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/candle_holder_marble_black_white_3.jpeg"
             }
           ]
         }
@@ -471,7 +563,7 @@
           "description": "מגש אובלי מושלם לעיצוב בחדר השינה, בחדר רצחה, סלון ובכל רחבי הבית.",
           "colors": "אפור שחור ולבן",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
-          "price": "60",
+          "price": "70",
           "discount": "",
           "product_images_paths": [
             {
@@ -507,7 +599,7 @@
           "description": "מגש אובלי מושלם לעיצוב בחדר השינה, בחדר רצחה, סלון ובכל רחבי הבית.",
           "colors": "לבן אדום וחום",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
-          "price": "60",
+          "price": "70",
           "discount": "",
           "product_images_paths": [
             {
@@ -523,7 +615,7 @@
           "description": "מגש אובלי מושלם לעיצוב בחדר השינה, בחדר רצחה, סלון ובכל רחבי הבית.",
           "colors": "בסיס שמנת עם נגיעות של זהב",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
-          "price": "70",
+          "price": "80",
           "discount": "",
           "product_images_paths": [
             {
@@ -539,7 +631,7 @@
           "description": "מגש אובלי מושלם לעיצוב בחדר השינה, בחדר רצחה, סלון ובכל רחבי הבית.",
           "colors": "אפור לבן",
           "sizes": { "h": "18", "w": "9.5", "d": "1.6" },
-          "price": "60",
+          "price": "70",
           "discount": "",
           "product_images_paths": [
             {

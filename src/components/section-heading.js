@@ -28,7 +28,7 @@ const styles = {
     textAlign: "center",
   },
   slogan: {
-    color: "#de7c5a",
+    color: "#6A7B76",
     fontSize: 18,
     fontWeight: 700,
     lineHeight: 2.22,

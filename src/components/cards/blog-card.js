@@ -7,19 +7,19 @@ const BlogPost = ({ post }) => {
   return (
     <Box sx={styles.post}>
       <Flex as="figure" sx={styles.postImage}>
-        <Image
-          loading="lazy"
-          src={post?.thumb}
-          alt={post?.title}
-          height={300}
-          width={410}
-        />
+        <Link href={post.link}>
+          <a href={post.link} rel="noreferrer">
+            <Image
+              loading="lazy"
+              src={post?.thumb}
+              alt={post?.title}
+              height={300}
+              width={410}
+            />
+            <Heading as="h4">{post?.title}</Heading>
+          </a>
+        </Link>
       </Flex>
-      <Box sx={styles.meta}>
-        <Heading as="h4">
-          <Link href={post.link}>{post?.title}</Link>
-        </Heading>
-      </Box>
     </Box>
   );
 };
@@ -30,7 +30,7 @@ const styles = {
   post: {
     textAlign: "center",
     figure: {
-      alignItems: "center",
+      // alignItems: "center",
     },
     h4: {
       mt: "1rem",
@@ -39,11 +39,12 @@ const styles = {
       fontSize: [14, 16, 20],
       lineHeight: 1.5,
       position: "relative",
-      a: {
-        cursor: "pointer",
-        color: "text",
-        textDecoration: "none",
-      },
+      fontWeight: "bold",
+      color: "#6A7B76",
+      cursor: "pointer",
+    },
+    a: {
+      textDecoration: "none",
     },
   },
   postImage: {

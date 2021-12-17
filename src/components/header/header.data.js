@@ -1,7 +1,7 @@
 export default [
   {
     path: "home",
-    label: "דף הבית",
+    label: "ראשי",
   },
   {
     path: "products",
@@ -10,10 +10,6 @@ export default [
   {
     path: "collections",
     label: "קולקציות",
-  },
-  {
-    path: "clients",
-    label: "מי אנחנו",
   },
   {
     path: "contact",

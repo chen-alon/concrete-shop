@@ -22,6 +22,7 @@ const styles = {
       fontWeight: 500,
       letterSpacing: "heading",
       fontSize: [20, null, null, null, null, 22],
+      fontWeight: "bold",
     },
     p: {
       fontSize: [null, null, null, null, 14, 17],

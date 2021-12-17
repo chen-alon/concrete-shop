@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, Image } from "theme-ui";
 import { Link } from "components/link";
-import logo from "assets/images/final_logo_narrow_2.png";
-import logoWhite from "assets/images/final_logo_narrow_2_white.png";
+import logo from "assets/images/logo_black.png";
+import logoWhite from "assets/images/logo_white.png";
 
 export default function Logo({ white }) {
   return (
@@ -15,7 +15,7 @@ export default function Logo({ white }) {
       <Image
         src={white ? logoWhite : logo}
         alt="concrete-shop"
-        sx={{ height: "53px", width: "164px" }}
+        sx={{ height: "53px", width: "164px", cursor: "pointer" }}
       />
     </Link>
   );

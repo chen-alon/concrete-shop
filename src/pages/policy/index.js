@@ -67,19 +67,19 @@ const styles = {
       fontSize: "1.3rem",
     },
     ":hover": {
-      backgroundColor: "transparent",
+      bg: "transparent",
     },
   },
   heading: {
     fontSize: 40,
     fontWeight: "bold",
     mt: "7rem",
-    backgroundColor: rgba("#de7c5a", 0.6),
+    bg: rgba("#6A7B76", 0.6),
     p: "5rem",
     "@media only screen and (max-width: 760px)": {
       mt: 0,
       pr: "1.5rem",
     },
   },
-  text: { fontSize: [20, 25], pr: "5%", pl: "4%", mt: "7rem" },
+  text: { fontSize: [15, 20], pr: "5%", pl: "4%", mt: "7rem" },
 };

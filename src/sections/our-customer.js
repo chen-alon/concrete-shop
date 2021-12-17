@@ -3,41 +3,37 @@ import { jsx, Box, Container, Flex } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Feature from "components/cards/feature";
 import { rgba } from "polished";
-import mail from "../assets/images/icons/icon-mail.svg";
-import whatsapp from "../assets/images/icons/icon-whatsapp.svg";
-import phone from "../assets/images/icons/icon-phone.svg";
+import mail from "../assets/images/icons/icon-mail.png";
+import whatsapp from "../assets/images/icons/icon-whatsapp.png";
+import phone from "../assets/images/icons/icon-phone.png";
 import instagram from "../assets/images/icons/icon-instagram.svg";
 
 const OurCustomer = () => {
   const desc =
-    "הצוות שלנו כאן בשבילך לכל שאלה או בקשה.\nישנם דרכים שונות ליצור איתנו איתנו קשר.\nבחרו את אחת האפשרויות הבאות:";
+    "הצוות שלנו כאן בשבילכם לכל שאלה או בקשה.\nישנן מספר דרכים ליצור איתנו איתנו קשר.\nבחרו את אחת האפשרויות הבאות:";
 
   const data = {
     contact: [
       {
         id: 1,
         icon: whatsapp,
-        link: "whatsapp://send?phone=+972526020358",
-        description: "ווטסאפ",
+        link: "https://api.whatsapp.com/send?phone=+972526020358",
       },
       {
         id: 2,
         icon: mail,
         link: "mailto:concrete.and.more0609@gmail.com",
-        description: "מייל",
       },
 
       {
         id: 3,
         icon: phone,
         link: "tel:+972526020358",
-        description: "טלפון",
       },
       {
         id: 4,
         icon: instagram,
         link: "https://www.instagram.com/concrete_shop_il/",
-        description: "אינסטגרם",
       },
     ],
   };
@@ -46,7 +42,7 @@ const OurCustomer = () => {
     <Box id="contact" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          // slogan="צור קשר"
+          slogan="צור קשר"
           title="מחפשים אותנו או צריכים עזרה?"
           dir="rtl"
         />
@@ -54,7 +50,7 @@ const OurCustomer = () => {
           <SectionHeading sx={styles.heading} description={desc} />
           <Box sx={styles.featureWrapper}>
             {data?.contact?.map((link) => (
-              <Box sx={styles.icon} key={link.id}>
+              <Box key={link.id}>
                 <a href={link.link} target="_blank" rel="noreferrer">
                   <Feature data={link}></Feature>
                 </a>
@@ -89,26 +85,20 @@ const styles = {
   },
   featureWrapper: {
     display: "flex",
+    flexDirection: "row",
     m: 0,
-    flexWrap: ["wrap", null, null, "unset"],
+    // flexWrap: ["wrap", null, null, "unset"],
     justifyContent: ["center"],
     a: {
       textDecoration: "none",
-      color: "#de7c5a",
-      pr: "2rem",
-      pl: "2rem",
+      color: "#6A7B76",
+      pr: "1rem",
+      pl: "1rem",
       display: "inline-block",
-      "@media only screen and (max-width: 400px)": {
-        p: "1rem",
+      "@media only screen and (max-width: 500px)": {
+        pr: "0.5rem",
+        pl: "0.5rem",
       },
-    },
-  },
-  icon: {
-    pt: "1rem",
-    flexDirection: "row",
-    textAlign: "center",
-    "@media only screen and (max-width: 490px)": {
-      p: "1.8rem",
     },
   },
 };

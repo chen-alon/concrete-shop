@@ -8,6 +8,7 @@ import Logo from "components/logo";
 import { NavLink } from "components/link";
 import menuItems from "./header.data";
 import productMenuItems from "../productpages/header.data";
+import productMenuItemsFooter from "../productpages/header.footer.data";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -42,18 +43,20 @@ export default function Header() {
     </li>
   ));
 
+  const navigationBarDetails = productMenuItemsFooter.map(
+    ({ path, label }, i) => (
+      <li key={i}>
+        <Link href={`/${path}`}>
+          <a onClick={closeMobileMenu}>{label}</a>
+        </Link>
+      </li>
+    )
+  );
+
   const returnMainAndCloseMobileMenu = () => {
     router.back();
     setMobileMenu(false);
   };
-
-  const navigationBarDetails = (
-    <li>
-      <Link href={`/`}>
-        <a onClick={closeMobileMenu}>חזור לדף הבית</a>
-      </Link>
-    </li>
-  );
 
   const currentPageNavigationLabels =
     router.pathname === "/"
@@ -79,7 +82,7 @@ export default function Header() {
         >
           <Container>
             <Box sx={styles.headerInner}>
-              <Logo />
+              <Logo sx={styles.logo} />
 
               <Flex
                 as="nav"
@@ -96,11 +99,11 @@ export default function Header() {
                 </Box>
                 <Button sx={styles.contact}>
                   <a
-                    href="whatsapp://send?phone=+972526020358&text=היי אשמח לבצע הזמנה"
+                    href="https://api.whatsapp.com/send?phone=+972526020358&text=היי אשמח לבצע הזמנה מותאמת אישית"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    לחצו פה להזמנה
+                    להזמנה מותאמת אישית לחצו כאן
                   </a>
                 </Button>
               </Flex>
@@ -196,6 +199,12 @@ const styles = {
       },
     },
   },
+  logo: {
+    "@media only screen and (max-width: 760px)": {
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  },
   navbar: {
     alignItems: "center",
     flexGrow: 1,
@@ -227,31 +236,37 @@ const styles = {
       },
     },
     ".active": {
-      color: "#DE7C5A",
+      color: "#6A7B76",
+      fontWeight: "bold",
     },
   },
   contact: {
     marginLeft: "auto",
-    // bg: "#fff",
-    bg: "transparent",
+    bg: rgba("#fff", 0.85),
+    boxShadow: [
+      "0px 10px 16px rgba(52, 61, 72, 0.12)",
+      null,
+      null,
+      null,
+      "none",
+    ],
     fontSize: "1.2rem",
-    borderRadius: 0,
     p: "1rem",
     pb: "1rem",
     pl: "2rem",
     pr: "2rem",
     a: {
       // color: "#141414",
-      color: "#de7c5a",
+      color: "#6A7B76",
       textDecoration: "none",
       textAlign: "center",
     },
     ":hover": {
       a: {
-        color: rgba("#FFFFFF", 0.7),
+        // color: rgba("#FFFFFF", 0.7),
       },
       transform: "scale(1.1)",
-      bg: "#141414",
+      bg: rgba("#141414", 0.85),
       opacity: "0.9",
     },
   },

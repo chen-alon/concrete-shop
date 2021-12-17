@@ -21,14 +21,15 @@ const data = {
     {
       id: 3,
       icon: whatsapp,
-      link: "whatsapp://send?phone=+972526020358",
+      link: "https://api.whatsapp.com/send?phone=+972526020358",
+      // link: "whatsapp://send?phone=+972526020358",
     },
   ],
   navItems: [
     {
       id: 1,
       link: "about",
-      title: "אודות",
+      title: "הסיפור שלי",
     },
     {
       id: 2,

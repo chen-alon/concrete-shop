@@ -77,7 +77,7 @@ const FeaturedSpace = () => {
   };
 
   const desc =
-    "מתוך אהבה טהורה לאומנות ובטון יצרנו קולקציות מוקפדות של אקססוריז ופרטי נוי מיוחדים לפנים וחוץ הבית במיוחד עבורכם ולאהובים שלכם.\nהפריטים שלנו יכניסו אור לבית ויוסיפו טאצ'ים עיצוביים.\nהקולקציות קבועות רק הצבעים משתנים.\nכל המוצרים עשויים בקפידה, בעבודת יד מחומרי הגלם האיכותיים ביותר.";
+    "מתוך אהבה טהורה לאומנות ובטון יצרתי עבורכן קולקציות מוקפדות של אקססוריז ופרטי נוי דקורטיביים לפנים וחוץ הבית במיוחד עבורכן ולאהובים שלכן.\nהפריטים יכניסו אור לבית ויוסיפו טאצ'ים עיצוביים.\nהקולקציות קבועות, רק הצבעים משתנים. ניתן לבצע הזמנה מותאמת אישית ולבצע שינויים.\nכל המוצרים עשויים בעבודת יד בקפידה, מחומרי הגלם האיכותיים ביותר.";
 
   return (
     <Box id="collections" as="section" sx={styles.section}>
@@ -87,6 +87,7 @@ const FeaturedSpace = () => {
             <SectionHeading
               sx={styles.heading}
               dir="rtl"
+              slogan="קולקציות"
               title="איך נולדו הקולקציות שלנו?"
               description={desc}
             />
@@ -132,7 +133,7 @@ export default FeaturedSpace;
 const styles = {
   section: {
     pt: [30, null, null, null, 60],
-    pb: [30, null, null, 50, 60],
+    pb: [60, null, null, null, 120],
   },
   contentWrapper: {
     gap: [null, null, null, null, "30px"],
@@ -162,13 +163,12 @@ const styles = {
   },
   rightContent: {
     position: "relative",
-    mt: [6, null, null, null, 0],
     maxWidth: "100%",
     ".swiper-pagination-bullets": {
       bottom: 20,
     },
     ".swiper-pagination-bullet": {
-      backgroundColor: "#DE7C5A",
+      backgroundColor: "#6A7B76",
       width: 10,
       height: 10,
       opacity: 1,
@@ -186,7 +186,7 @@ const styles = {
     left: [15, 25],
     top: [46, 53],
     zIndex: 2,
-    backgroundColor: "#DE7C5A",
+    backgroundColor: "#6A7B76",
   },
   progressBar: {
     position: "relative",
@@ -200,7 +200,7 @@ const styles = {
       borderRadius: 10,
     },
     figcaption: {
-      backgroundColor: "#DE7C5A",
+      backgroundColor: "#6A7B76",
       display: "flex",
       alignItems: "center",
       position: "absolute",

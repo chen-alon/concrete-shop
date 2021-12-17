@@ -26,10 +26,7 @@ const styles = {
     margin: "0.5rem",
     borderRadius: "8px",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-    fontSize: "1.8rem",
-    "@media only screen and (max-width: 450px)": {
-      fontSize: "1rem",
-    },
+    fontSize: [15, 20],
   },
   list: {
     paddingTop: "2rem",

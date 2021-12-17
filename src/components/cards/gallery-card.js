@@ -27,6 +27,7 @@ const styles = {
     position: "relative",
     overflow: "hidden",
     alignItems: "flex-start",
+    cursor: "pointer",
     mb: 30,
     mx: 15,
     width: [

@@ -14,9 +14,10 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <SEO title="Concrete Shop" />
       <Banner />
+      <Clients />
       <Gallery />
       <FeaturedSpace />
-      <Clients />
+
       <OurCustomer />
       <Blog />
     </ThemeProvider>

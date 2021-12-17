@@ -13,7 +13,7 @@ function QandAPage() {
       {
         question: "מזה קונקריט שופ?",
         answer:
-          "אנחנו חנות מקוונת שמוכרת פרטי נוי ואקססוריז בעבודת יד. אנחנו המקום המושלם למצוא מתנות ופריטים ייחודים בשיא הסטייל!",
+          "אנחנו חנות מקוונת שמוכרת פרטי נוי ואקססוריז בעבודת יד. אנחנו המקום המושלם לפרטי נוי ייחודים ומתנות מקוריות בשיא הסטייל!",
         open: true,
         id: "1",
       },
@@ -41,20 +41,19 @@ function QandAPage() {
       {
         question: "איך עליי לטפל במוצר שלי?",
         answer:
-          "הפריט אטום וניתן לניקוי עם מטלית לחה. שימוש בכל מוצרי ניקוי קשים או קרצוף קשה, יפגע בפני השטח של היצירה שלך. אנו ממליצים לנגב כל נוזל כמו יין או קפה בהקדם האפשרי.",
+          "הפריט אטום וניתן לניקוי עם מטלית לחה או מגבון. שימוש בכל מוצרי ניקוי קשים או קרצוף קשה, יפגע במוצר. אנו ממליצים לנגב כל נוזל כמו יין או קפה בהקדם האפשרי.",
         open: false,
         id: "5",
       },
       {
-        question: "האם המוצרים ידידותיים למדיח כלים או למיקרוגל?",
-        answer: "המוצרים אינם ידידותיים למדיח כלים או למיקרוגל.",
+        question: "האם המוצרים מתאימים לשימוש במדיח כלים או במיקרוגל?",
+        answer: "לא.",
         open: false,
         id: "6",
       },
       {
         question: "האם המוצר עמיד במים?",
-        answer:
-          "כל המוצרים שלנו מצופים בשכבת הגנה מפני מים וכתמים, עם זאת אנו ממליצים לנקות את המוצר בעזרת מטלית לחה וחומר ניקוי קל בהקדם על מנת למנוע שינוי בפני המשטח.",
+        answer: "כן, כל המוצרים שלנו מצופים בשכבת הגנה מפני מים.",
         open: false,
         id: "7",
       },
@@ -112,7 +111,7 @@ function QandAPage() {
       </Heading>
       {router.pathname !== "/" && (
         <Button onClick={() => router.back()} sx={styles.buttonBack}>
-          חזרה לעמוד הקודם {back}
+          לעמוד הקודם {back}
         </Button>
       )}
       <p style={styles.title}>כללי</p>
@@ -133,21 +132,18 @@ const styles = {
     float: "left",
     bg: "transparent",
     color: "#141414",
-    fontSize: "1.5rem",
+    fontSize: [15, 20],
     borderRadius: 0,
     fontWeight: "bold",
-    "@media only screen and (max-width: 900px) ": {
-      fontSize: "1.3rem",
-    },
     ":hover": {
-      backgroundColor: "transparent",
+      bg: "transparent",
     },
   },
   heading: {
     fontSize: 40,
     fontWeight: "bold",
     mt: "7rem",
-    backgroundColor: rgba("#de7c5a", 0.6),
+    bg: rgba("#6A7B76", 0.6),
     p: "5rem",
     "@media only screen and (max-width: 760px)": {
       mt: 0,

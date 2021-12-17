@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Button, Container, Box, Flex } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
+import { rgba } from "polished";
 
 async function getData() {
   const dataFilePath = path.join(process.cwd(), "data", "products-data.json");
@@ -61,7 +62,7 @@ function ProductIdPage(props) {
   const { currentProduct, currentCategory } = props;
   const router = useRouter();
   const whatsAppMessage =
-    "whatsapp://send?phone=+972526020358&text=היי אשמח לבצע הזמנה של המוצר " +
+    "https://api.whatsapp.com/send?phone=+972526020358&text=היי אשמח לבצע הזמנה של המוצר " +
     currentProduct.label;
 
   return (
@@ -88,7 +89,7 @@ function ProductIdPage(props) {
             </Box>
             <Button sx={styles.order} variant="secondary">
               <a href={whatsAppMessage} target="_blank" rel="noreferrer">
-                להזמנה לחצו כאן
+                להזמנת המוצר לחצו כאן
               </a>
             </Button>
             <ProductDetails
@@ -118,7 +119,7 @@ export default ProductIdPage;
 
 const styles = {
   section: {
-    pt: [30, 30, 40, 50, 60],
+    pt: [50, 60, 80],
     pb: [60, 60, 60, 90, 80, 120],
   },
   container: {
@@ -151,22 +152,19 @@ const styles = {
   },
 
   buttonBack: {
-    backgroundColor: "#DE7C5A",
+    bg: rgba("#6A7B76", 0.6),
     fontSize: "1rem",
-    borderRadius: 0,
     fontWeight: 300,
     "@media only screen and (max-width: 900px) ": {
       fontSize: "0.8rem",
     },
     ":hover": {
-      backgroundColor: "#DE7C5A",
+      bg: "#6A7B76",
       opacity: "0.8",
     },
   },
   order: {
-    borderRadius: 0,
-    // bg: "#333333",
-    bg: "#DE7C5A",
+    bg: rgba("#6A7B76", 0.6),
     fontSize: [15, 20],
     width: "50%",
     p: "1rem",
@@ -178,6 +176,7 @@ const styles = {
     ":hover": {
       opacity: "0.8",
       transform: "scale(1.1)",
+      bg: "#6A7B76",
     },
   },
   name: {

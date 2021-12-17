@@ -54,6 +54,7 @@ const styles = {
     flexDirection: "column",
     position: "relative",
     overflow: "hidden",
+    cursor: "pointer",
     mb: 30,
     mx: 15,
     width: [
@@ -90,7 +91,7 @@ const styles = {
   category: {
     position: "absolute",
     color: "#fff",
-    backgroundColor: "#de7c5a",
+    backgroundColor: "#6A7B76",
     opacity: 0.9,
     borderRadius: 10,
     padding: "1rem",
@@ -104,9 +105,9 @@ const styles = {
     color: "#fff",
     backgroundColor: "#141414",
     opacity: 0.9,
-    // borderRadius: 10,
+    borderRadius: 7,
     padding: "1.5rem",
-    top: "0px",
+    top: "-5px",
     left: "20px",
   },
   details: {
