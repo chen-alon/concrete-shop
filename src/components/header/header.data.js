@@ -1,7 +1,7 @@
 export default [
   {
     path: "home",
-    label: "ראשי",
+    label: "דף הבית",
   },
   {
     path: "products",

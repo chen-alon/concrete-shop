@@ -2,26 +2,16 @@ import path from "path";
 // import fs from "fs/promises";
 import CategoryGallery from "sections/category-gallery";
 import { products } from "../../../data/products-data.json";
-// import { useRouter } from "next/router";
-// import { Button, Box } from "theme-ui";
 import { rgba } from "polished";
 
 function ProductCategoryPage(props) {
   const { currentProductCategory } = props;
-  // const router = useRouter();
 
   return (
-    // <Box sx={{ mt: "5rem", mb: "1rem" }} dir="rtl">
-    //     <Button onClick={() => router.push("/")} sx={styles.buttonBack}>
-    //       חזרה לעמוד הראשי
-    //     </Button>
-
-
-      <CategoryGallery
-        categoryProductsList={currentProductCategory.products_list}
-        category_id={currentProductCategory.category_id}
-      />
-    // </Box>
+    <CategoryGallery
+      categoryProductsList={currentProductCategory.products_list}
+      category_id={currentProductCategory.category_id}
+    />
   );
 }
 
@@ -64,18 +54,3 @@ export async function getStaticPaths() {
 }
 
 export default ProductCategoryPage;
-
-// const styles = {
-//   buttonBack: {
-//     bg: rgba("#6A7B76", 0.6),
-//     fontSize: "1rem",
-//     fontWeight: 300,
-//     "@media only screen and (max-width: 900px) ": {
-//       fontSize: "0.8rem",
-//     },
-//     ":hover": {
-//       bg: "#6A7B76",
-//       opacity: "0.8",
-//     },
-//   },
-// };

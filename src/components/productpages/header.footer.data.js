@@ -1,7 +1,7 @@
 export default [
   {
     path: "",
-    label: "ראשי",
+    label: "דף הבית",
   },
   {
     path: "coasters",
