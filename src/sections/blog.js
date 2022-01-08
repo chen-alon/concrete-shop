@@ -9,6 +9,7 @@ import salon from "assets/images/blog/blog_salon.png";
 import dresser_2 from "assets/images/blog/room_2.jpg";
 import balcony from "assets/images/blog/balcony.jpg";
 import side_dresser from "assets/images/blog/room_2_2.jpg";
+import kaveret from "assets/images/blog/kaveret.jpg";
 
 const data = [
   {
@@ -46,6 +47,12 @@ const data = [
     thumb: dresser,
     link: "#!",
     title: `שידת טואלט`,
+  },
+  {
+    id: 7,
+    thumb: kaveret,
+    link: "/fire_bowls",
+    title: `כוורת`,
   },
 ];
 

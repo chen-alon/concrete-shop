@@ -26,11 +26,11 @@ const data = {
     },
   ],
   navItems: [
-    {
-      id: 1,
-      link: "about",
-      title: "הסיפור שלי",
-    },
+    // {
+    //   id: 1,
+    //   link: "about",
+    //   title: "הסיפור שלי",
+    // },
     {
       id: 2,
       link: "policy",

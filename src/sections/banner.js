@@ -1,19 +1,13 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Heading } from "theme-ui";
-import { rgba } from "polished";
-import bannerBg from "assets/images/banner-bg1.jpg";
+import { jsx, Box, Container } from "theme-ui";
+import bannerBg from "assets/images/banner-bg.jpg";
+import bannerBgMobile from "assets/images/banner-bg-mobile.jpg";
 
 export default function Banner() {
   return (
-    <Box as="section" id="home" sx={styles.section} dir="rtl">
+    <Box as="section" id="home" sx={styles.section}>
       <Container>
-        <Box sx={styles.contentWrapper}>
-          <Box sx={styles.bannerContent}>
-            <Heading as="h1" sx={styles.heroTitle}>
-              ברוכים הבאים <br /> הגעתם למקום לעיצוב הבית מבטון
-            </Heading>
-          </Box>
-        </Box>
+        <Box sx={styles.contentWrapper}></Box>
       </Container>
     </Box>
   );
@@ -23,40 +17,26 @@ const styles = {
   section: {
     background: `url(${bannerBg}) no-repeat center top / cover`,
     backgroundSize: ["100%", null, null, null, "cover"],
+    "@media only screen and (max-width: 760px)": {
+      background: `url(${bannerBgMobile}) no-repeat center top / cover`,
+      backgroundSize: ["100%", null, null, null, "cover"],
+    },
   },
   contentWrapper: {
     display: "flex",
     alignItems: "center",
-    minHeight: [null, null, null, null, "50vh", "100vh"],
+    minHeight: [
+      "30vh",
+      "40vh",
+      "50vh",
+      "60vh",
+      "70vh",
+      "80vh",
+      "90vh",
+      "100vh",
+    ],
     "@media only screen and (max-width: 760px)": {
       justifyContent: "center",
     },
-  },
-  bannerContent: {
-    backgroundColor: rgba("#fff", 0.85),
-    boxShadow: [
-      "0px 10px 16px rgba(52, 61, 72, 0.12)",
-      null,
-      null,
-      null,
-      "none",
-    ],
-    maxWidth: [null, null, null, 600, 500, null, 650],
-    padding: "5rem",
-    borderRadius: 5,
-    mt: "12rem",
-    // m: ["110px 0 0", null, null, "110px auto 0", "60px 0 0", null, 0],
-    "@media only screen and (max-width: 760px)": {
-      maxWidth: 515,
-      padding: "3rem",
-      mt: "10rem",
-    },
-  },
-  heroTitle: {
-    textAlign: "center",
-    fontSize: [27, 40],
-    fontWeight: 700,
-    letterSpacing: "heading",
-    lineHeight: [1.4, null, null, null, null, null, 1.57],
   },
 };

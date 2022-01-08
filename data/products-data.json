@@ -240,7 +240,7 @@
       "description": "קערות אש",
       "products_list": [
         {
-          "product_id": "fire_bowl_26",
+          "product_id": "round_fire_bowl",
           "label": "קערת אש מעוגלת",
           "category": "",
           "description": "",
@@ -252,12 +252,57 @@
           "product_images_paths": [
             {
               "image_id": "1",
+              "image_path": "/images/fire_bowl_white_black.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/fire_bowl_white_white_black.jpg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/fire_bowl_white_white_grey.jpg"
+            },
+            {
+              "image_id": "4",
+              "image_path": "/images/fire_bowl_white_white_red.jpg"
+            },
+            {
+              "image_id": "5",
+              "image_path": "/images/fire_bowl_white_white_2.jpg"
+            },
+            {
+              "image_id": "6",
+              "image_path": "/images/fire_bowl_white_white.jpg"
+            },
+            {
+              "image_id": "7",
               "image_path": "/images/fire_bowl_white.png"
+            },
+            {
+              "image_id": "8",
+              "image_path": "/images/fire_bowl_white_grey.jpg"
             }
           ]
         },
         {
-          "product_id": "fire_bowl_27",
+          "product_id": "round_marble_fire_bowl",
+          "label": "קערת אש מעוגלת בסגנון שיש",
+          "category": "",
+          "description": "",
+          "colors": "צבע הקערה והאבנים לבחירה",
+          "sizes": "קוטר 24",
+          "price": "220",
+          "discount": "",
+          "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
+            }
+          ]
+        },
+        {
+          "product_id": "wide_fire_bowl",
           "label": "קערת אש רחבה",
           "category": "",
           "description": "",
@@ -270,6 +315,23 @@
             {
               "image_id": "1",
               "image_path": "/images/fire_bowl_black.png"
+            }
+          ]
+        },
+        {
+          "product_id": "wide_marble_fire_bowl",
+          "label": "קערת אש רחבה בסגנון שיש",
+          "category": "",
+          "description": "",
+          "colors": "צבע הקערה והאבנים לבחירה",
+          "sizes": "קוטר 27",
+          "price": "240",
+          "discount": "",
+          "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": ""
             }
           ]
         }
@@ -331,7 +393,7 @@
           "description": "",
           "colors": "",
           "sizes": { "h": "3.5", "w": "3.5", "d": "3.5" },
-          "price": "40",
+          "price": "30",
           "discount": "",
           "product_images_paths": [
             {
@@ -681,6 +743,30 @@
             {
               "image_id": "2",
               "image_path": "/images/tray_natural_red_2.png"
+            }
+          ]
+        },
+        {
+          "product_id": "decorative_arch_white",
+          "label": "קשת דקורטיבית קלאסית",
+          "category": "",
+          "description": "מגש דקורטיבי משמש כפריט נוי, כלי הגשה או תחתית.",
+          "colors": "לבן",
+          "sizes": "",
+          "price": "120",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/tray_natural_white.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/tray_natural_white_2.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/tray_natural_white_3.jpg"
             }
           ]
         },

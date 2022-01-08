@@ -8,6 +8,10 @@ export default [
     label: "חנות",
   },
   {
+    path: "about",
+    label: "אודות",
+  },
+  {
     path: "collections",
     label: "קולקציות",
   },

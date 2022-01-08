@@ -8,6 +8,7 @@ import FeaturedSpace from "sections/featured-space";
 import OurCustomer from "sections/our-customer";
 import Gallery from "sections/gallery";
 import Blog from "sections/blog";
+import About from "./about";
 
 export default function IndexPage() {
   return (
@@ -16,8 +17,8 @@ export default function IndexPage() {
       <Banner />
       <Clients />
       <Gallery />
+      <About />
       <FeaturedSpace />
-
       <OurCustomer />
       <Blog />
     </ThemeProvider>

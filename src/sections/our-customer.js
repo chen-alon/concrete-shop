@@ -25,11 +25,11 @@ const OurCustomer = () => {
         link: "mailto:concrete.and.more0609@gmail.com",
       },
 
-      {
-        id: 3,
-        icon: phone,
-        link: "tel:+972526020358",
-      },
+      // {
+      //   id: 3,
+      //   icon: phone,
+      //   link: "tel:+972526020358",
+      // },
       {
         id: 4,
         icon: instagram,
