@@ -97,7 +97,7 @@
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "one_piece_price": "25",
           "price": "110",
-          "discount": "",
+          "discount": "95",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -117,7 +117,7 @@
           "colors": "שחור",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "price": "110",
-          "discount": "",
+          "discount": "95",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -201,7 +201,7 @@
           "colors": "אדום",
           "sizes": "",
           "price": "110",
-          "discount": "",
+          "discount": "95",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -221,7 +221,7 @@
           "colors": "תכלת",
           "sizes": "",
           "price": "110",
-          "discount": "",
+          "discount": "95",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -297,7 +297,23 @@
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
+              "image_path": "/images/fire_bowl_marble_small_black_2.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/fire_bowl_marble_small_black_white.jpg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/fire_bowl_marble_small_grey.jpg"
+            },
+            {
+              "image_id": "4",
+              "image_path": "/images/fire_bowl_marble_small_white.jpg"
+            },
+            {
+              "image_id": "5",
+              "image_path": "/images/fire_bowl_marble_small_black.jpg"
             }
           ]
         },
@@ -331,7 +347,11 @@
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
+              "image_path": "/images/fire_bowl_marble_white_2.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/fire_bowl_marble_white.jpg"
             }
           ]
         }
@@ -349,7 +369,7 @@
           "colors": "",
           "sizes": { "h": "7", "w": "9", "d": "4" },
           "price": "70",
-          "discount": "",
+          "discount": "60",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -369,11 +389,11 @@
           "colors": "",
           "sizes": { "h": "5.5", "w": "5.5", "d": "5.5" },
           "price": "70",
-          "discount": "",
+          "discount": "60",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": "/images/candle_big_bubble_white.png"
+              "image_path": "/images/candle_big_bubble_misc.jpg"
             },
             {
               "image_id": "2",
@@ -383,6 +403,10 @@
             {
               "image_id": "3",
               "image_path": "/images/candle_big_bubble_red.png"
+            },
+            {
+              "image_id": "4",
+              "image_path": "/images/candle_big_bubble_white.png"
             }
           ]
         },
@@ -394,7 +418,7 @@
           "colors": "",
           "sizes": { "h": "3.5", "w": "3.5", "d": "3.5" },
           "price": "30",
-          "discount": "",
+          "discount": "25",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -414,7 +438,7 @@
           "colors": "",
           "sizes": { "h": "9", "w": "5.5", "d": "2" },
           "price": "60",
-          "discount": "",
+          "discount": "50",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -430,7 +454,7 @@
           "colors": "",
           "sizes": { "h": "11.8", "w": "5.8", "d": "1.8" },
           "price": "70",
-          "discount": "",
+          "discount": "60",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -446,7 +470,7 @@
           "colors": "",
           "sizes": { "h": "11", "w": "6.5", "d": "2" },
           "price": "50",
-          "discount": "",
+          "discount": "42",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -462,7 +486,7 @@
           "colors": "",
           "sizes": { "h": "10.5", "w": "5.5", "d": "2" },
           "price": "60",
-          "discount": "",
+          "discount": "50",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -478,7 +502,7 @@
           "colors": "",
           "sizes": { "h": "8.5", "w": "8.5", "d": "2" },
           "price": "50",
-          "discount": "",
+          "discount": "42",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -494,11 +518,15 @@
           "colors": "",
           "sizes": { "h": "9.5", "w": "9.5", "d": "2" },
           "price": "60",
-          "discount": "",
+          "discount": "50",
           "product_images_paths": [
             {
               "image_id": "1",
-              "image_path": ""
+              "image_path": "/images/candle_moon.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/candle_moon_misc.jpg"
             }
           ]
         },
@@ -510,7 +538,7 @@
           "colors": "",
           "sizes": "",
           "price": "50",
-          "discount": "",
+          "discount": "42",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -526,7 +554,7 @@
           "colors": "",
           "sizes": "",
           "price": "50",
-          "discount": "",
+          "discount": "42",
           "product_images_paths": [
             {
               "image_id": "1",
