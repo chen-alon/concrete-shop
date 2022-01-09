@@ -407,6 +407,10 @@
             {
               "image_id": "4",
               "image_path": "/images/candle_big_bubble_white.png"
+            },
+            {
+              "image_id": "5",
+              "image_path": "/images/candle_big_bubble_grey.jpg"
             }
           ]
         },
