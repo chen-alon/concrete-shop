@@ -22,7 +22,7 @@ const OurCustomer = () => {
       {
         id: 2,
         icon: mail,
-        link: "mailto:concrete.and.more0609@gmail.com",
+        link: "mailto:contact@concrete-shop.co.il",
       },
 
       // {
