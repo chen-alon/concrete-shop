@@ -60,12 +60,9 @@ const styles = {
     float: "left",
     bg: "transparent",
     color: "#141414",
-    fontSize: "1.5rem",
+    fontSize: [15, 20],
     borderRadius: 0,
     fontWeight: "bold",
-    "@media only screen and (max-width: 900px) ": {
-      fontSize: "1.3rem",
-    },
     ":hover": {
       bg: "transparent",
     },
