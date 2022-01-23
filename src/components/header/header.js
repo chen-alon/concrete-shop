@@ -71,7 +71,7 @@ export default function Header() {
     <Box sx={styles.headerWrapper}>
       <Box as="footer" sx={styles.top}>
         <Flex sx={styles.copyright}>
-          <Text as="span">משלוחים חינם ברכישה מעל 250₪</Text>
+          <Text as="span">משלוחים חינם ברכישה מעל 300₪</Text>
         </Flex>
       </Box>
       <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>

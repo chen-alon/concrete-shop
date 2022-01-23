@@ -4,12 +4,12 @@ export default [
     label: "דף הבית",
   },
   {
-    path: "coasters",
-    label: "תחתיות",
-  },
-  {
     path: "fire_bowls",
     label: "קערות-אש",
+  },  
+  {
+    path: "coasters",
+    label: "תחתיות",
   },
   {
     path: "candles",
