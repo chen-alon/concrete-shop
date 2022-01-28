@@ -265,7 +265,7 @@
       "products_list": [
         {
           "product_id": "round_fire_bowl",
-          "label": "קערת אש מעוגלת",
+          "label": "קערת אש מעוגלת קוטר 24",
           "category": "",
           "description": "",
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
@@ -310,7 +310,7 @@
         },
         {
           "product_id": "round_marble_fire_bowl",
-          "label": "קערת אש מעוגלת בסגנון שיש",
+          "label": "קערת אש מעוגלת בסגנון שיש  קוטר 24",
           "category": "קולקציית מרבל",
           "description": "",
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
@@ -343,7 +343,7 @@
         },
         {
           "product_id": "wide_fire_bowl",
-          "label": "קערת אש רחבה",
+          "label": "קערת אש רחבה  קוטר 27",
           "category": "",
           "description": "",
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
@@ -360,7 +360,7 @@
         },
         {
           "product_id": "wide_marble_fire_bowl",
-          "label": "קערת אש רחבה בסגנון שיש",
+          "label": "קערת אש רחבה בסגנון שיש  קוטר 27",
           "category": "קולקציית מרבל",
           "description": "",
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
@@ -698,6 +698,30 @@
       "category_id": "trays",
       "description": "מגשים",
       "products_list": [
+        {
+          "product_id": "tray_marble_black_white",
+          "label": "קשת דקורטיבית בסגנון שיש",
+          "category": "קולקציית מרבל",
+          "description": "מגש דקורטיבי משמש כפריט נוי, כלי הגשה או תחתית.",
+          "colors": "אפור שחור ולבן",
+          "sizes": "",
+          "price": "140",
+          "discount": "",
+          "product_images_paths": [
+            {
+              "image_id": "1",
+              "image_path": "/images/tray_marble_black_white_2.jpg"
+            },
+            {
+              "image_id": "2",
+              "image_path": "/images/tray_marble_black_white_3.jpg"
+            },
+            {
+              "image_id": "3",
+              "image_path": "/images/tray_marble_black_white.jpg"
+            }
+          ]
+        },
         {
           "product_id": "oval_tray_marble_bold",
           "label": "מגש אובלי מרבל נועז",

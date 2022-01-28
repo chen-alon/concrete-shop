@@ -9,10 +9,12 @@ import OurCustomer from "sections/our-customer";
 import Gallery from "sections/gallery";
 import Blog from "sections/blog";
 import About from "./about";
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
+      <GoogleAnalytics />
       <SEO title="Concrete Shop" />
       <Banner />
       <Clients />
