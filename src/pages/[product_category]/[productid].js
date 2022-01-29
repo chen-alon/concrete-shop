@@ -5,6 +5,7 @@ import { Button, Container, Box, Flex } from "theme-ui";
 import SlideShow from "components/productpages/product/slideshow";
 import ProductDetails from "components/productpages/product/product-details";
 import { rgba } from "polished";
+import { logEvent} from "analytics";
 
 async function getData() {
   const dataFilePath = path.join(process.cwd(), "data", "products-data.json");
@@ -87,7 +88,7 @@ function ProductIdPage(props) {
                 ) : null}
               </div>
             </Box>
-            <Button sx={styles.order} variant="secondary">
+            <Button sx={styles.order} variant="secondary" onClick={logEvent.bind(this, "Order", "Product: " + currentProduct.product_id)}>
               <a href={whatsAppMessage} target="_blank" rel="noreferrer">
                 להזמנת המוצר לחצו כאן
               </a>
