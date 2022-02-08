@@ -33,7 +33,7 @@ const OurCustomer = () => {
       {
         id: 4,
         icon: instagram,
-        link: "https://www.instagram.com/concrete_shop_il/",
+        link: "https://www.instagram.com/concrete_shop_decor/",
       },
     ],
   };
