@@ -121,7 +121,7 @@
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "one_piece_price": "25",
           "price": "110",
-          "discount": "95",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -141,7 +141,7 @@
           "colors": "שחור",
           "sizes": { "h": "10", "w": "10", "d": "1.5" },
           "price": "110",
-          "discount": "95",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -225,7 +225,7 @@
           "colors": "אדום",
           "sizes": { "h": "9.5", "w": "9.5", "d": "1" },
           "price": "110",
-          "discount": "95",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -245,7 +245,7 @@
           "colors": "תכלת",
           "sizes": { "h": "9.5", "w": "9.5", "d": "1" },
           "price": "110",
-          "discount": "95",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -271,7 +271,7 @@
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
           "sizes": "קוטר 24",
           "price": "260",
-          "discount": "235",
+          "discount": "",
           "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
@@ -316,7 +316,7 @@
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
           "sizes": "קוטר 24",
           "price": "280",
-          "discount": "255",
+          "discount": "",
           "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
@@ -349,7 +349,7 @@
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
           "sizes": "קוטר 27",
           "price": "280",
-          "discount": "255",
+          "discount": "",
           "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
@@ -366,7 +366,7 @@
           "colors": "צבע הקערה, האבנים והלפיד לבחירה בהתאם למלאי.",
           "sizes": "קוטר 27",
           "price": "300",
-          "discount": "270",
+          "discount": "",
           "more": "ניתן לבחור סוג אחד של אבנים או לשלב מספר סוגים יחד לפי המלאי הקיים בחנות.",
           "product_images_paths": [
             {
@@ -393,7 +393,7 @@
           "colors": "",
           "sizes": { "h": "7", "w": "9", "d": "4" },
           "price": "75",
-          "discount": "60",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -413,7 +413,7 @@
           "colors": "",
           "sizes": { "h": "5.5", "w": "5.5", "d": "5.5" },
           "price": "75",
-          "discount": "60",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -446,7 +446,7 @@
           "colors": "",
           "sizes": { "h": "3.5", "w": "3.5", "d": "3.5" },
           "price": "35",
-          "discount": "25",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -466,7 +466,7 @@
           "colors": "",
           "sizes": { "h": "9", "w": "5.5", "d": "2" },
           "price": "65",
-          "discount": "50",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -482,7 +482,7 @@
           "colors": "",
           "sizes": { "h": "11.8", "w": "5.8", "d": "1.8" },
           "price": "75",
-          "discount": "60",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -498,7 +498,7 @@
           "colors": "",
           "sizes": { "h": "11", "w": "6.5", "d": "2" },
           "price": "55",
-          "discount": "42",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -514,7 +514,7 @@
           "colors": "",
           "sizes": { "h": "10.5", "w": "5.5", "d": "2" },
           "price": "65",
-          "discount": "50",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -530,7 +530,7 @@
           "colors": "",
           "sizes": { "h": "8.5", "w": "8.5", "d": "2" },
           "price": "55",
-          "discount": "42",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -546,7 +546,7 @@
           "colors": "",
           "sizes": { "h": "9.5", "w": "9.5", "d": "2" },
           "price": "65",
-          "discount": "50",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -566,7 +566,7 @@
           "colors": "",
           "sizes": { "h": "23", "w": "4", "d": "2" },
           "price": "80",
-          "discount": "70",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -590,7 +590,7 @@
           "colors": "",
           "sizes": "",
           "price": "55",
-          "discount": "42",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
@@ -606,7 +606,7 @@
           "colors": "",
           "sizes": "",
           "price": "55",
-          "discount": "42",
+          "discount": "",
           "product_images_paths": [
             {
               "image_id": "1",
